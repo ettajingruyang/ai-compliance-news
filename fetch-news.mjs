@@ -27,21 +27,21 @@ function gNews(q) {
 
 const sources = {
   googleNews: [
+    // --- AI进展 (中文) — 聚焦产品发布、技术突破、行业大事 ---
+    { query: '("大模型" OR "AI模型" OR "人工智能") AND (发布 OR 开源 OR 上线 OR 推出 OR 突破)', cat: "ai-progress" },
+    { query: '(OpenAI OR Anthropic OR 百度 OR 阿里 OR 华为 OR DeepSeek OR 智谱 OR Kimi OR 字节) AND (发布 OR 推出 OR 开源 OR 融资 OR 上市)', cat: "ai-progress" },
+    // --- AI进展 (英文) — exclude regulation/policy keywords ---
+    { query: '("AI model" OR "GPT" OR "foundation model" OR "LLM") AND (release OR launch OR breakthrough OR announce) -regulation -law -ban -executive -order', cat: "ai-progress" },
+    { query: '(OpenAI OR Anthropic OR "Google DeepMind" OR Meta OR DeepSeek OR xAI) AND (release OR launch OR funding OR IPO OR model) -regulation -lawsuit -ban', cat: "ai-progress" },
     // --- AI 监管 (中文) ---
-    { query: '("AI监管" OR "人工智能治理" OR "AI立法" OR "算法备案")', cat: "ai-regulation" },
+    { query: '("AI监管" OR "人工智能治理" OR "AI立法" OR "算法备案" OR "数据合规")', cat: "ai-regulation" },
     // --- AI 监管 (英文) ---
-    { query: '("EU AI Act" OR "AI regulation" OR "AI legislation") AND (law OR policy OR enforcement OR act)', cat: "ai-regulation" },
-    { query: '("AI governance" OR "AI compliance" OR "FTC AI" OR "AI liability")', cat: "ai-regulation" },
+    { query: '("EU AI Act" OR "AI regulation" OR "AI legislation" OR "AI Act") AND (law OR policy OR enforcement OR compliance)', cat: "ai-regulation" },
+    { query: '("AI governance" OR "AI executive order" OR "FTC AI" OR "AI liability" OR "AI fine" OR "AI lawsuit")', cat: "ai-regulation" },
     // --- 法律AI (中文) ---
-    { query: '("法律AI" OR "AI法律" OR "智能司法" OR "合规科技")', cat: "legal-ai" },
+    { query: '("法律AI" OR "AI法律" OR "智能司法" OR "合规科技" OR "AI律师")', cat: "legal-ai" },
     // --- 法律AI (英文) ---
-    { query: '("legal AI" OR "AI lawyer" OR "AI copyright" OR "AI court" OR "AI litigation")', cat: "legal-ai" },
-    // --- AI进展 (中文) ---
-    { query: '("大模型" OR "人工智能" OR "AI") AND (发布 OR 开源 OR 突破 OR 进展)', cat: "ai-progress" },
-    { query: '(OpenAI OR Anthropic OR 百度 OR 阿里 OR 华为 OR DeepSeek OR 智谱 OR Kimi) AND (AI OR 模型)', cat: "ai-progress" },
-    // --- AI进展 (英文) ---
-    { query: '("AI model" OR "GPT-5" OR "foundation model") AND (release OR launch OR breakthrough OR announce)', cat: "ai-progress" },
-    { query: '(OpenAI OR Anthropic OR "Google DeepMind" OR Meta OR DeepSeek) AND (AI OR model)', cat: "ai-progress" },
+    { query: '("legal AI" OR "AI lawyer" OR "legal tech" OR "AI legal" OR "AI contract") AND (AI OR platform OR startup OR funding OR tool)', cat: "legal-ai" },
   ],
   rss: [
     // 境外监管/法律
@@ -241,14 +241,25 @@ async function curateWithAI(items, cat, catName) {
     `[${i + 1}] ${item.title} | 来源: ${item.source} | 日期: ${item.date}\n  摘要: ${item.summary.substring(0, 150)}`
   ).join("\n\n");
 
-  const prompt = `你是一个AI合规与法律AI领域的专业编辑。请从以下候选新闻中，为"${catName}"栏目挑选最重要的5条新闻。
+  const categoryDefinitions = {
+    "ai-progress": "AI行业重大进展：聚焦AI公司产品发布（如新模型、新功能上线）、技术突破、重大融资/IPO、行业并购、AI基础设施重大建设。**注意：不包括政策法规、行政处罚、诉讼案件、版权纠纷、监管动态**——这些属于AI监管。",
+    "ai-regulation": "AI监管动态：聚焦各国AI立法进程、行政命令、监管机构执法行动、AI相关诉讼判决、数据隐私处罚、AI安全合规要求、反垄断调查。**注意：不包括AI公司产品发布、技术突破、融资消息**——这些属于AI进展。",
+    "legal-ai": "法律AI行业动态：聚焦法律科技公司的产品发布、融资、合作、并购，AI在法律服务中的应用（合同审查、法律研究、诉讼预测等），法律行业对AI的采用趋势。**注意：不包括政府AI立法监管政策、AI版权诉讼判决**——这些属于AI监管。",
+  };
+
+  const def = categoryDefinitions[cat] || "";
+
+  const prompt = `你是一个AI行业的专业编辑。请从以下候选新闻中，为"${catName}"栏目挑选最重要的5条新闻。
+
+⚠️ 栏目定义（严格遵守）：
+${def}
 
 挑选标准：
-- 优先选择有重大影响的：新法规通过、大额罚款、重大执法行动、重要模型发布、里程碑式裁决
-- 其次选择对行业有参考价值的：政策动态、企业合规实践、研究报告
+- 优先选择对该栏目领域有重大影响的新闻
 - 略过纯营销内容、重复报道、无实质信息的文章
+- 如果候选新闻中有明显不属于本栏目的（属于另外两个栏目），坚决排除
 
-请返回JSON数组，每个元素包含：选中的序号(index, 数字)、选择理由(reason, 中文, 20字以内)。
+请返回JSON数组，每个元素包含：选中的序号(index, 数字)、选择理由(reason, 中文, 15字以内)。
 只返回JSON，不要其他文字。
 
 候选新闻：
@@ -285,23 +296,42 @@ async function writeHeadlineAnalysis(item) {
   }
 }
 
-// 为一个分类的5条新闻批量生成详细解读（300-500字中文）
+// 为一个分类的5条新闻批量生成详细解读（350-500字中文）
 async function analyzeCategoryItems(items, catName) {
   if (items.length === 0) return {};
 
+  const catContext = {
+    "AI重大进展": "这些新闻属于AI行业重大进展栏目。请从技术/产品/商业角度解读，不要过度关注监管合规层面。",
+    "AI监管动态": "这些新闻属于AI监管动态栏目。请从政策/法律/合规角度解读，重点分析监管影响和行业合规启示。",
+    "法律AI": "这些新闻属于法律AI行业动态栏目。请从法律科技行业角度解读，重点分析对法律服务市场和法律行业的影响。",
+  };
+
   const list = items.map((item, i) =>
-    `[${i + 1}] 标题: ${item.title}\n    来源: ${item.source}\n    日期: ${item.date}\n    原文链接: ${item.url}\n    原始摘要: ${item.summary?.substring(0, 300) || "无"}`
+    `[${i + 1}] 标题: ${item.title}\n    来源: ${item.source}\n    日期: ${item.date}\n    原始摘要: ${item.summary?.substring(0, 300) || "无"}`
   ).join("\n\n");
 
-  const prompt = `你是一个AI合规与法律AI领域的资深分析师。请为以下"${catName}"栏目的${items.length}条新闻分别撰写详细解读。
+  const prompt = `你是一个AI行业的资深分析师。请为以下"${catName}"栏目的${items.length}条新闻分别撰写详细解读。
 
-每条解读要求（300-500字中文）：
-- 第一段：详细介绍该新闻事件的具体内容、背景、涉及方
-- 第二段：专业分析该事件的重要性、对行业的影响、未来趋势
-- 结尾：附上"原文链接: [新闻链接]"
-- 不要使用markdown格式，纯文字即可
+${catContext[catName] || ""}
 
-请返回JSON数组，每个元素包含：序号(index, 数字)、解读(analysis, 中文, 300-500字)。
+每条解读要求（350-500字中文），按以下结构组织，每个部分用【】标记标题：
+【事件概述】用2-3句话介绍该新闻的核心事件，说清楚发生了什么、涉及谁。
+【关键信息】列2-3个要点（用 - 开头），提炼最重要的数据和事实。
+【行业影响】分析该事件对行业的短期和长期影响，为什么值得关注。
+
+格式示例：
+【事件概述】xxx公司于近日发布了xxx产品，这是xxx领域的一次重大突破……
+【关键信息】
+- 要点一：具体数据或事实
+- 要点二：具体数据或事实
+【行业影响】该事件标志着xxx，短期内xxx，长期来看xxx……
+
+注意：
+- 不要使用markdown标题（不用##），用【】即可
+- 不要附原文链接
+- 纯文字，不要emoji
+
+请返回JSON数组，每个元素包含：序号(index, 数字)、解读(analysis, 中文, 350-500字)。
 只返回JSON，不要其他文字。
 
 新闻列表：
@@ -309,26 +339,59 @@ ${list}`;
 
   try {
     const resp = await askDeepSeek([{ role: "user", content: prompt }]);
-    // 尝试提取 JSON 数组
+    // 提取 JSON 数组
     let jsonStr = resp.match(/\[[\s\S]*\]/)?.[0];
     if (!jsonStr) {
-      // Fallback: 如果 AI 返回的不是标准JSON数组，尝试提取每一段
-      console.log(`    ⚠️ 批量分析(${catName}): AI 返回格式不对，尝试逐条提取`);
-      const map = {};
-      items.forEach((_, i) => { map[i + 1] = ""; });
-      return map;
+      console.log(`    ⚠️ 批量分析(${catName}): 未找到JSON数组，回退逐条生成`);
+      return await analyzeOneByOne(items, catName);
     }
-    // 清理可能导致 JSON 解析失败的字符
-    jsonStr = jsonStr.replace(/[\x00-\x08\x0B-\x0C\x0E-\x1F]/g, "");
-    const json = JSON.parse(jsonStr);
+    // 清理不可见控制字符（保留换行和常用空白）
+    jsonStr = jsonStr.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F]/g, "");
+    // 尝试解析
+    let json;
+    try {
+      json = JSON.parse(jsonStr);
+    } catch {
+      // JSON 解析失败 → 逐条重试
+      console.log(`    ⚠️ 批量JSON解析失败，切换为逐条生成...`);
+      return await analyzeOneByOne(items, catName);
+    }
     const map = {};
     json.forEach(j => { if (j.index != null) map[j.index] = j.analysis || ""; });
     return map;
   } catch (err) {
-    console.log(`    ⚠️ 批量分析(${catName}): JSON解析失败, ${err.message}`);
-    // fallback to empty
+    console.log(`    ⚠️ 批量分析(${catName}): ${err.message}`);
     return {};
   }
+}
+
+// 逐条生成解读（慢但可靠，作为 JSON 解析失败时的回退）
+async function analyzeOneByOne(items, catName) {
+  const map = {};
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    const prompt = `你是一个AI行业的资深分析师。请为以下这条新闻撰写详细解读（350-500字中文）。
+
+按以下结构组织，每个部分用【】标记标题：
+【事件概述】用2-3句话介绍该新闻的核心事件。
+【关键信息】列2-3个要点（用 - 开头），提炼最重要的数据和事实。
+【行业影响】分析该事件对行业的短期和长期影响。
+
+新闻标题：${item.title}
+来源：${item.source}
+日期：${item.date}
+摘要：${item.summary?.substring(0, 300) || "无"}
+
+不要使用markdown，不要附原文链接，不要emoji。直接返回解读文本。`;
+
+    try {
+      const text = await askDeepSeek([{ role: "user", content: prompt }]);
+      map[i + 1] = text.trim();
+    } catch {
+      map[i + 1] = "";
+    }
+  }
+  return map;
 }
 
 // ============================================================
