@@ -1,5 +1,5 @@
 import Parser from "rss-parser";
-import { writeFileSync } from "fs";
+import { writeFileSync, mkdirSync, existsSync, readFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -20,39 +20,42 @@ const parser = new Parser({
 
 // ––– 信息源 –––
 
-// Google News 关键词搜索
 function gNews(q) {
   return `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
 }
 
 const sources = {
   googleNews: [
-    // --- AI进展 (中文) — 聚焦产品发布、技术突破、行业大事 ---
+    // AI进展 (中文)
     { query: '("大模型" OR "AI模型" OR "人工智能") AND (发布 OR 开源 OR 上线 OR 推出 OR 突破)', cat: "ai-progress" },
     { query: '(OpenAI OR Anthropic OR 百度 OR 阿里 OR 华为 OR DeepSeek OR 智谱 OR Kimi OR 字节) AND (发布 OR 推出 OR 开源 OR 融资 OR 上市)', cat: "ai-progress" },
-    // --- AI进展 (英文) — exclude regulation/policy keywords ---
+    // AI进展 (英文)
     { query: '("AI model" OR "GPT" OR "foundation model" OR "LLM") AND (release OR launch OR breakthrough OR announce) -regulation -law -ban -executive -order', cat: "ai-progress" },
     { query: '(OpenAI OR Anthropic OR "Google DeepMind" OR Meta OR DeepSeek OR xAI) AND (release OR launch OR funding OR IPO OR model) -regulation -lawsuit -ban', cat: "ai-progress" },
-    // --- AI 监管 (中文) ---
+    // AI 监管 (中文)
     { query: '("AI监管" OR "人工智能治理" OR "AI立法" OR "算法备案" OR "数据合规")', cat: "ai-regulation" },
-    // --- AI 监管 (英文) ---
+    // AI 监管 (英文)
     { query: '("EU AI Act" OR "AI regulation" OR "AI legislation" OR "AI Act") AND (law OR policy OR enforcement OR compliance)', cat: "ai-regulation" },
     { query: '("AI governance" OR "AI executive order" OR "FTC AI" OR "AI liability" OR "AI fine" OR "AI lawsuit")', cat: "ai-regulation" },
-    // --- 法律AI (中文) ---
+    // 法律AI (中文)
     { query: '("法律AI" OR "AI法律" OR "智能司法" OR "合规科技" OR "AI律师")', cat: "legal-ai" },
-    // --- 法律AI (英文) ---
+    // 法律AI (英文)
     { query: '("legal AI" OR "AI lawyer" OR "legal tech" OR "AI legal" OR "AI contract") AND (AI OR platform OR startup OR funding OR tool)', cat: "legal-ai" },
   ],
   rss: [
-    // 境外监管/法律
+    // 境外
     { url: "https://iapp.org/news/feed/", cat: "ai-regulation" },
     { url: "https://techcrunch.com/category/artificial-intelligence/feed/", cat: "ai-progress" },
     { url: "https://www.technologyreview.com/topic/artificial-intelligence/feed/", cat: "ai-progress" },
     { url: "https://www.artificiallawyer.com/feed", cat: "legal-ai" },
     { url: "https://feeds.feedblitz.com/abajournal/topstories", cat: "legal-ai" },
-    // 中国来源
+    { url: "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml", cat: "ai-progress" },
+    { url: "https://venturebeat.com/category/ai/feed/", cat: "ai-progress" },
+    // 中国
     { url: "https://www.jiqizhixin.com/rss", cat: "ai-progress" },
     { url: "https://rsshub.app/36kr/motif/327403059714547", cat: "ai-progress" },
+    { url: "https://rsshub.app/thepaper/feature/27203", cat: "ai-regulation" },
+    { url: "https://rsshub.app/xinhua/ai", cat: "ai-regulation" },
   ],
   hn: [
     { query: "AI regulation", cat: "ai-regulation" },
@@ -90,11 +93,13 @@ function slug(text) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "").substring(0, 80);
 }
 
-// 用关键词给新闻打分（越高越重要）
+function todayStr() {
+  return new Date().toISOString().split("T")[0];
+}
+
 function scoreByKeywords(title) {
   const t = title.toLowerCase();
   let score = 0;
-  // 权威机构/关键词加分
   if (/eu ai act|european (union|commission|parliament)/.test(t)) score += 5;
   if (/supreme court|federal court|landmark|ruling/.test(t)) score += 5;
   if (/ftc|sec|doj|department of justice/.test(t)) score += 4;
@@ -110,7 +115,6 @@ function scoreByKeywords(title) {
   if (/releas|launch|announce|unveil|introduce/.test(t)) score += 2;
   if (/law firm|legal tech|legal AI|AI lawyer|court.*AI/.test(t)) score += 4;
   if (/copyright|intellectual property|patent/.test(t)) score += 3;
-  // 标题长度合理（太短或太长都不好）
   if (title.length > 30 && title.length < 150) score += 1;
   return score;
 }
@@ -163,7 +167,7 @@ async function fetchHN({ query, cat }) {
       title: h.title?.trim() || "",
       url: h.url || `https://news.ycombinator.com/item?id=${h.objectID}`,
       source: "Hacker News",
-      summary: h.story_text ? clean(h.story_text).substring(0, 200) : `💬 ${h.num_comments || 0} 条讨论 • ⭐ ${h.points || 0} 分`,
+      summary: h.story_text ? clean(h.story_text).substring(0, 200) : `💬 ${h.num_comments || 0} 条讨论 · ⭐ ${h.points || 0} 分`,
       date: h.created_at ? h.created_at.split("T")[0] : "",
       category: cat,
       score: scoreByKeywords(h.title || "") + Math.min((h.points || 0) / 50, 5),
@@ -172,7 +176,7 @@ async function fetchHN({ query, cat }) {
 }
 
 // ============================================================
-// DeepSeek — 精选 + 写解读
+// DeepSeek — 精选 + 分析 + 翻译
 // ============================================================
 
 async function askDeepSeek(messages) {
@@ -185,12 +189,10 @@ async function askDeepSeek(messages) {
   return (await res.json()).choices[0].message.content;
 }
 
-// 判断文本是否已经包含中文
 function hasChinese(text) {
   return /[一-鿿]/.test(text || "");
 }
 
-// 批量翻译非中文标题和摘要
 async function translateToChinese(items) {
   const needTranslate = items
     .map((item, i) => ({ item, i, need: !hasChinese(item.title) }))
@@ -234,7 +236,6 @@ ${list}`;
 async function curateWithAI(items, cat, catName) {
   if (items.length <= 5) return items;
 
-  // 先按评分选出 top 30，再交给 AI 精选
   const candidates = items.sort((a, b) => b.score - a.score).slice(0, 30);
 
   const list = candidates.map((item, i) =>
@@ -276,27 +277,6 @@ ${list}`;
   }
 }
 
-async function writeHeadlineAnalysis(item) {
-  const prompt = `你是一个AI合规与法律AI领域的资深分析师。请针对以下今日最重要的AI合规/法律AI新闻，写一段专业分析（150-250字中文）。
-
-格式要求：
-- 第一段：简要介绍事件
-- 第二段：分析为什么它重要、对行业意味着什么
-
-新闻标题：${item.title}
-来源：${item.source}
-日期：${item.date}
-摘要：${item.summary || "无"}`;
-
-  try {
-    return await askDeepSeek([{ role: "user", content: prompt }]);
-  } catch (err) {
-    console.log(`    ⚠️ 头条分析生成失败: ${err.message}`);
-    return "";
-  }
-}
-
-// 为一个分类的5条新闻批量生成详细解读（350-500字中文）
 async function analyzeCategoryItems(items, catName) {
   if (items.length === 0) return {};
 
@@ -314,48 +294,29 @@ async function analyzeCategoryItems(items, catName) {
 
 ${catContext[catName] || ""}
 
-每条解读要求（350-500字中文），按以下结构组织，每个部分用【】标记标题：
-【事件概述】用2-3句话介绍该新闻的核心事件，说清楚发生了什么、涉及谁。
-【关键信息】列2-3个要点（用 - 开头），提炼最重要的数据和事实。
-【行业影响】分析该事件对行业的短期和长期影响，为什么值得关注。
+每条解读要求（350-500字中文），按以下结构组织：
+【事件概述】2-3句话介绍核心事件
+【关键信息】2-3个要点（用 - 开头）
+【行业影响】短期和长期影响分析
 
 格式示例：
 【事件概述】xxx公司于近日发布了xxx产品，这是xxx领域的一次重大突破……
 【关键信息】
-- 要点一：具体数据或事实
-- 要点二：具体数据或事实
+- 要点一
+- 要点二
 【行业影响】该事件标志着xxx，短期内xxx，长期来看xxx……
 
-注意：
-- 不要使用markdown标题（不用##），用【】即可
-- 不要附原文链接
-- 纯文字，不要emoji
+注意：不要markdown标题，不要附原文链接，不要emoji。
 
-请返回JSON数组，每个元素包含：序号(index, 数字)、解读(analysis, 中文, 350-500字)。
-只返回JSON，不要其他文字。
-
-新闻列表：
-${list}`;
+请返回JSON数组：序号(index)、解读(analysis)。只返回JSON。`;
 
   try {
     const resp = await askDeepSeek([{ role: "user", content: prompt }]);
-    // 提取 JSON 数组
     let jsonStr = resp.match(/\[[\s\S]*\]/)?.[0];
-    if (!jsonStr) {
-      console.log(`    ⚠️ 批量分析(${catName}): 未找到JSON数组，回退逐条生成`);
-      return await analyzeOneByOne(items, catName);
-    }
-    // 清理不可见控制字符（保留换行和常用空白）
+    if (!jsonStr) return await analyzeOneByOne(items);
     jsonStr = jsonStr.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F]/g, "");
-    // 尝试解析
     let json;
-    try {
-      json = JSON.parse(jsonStr);
-    } catch {
-      // JSON 解析失败 → 逐条重试
-      console.log(`    ⚠️ 批量JSON解析失败，切换为逐条生成...`);
-      return await analyzeOneByOne(items, catName);
-    }
+    try { json = JSON.parse(jsonStr); } catch { return await analyzeOneByOne(items); }
     const map = {};
     json.forEach(j => { if (j.index != null) map[j.index] = j.analysis || ""; });
     return map;
@@ -365,33 +326,75 @@ ${list}`;
   }
 }
 
-// 逐条生成解读（慢但可靠，作为 JSON 解析失败时的回退）
-async function analyzeOneByOne(items, catName) {
+async function analyzeOneByOne(items) {
   const map = {};
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
-    const prompt = `你是一个AI行业的资深分析师。请为以下这条新闻撰写详细解读（350-500字中文）。
+    const prompt = `请为以下这条新闻撰写详细解读（350-500字中文）。
 
-按以下结构组织，每个部分用【】标记标题：
-【事件概述】用2-3句话介绍该新闻的核心事件。
-【关键信息】列2-3个要点（用 - 开头），提炼最重要的数据和事实。
-【行业影响】分析该事件对行业的短期和长期影响。
+【事件概述】2-3句话核心事件
+【关键信息】2-3个要点（用 - 开头）
+【行业影响】短期和长期影响
 
-新闻标题：${item.title}
+新闻：${item.title}
 来源：${item.source}
-日期：${item.date}
 摘要：${item.summary?.substring(0, 300) || "无"}
 
-不要使用markdown，不要附原文链接，不要emoji。直接返回解读文本。`;
+不要markdown，不要链接，不要emoji。`;
 
     try {
       const text = await askDeepSeek([{ role: "user", content: prompt }]);
       map[i + 1] = text.trim();
-    } catch {
-      map[i + 1] = "";
-    }
+    } catch { map[i + 1] = ""; }
   }
   return map;
+}
+
+// ============================================================
+// 归档 & all.json 累积
+// ============================================================
+
+function updateArchive(date, items) {
+  const archiveDir = join(__dirname, "archive");
+  if (!existsSync(archiveDir)) mkdirSync(archiveDir, { recursive: true });
+
+  const archivePath = join(archiveDir, `${date}.json`);
+  const record = {
+    date,
+    generated: new Date().toISOString(),
+    total: items.length,
+    items,
+  };
+  writeFileSync(archivePath, JSON.stringify(record, null, 2), "utf-8");
+  console.log(`📁 归档: archive/${date}.json`);
+}
+
+function updateAllJson(date, items) {
+  const allPath = join(__dirname, "all.json");
+
+  let existing = [];
+  if (existsSync(allPath)) {
+    try { existing = JSON.parse(readFileSync(allPath, "utf-8")).items || []; } catch { existing = []; }
+  }
+
+  const existingUrls = new Set(existing.map(i => i.url));
+
+  // 不重复追加
+  const newItems = items.filter(i => !existingUrls.has(i.url));
+  const merged = [...existing, ...newItems];
+
+  // 只保留12个月
+  const cutoff = new Date(Date.now() - 365 * 86400000).toISOString().split("T")[0];
+  const trimmed = merged.filter(i => i.date >= cutoff);
+
+  const output = {
+    updated: new Date().toISOString(),
+    total: trimmed.length,
+    items: trimmed,
+  };
+
+  writeFileSync(allPath, JSON.stringify(output, null, 2), "utf-8");
+  console.log(`📋 all.json: ${trimmed.length} 条 (新增 ${newItems.length})`);
 }
 
 // ============================================================
@@ -406,7 +409,9 @@ async function main() {
     console.log("⚠️  未设置 DEEPSEEK_API_KEY 环境变量，将使用关键词评分排序（跳过AI精选）\n");
   }
 
-  // 1. 抓取所有来源
+  const date = todayStr();
+
+  // 1. 抓取
   const tasks = [
     ...sources.googleNews.map(q => fetchGoogleNews(q)),
     ...sources.rss.map(r => fetchRSS(r)),
@@ -417,7 +422,7 @@ async function main() {
   let all = results.flat();
   console.log(`📊 原始抓取: ${all.length} 条`);
 
-  // 2. 去重（按URL）
+  // 2. 去重
   const seen = new Set();
   all = all.filter(item => {
     const k = item.url || item.id;
@@ -428,16 +433,16 @@ async function main() {
   });
   console.log(`📊 去重后: ${all.length} 条`);
 
-  // 3. 只保留近7天
+  // 3. 近7天
   const cutoff = new Date(Date.now() - 7 * 86400000).toISOString().split("T")[0];
   all = all.filter(item => item.date >= cutoff);
   console.log(`📊 近7天: ${all.length} 条`);
 
-  // 4. 每分类精选 5 条 + 全部分析
+  // 4. 精选 + 分析
   const catNames = { "ai-progress": "AI重大进展", "ai-regulation": "AI监管动态", "legal-ai": "法律AI" };
   const PER_CATEGORY = 5;
 
-  const aiLabel = useAI ? "🤖 正在用 DeepSeek 精选 + 分析各分类新闻..." : "📊 正在用关键词评分排序各分类新闻...";
+  const aiLabel = useAI ? "🤖 DeepSeek 精选 + 分析" : "📊 关键词评分排序";
   console.log(`\n${aiLabel}\n`);
 
   let allCurated = [];
@@ -452,7 +457,6 @@ async function main() {
       selected = items.sort((a, b) => b.score - a.score).slice(0, PER_CATEGORY);
     }
 
-    // 不足5条时用评分补足
     if (selected.length < PER_CATEGORY && items.length > selected.length) {
       const rest = items.filter(i => !selected.includes(i))
         .sort((a, b) => b.score - a.score)
@@ -460,45 +464,42 @@ async function main() {
       selected = selected.concat(rest);
     }
 
-    // 附上选择理由
     for (const item of selected) {
       if (item.reason) {
-        item.summary = `【编辑推荐】${item.reason}
-${item.summary || ""}`;
+        item.summary = `【编辑推荐】${item.reason}\n${item.summary || ""}`;
       }
       delete item.reason;
       delete item.score;
     }
 
-    // 翻译非中文内容
     if (useAI && selected.length > 0) {
-      console.log(`  正在将「${name}」非中文内容翻译为中文...`);
+      console.log(`  翻译「${name}」...`);
       await translateToChinese(selected);
     }
 
-    // 批量生成解读
     if (useAI && selected.length > 0) {
-      console.log(`  正在为「${name}」${selected.length}条新闻生成解读...`);
+      console.log(`  分析「${name}」${selected.length}条...`);
       const analysisMap = await analyzeCategoryItems(selected, name);
-      selected.forEach((item, i) => {
-        // 1-indexed matching
-        item.analysis = analysisMap[i + 1] || "";
-      });
+      selected.forEach((item, i) => { item.analysis = analysisMap[i + 1] || ""; });
     }
 
-    console.log(`  ${name}: ${items.length} 条 → 精选 ${selected.length} 条`);
+    console.log(`  ${name}: ${items.length} 条 → ${selected.length} 条精选\n`);
     allCurated = allCurated.concat(selected);
   }
 
-  // 5. 写入
+  // 5. 写入 data.json
   const output = {
     updated: new Date().toISOString(),
     total: allCurated.length,
     items: allCurated,
   };
-
   writeFileSync(join(__dirname, "data.json"), JSON.stringify(output, null, 2), "utf-8");
-  console.log(`\n✅ 完成! 共 ${allCurated.length} 条精选新闻 → data.json`);
+
+  // 6. 归档 + 累积
+  updateArchive(date, allCurated);
+  updateAllJson(date, allCurated);
+
+  console.log(`✅ 完成! ${allCurated.length} 条精选 → data.json`);
 }
 
 main().catch(err => { console.error("❌", err); process.exit(1); });

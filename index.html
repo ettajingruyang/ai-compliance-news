@@ -9,380 +9,157 @@
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&family=Tektur:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root {
-      --neon-pink: #F0A6CA;
-      --neon-cyan: #5EDCF4;
-      --neon-yellow: #F4D03F;
-      --deep-navy: #0F1B3D;
-      --dark-void: #0A0E27;
-      --soft-lavender: #E2D5F2;
-      --font-display: 'Tektur', cursive;
-      --font-body: 'Chakra Petch', sans-serif;
-      --font-mono: 'Space Mono', monospace;
-      --tab-bg: var(--dark-void);
-      --tab-accent: var(--neon-cyan);
-      --tab-accent2: var(--neon-yellow);
-      --card-bg: rgba(15,27,61,0.7);
-      --card-border: rgba(94,220,244,0.15);
-      --card-corner: var(--neon-cyan);
-      --text-heading: #e1e4f0;
-      --text-body: rgba(255,255,255,0.7);
-      --text-muted: rgba(255,255,255,0.45);
+      --neon-pink: #F0A6CA; --neon-cyan: #5EDCF4; --neon-yellow: #F4D03F;
+      --deep-navy: #0F1B3D; --dark-void: #0A0E27; --soft-lavender: #E2D5F2;
+      --font-display: 'Tektur', cursive; --font-body: 'Chakra Petch', sans-serif; --font-mono: 'Space Mono', monospace;
     }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
+    * { margin:0; padding:0; box-sizing:border-box; }
     body {
-      font-family: var(--font-body);
-      background: var(--dark-void);
-      color: var(--text-heading);
-      min-height: 100vh;
-      line-height: 1.6;
-      overflow-x: hidden;
-      position: relative;
-      transition: background 0.5s;
+      font-family:var(--font-body); background:var(--dark-void); color:#e1e4f0;
+      min-height:100vh; line-height:1.6; overflow-x:hidden; position:relative;
     }
+    .scanlines{position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent 0px,transparent 2px,rgba(10,14,39,.04) 2px,rgba(10,14,39,.04) 4px);pointer-events:none;z-index:50;}
+    .grain{position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.03;pointer-events:none;z-index:49;}
+    .vignette{position:fixed;inset:0;background:radial-gradient(ellipse at center,transparent 50%,rgba(10,14,39,.3) 100%);pointer-events:none;z-index:51;}
+    .bg-grid{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(94,220,244,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(94,220,244,.06) 1px,transparent 1px);background-size:40px 40px;transition:background-image .5s;}
+    .starfield{position:fixed;inset:0;z-index:0;pointer-events:none;}
+    .starfield .star{position:absolute;width:4px;height:4px;background:var(--neon-cyan);opacity:0;animation:twinkle 3s infinite ease-in-out;}
+    .starfield .star:nth-child(2n){background:var(--neon-yellow);animation-delay:.7s;}
+    .starfield .star:nth-child(3n){background:var(--neon-pink);animation-delay:1.5s;}
+    .starfield .star:nth-child(5n){width:6px;height:6px;animation-delay:2.2s;}
+    @keyframes twinkle{0%,100%{opacity:.15;transform:scale(1)}50%{opacity:.7;transform:scale(1.3)}}
+    .pixel-particles{position:fixed;inset:0;z-index:0;pointer-events:none;}
+    .pixel-particles .p{position:absolute;width:8px;height:8px;opacity:.4;animation:float 8s infinite ease-in-out;}
+    @keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-30px) rotate(90deg)}}
+    .container{max-width:920px;margin:0 auto;padding:0 20px;position:relative;z-index:10;}
 
-    /* Scanline overlay */
-    .scanlines {
-      position: fixed; inset: 0;
-      background: repeating-linear-gradient(0deg, transparent 0px, transparent 2px, rgba(10,14,39,0.04) 2px, rgba(10,14,39,0.04) 4px);
-      pointer-events: none; z-index: 50;
-    }
+    header{padding:56px 0 24px;text-align:center;}
+    header h1{font-family:var(--font-display);font-weight:900;font-size:clamp(28px,5vw,44px);line-height:1.15;color:var(--neon-cyan);text-shadow:3px 3px 0 var(--neon-yellow),6px 6px 0 var(--deep-navy);letter-spacing:.03em;margin-bottom:12px;}
+    header .subtitle{font-family:var(--font-mono);font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--neon-pink);margin-bottom:4px;}
+    .update-time{display:inline-block;margin-top:16px;font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;color:rgba(255,255,255,.45);background:rgba(15,27,61,.8);border:1px solid rgba(94,220,244,.2);padding:6px 16px;}
 
-    /* Grain overlay */
-    .grain {
-      position: fixed; inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-      opacity: 0.03; pointer-events: none; z-index: 49;
-    }
+    /* Primary tabs */
+    .nav-primary{display:flex;gap:0;margin-bottom:8px;border-bottom:3px solid rgba(94,220,244,.15);overflow-x:auto;-webkit-overflow-scrolling:touch;justify-content:center;}
+    .nav-primary button{flex-shrink:0;background:none;border:none;font-family:var(--font-display);font-weight:600;font-size:15px;color:rgba(255,255,255,.4);padding:14px 28px;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-3px;transition:all .2s;white-space:nowrap;letter-spacing:.04em;}
+    .nav-primary button:hover{color:var(--neon-yellow);}
+    .nav-primary button.active{color:var(--neon-cyan);border-bottom-color:var(--neon-cyan);text-shadow:0 0 12px rgba(94,220,244,.4);}
+    .nav-primary button .count{display:inline-block;margin-left:8px;font-family:var(--font-mono);font-size:10px;background:rgba(94,220,244,.12);color:var(--neon-cyan);padding:2px 8px;vertical-align:2px;}
 
-    /* CRT vignette */
-    .vignette {
-      position: fixed; inset: 0;
-      background: radial-gradient(ellipse at center, transparent 50%, rgba(10,14,39,0.3) 100%);
-      pointer-events: none; z-index: 51;
-    }
+    /* Secondary tabs */
+    .nav-secondary{display:flex;gap:6px;margin-bottom:32px;justify-content:center;flex-wrap:wrap;}
+    .nav-secondary button{flex-shrink:0;background:rgba(15,27,61,.6);border:1px solid rgba(94,220,244,.15);font-family:var(--font-mono);font-size:11px;color:rgba(255,255,255,.4);padding:8px 18px;cursor:pointer;transition:all .2s;letter-spacing:.06em;text-transform:uppercase;}
+    .nav-secondary button:hover{color:var(--neon-yellow);border-color:rgba(244,208,63,.3);}
+    .nav-secondary button.active{color:var(--neon-cyan);border-color:var(--neon-cyan);background:rgba(94,220,244,.08);}
 
-    /* Grid background — changes per tab via CSS vars */
-    .bg-grid {
-      position: fixed; inset: 0; z-index: 0; pointer-events: none;
-      background-image:
-        linear-gradient(var(--grid-color, rgba(94,220,244,0.06)) 1px, transparent 1px),
-        linear-gradient(90deg, var(--grid-color, rgba(94,220,244,0.06)) 1px, transparent 1px);
-      background-size: 40px 40px;
-      transition: background-image 0.5s;
-    }
+    /* Content panels */
+    .news-list{display:none;}
+    .news-list.active{display:block;}
 
-    /* Starfield */
-    .starfield {
-      position: fixed; inset: 0; z-index: 0; pointer-events: none;
-    }
-    .starfield .star {
-      position: absolute; width: 4px; height: 4px;
-      background: var(--neon-cyan); opacity: 0;
-      animation: twinkle 3s infinite ease-in-out;
-    }
-    .starfield .star:nth-child(2n) { background: var(--neon-yellow); animation-delay: 0.7s; }
-    .starfield .star:nth-child(3n) { background: var(--neon-pink); animation-delay: 1.5s; }
-    .starfield .star:nth-child(5n) { width: 6px; height: 6px; animation-delay: 2.2s; }
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.15; transform: scale(1); }
-      50% { opacity: 0.7; transform: scale(1.3); }
-    }
+    /* ---- CARD STYLES (shared) ---- */
+    .card{background:rgba(15,27,61,.7);border:2px solid rgba(94,220,244,.12);padding:24px 28px;margin-bottom:14px;position:relative;cursor:pointer;transition:border-color .2s,transform .15s;}
+    .card:hover{border-color:rgba(94,220,244,.35);transform:translateY(-1px);}
+    .card::before{content:"";position:absolute;top:-2px;left:-2px;width:14px;height:14px;border-top:3px solid var(--neon-cyan);border-left:3px solid var(--neon-cyan);}
+    .card::after{content:"";position:absolute;bottom:-2px;right:-2px;width:14px;height:14px;border-bottom:3px solid var(--neon-cyan);border-right:3px solid var(--neon-cyan);}
+    .card-header{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;}
+    .card-source{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--neon-yellow);}
+    .card-date{font-family:var(--font-mono);font-size:10px;color:rgba(255,255,255,.35);}
+    .card-category{font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;}
+    .cat-ai-progress{background:rgba(94,220,244,.12);color:var(--neon-cyan);border:1px solid rgba(94,220,244,.25);}
+    .cat-ai-regulation{background:rgba(240,166,202,.12);color:var(--neon-pink);border:1px solid rgba(240,166,202,.25);}
+    .cat-legal-ai{background:rgba(244,208,63,.12);color:var(--neon-yellow);border:1px solid rgba(244,208,63,.25);}
+    .card-title{font-family:var(--font-body);font-size:16px;font-weight:600;line-height:1.5;margin-bottom:4px;}
+    .card-title a{color:#d8dde8;text-decoration:none;transition:color .2s;}
+    .card-title a:hover{color:var(--neon-cyan);}
+    .card-summary{font-family:var(--font-body);font-size:13px;color:rgba(255,255,255,.5);line-height:1.65;}
+    .card-toggle{position:absolute;right:28px;top:24px;font-family:var(--font-mono);font-size:18px;font-weight:700;color:var(--neon-cyan);opacity:.4;transition:all .3s;user-select:none;}
+    .card--first{cursor:default;}
+    .card--first .card-toggle{display:none;}
 
-    /* Floating pixel particles */
-    .pixel-particles {
-      position: fixed; inset: 0; z-index: 0; pointer-events: none;
-    }
-    .pixel-particles .p {
-      position: absolute; width: 8px; height: 8px; opacity: 0.4;
-      animation: float 8s infinite ease-in-out;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0) rotate(0deg); }
-      50% { transform: translateY(-30px) rotate(90deg); }
-    }
+    /* Detail panel */
+    .detail-panel{display:none;margin-top:16px;padding:28px 28px 24px;background:rgba(15,27,61,.55);border:1px solid rgba(94,220,244,.1);position:relative;color:rgba(255,255,255,.8);}
+    .card--first .detail-panel{display:block;}
+    .card--expanded .detail-panel{display:block;}
+    .detail-panel::before{content:"";position:absolute;top:0;left:0;width:18px;height:18px;border-top:3px solid var(--neon-cyan);border-left:3px solid var(--neon-cyan);}
+    .detail-panel::after{content:"";position:absolute;bottom:0;right:0;width:18px;height:18px;border-bottom:3px solid var(--neon-cyan);border-right:3px solid var(--neon-cyan);}
+    .detail-label{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--neon-yellow);margin-bottom:14px;}
+    .detail-body{font-family:var(--font-body);font-size:14px;line-height:1.85;color:rgba(255,255,255,.7);white-space:pre-line;}
+    .detail-link{display:inline-block;margin-top:18px;padding:10px 24px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--deep-navy);background:var(--neon-cyan);text-decoration:none;box-shadow:3px 0 0 0 var(--deep-navy),0 3px 0 0 var(--deep-navy),3px 3px 0 0 var(--deep-navy),6px 3px 0 0 var(--neon-yellow),3px 6px 0 0 var(--neon-yellow),6px 6px 0 0 var(--neon-yellow);transition:transform .1s,box-shadow .1s;}
+    .detail-link:hover{transform:translate(2px,2px);box-shadow:1px 0 0 0 var(--deep-navy),0 1px 0 0 var(--deep-navy),1px 1px 0 0 var(--deep-navy),2px 1px 0 0 var(--neon-yellow),1px 2px 0 0 var(--neon-yellow),2px 2px 0 0 var(--neon-yellow);}
 
-    .container { max-width: 920px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 10; }
+    /* ---- SEARCH ---- */
+    .search-bar{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap;}
+    .search-bar input,.search-bar select{font-family:var(--font-mono);font-size:13px;padding:10px 14px;background:rgba(15,27,61,.8);border:1px solid rgba(94,220,244,.2);color:var(--neon-cyan);outline:none;transition:border-color .2s;}
+    .search-bar input:focus,.search-bar select:focus{border-color:var(--neon-cyan);}
+    .search-bar input{flex:1;min-width:200px;}
+    .search-bar input::placeholder{color:rgba(255,255,255,.2);}
+    .search-bar select{color:rgba(255,255,255,.5);}
+    .search-bar select option{background:var(--deep-navy);}
+    .search-info{font-family:var(--font-mono);font-size:11px;color:rgba(255,255,255,.3);margin-bottom:16px;letter-spacing:.04em;}
+    .search-pagination{display:flex;gap:8px;justify-content:center;margin-top:20px;flex-wrap:wrap;}
+    .search-pagination button{font-family:var(--font-mono);font-size:11px;padding:6px 14px;background:rgba(15,27,61,.6);border:1px solid rgba(94,220,244,.2);color:rgba(255,255,255,.4);cursor:pointer;transition:all .2s;}
+    .search-pagination button:hover{color:var(--neon-cyan);border-color:var(--neon-cyan);}
+    .search-pagination button.active{color:var(--neon-yellow);border-color:var(--neon-yellow);}
 
-    /* Header */
-    header {
-      padding: 56px 0 24px; text-align: center; position: relative;
-    }
-    header h1 {
-      font-family: var(--font-display); font-weight: 900;
-      font-size: clamp(28px, 5vw, 44px); line-height: 1.15;
-      color: var(--neon-cyan);
-      text-shadow: 3px 3px 0 var(--neon-yellow), 6px 6px 0 var(--deep-navy);
-      letter-spacing: 0.03em; margin-bottom: 12px;
-    }
-    header .subtitle {
-      font-family: var(--font-mono); font-size: 12px;
-      letter-spacing: 0.25em; text-transform: uppercase;
-      color: var(--neon-pink); margin-bottom: 4px;
-    }
-    .update-time {
-      display: inline-block; margin-top: 16px;
-      font-family: var(--font-mono); font-size: 11px;
-      letter-spacing: 0.12em; color: rgba(255,255,255,0.45);
-      background: rgba(15,27,61,0.8); border: 1px solid rgba(94,220,244,0.2);
-      padding: 6px 16px;
-    }
+    /* ---- SUMMARY PAGE ---- */
+    .summary-overview{background:rgba(15,27,61,.6);border:1px solid rgba(94,220,244,.15);padding:24px 28px;margin-bottom:24px;position:relative;}
+    .summary-overview::before{content:"";position:absolute;top:0;left:0;width:16px;height:16px;border-top:3px solid var(--neon-yellow);border-left:3px solid var(--neon-yellow);}
+    .summary-overview::after{content:"";position:absolute;bottom:0;right:0;width:16px;height:16px;border-bottom:3px solid var(--neon-yellow);border-right:3px solid var(--neon-yellow);}
+    .summary-overview .overview-label{font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--neon-yellow);margin-bottom:12px;}
+    .summary-overview .overview-text{font-family:var(--font-body);font-size:14px;line-height:1.85;color:rgba(255,255,255,.75);white-space:pre-line;}
 
-    /* Tabs */
-    nav {
-      display: flex; gap: 0; margin-bottom: 36px;
-      border-bottom: 3px solid rgba(94,220,244,0.15);
-      overflow-x: auto; -webkit-overflow-scrolling: touch;
-      justify-content: center;
-    }
-    nav button {
-      flex-shrink: 0; background: none; border: none;
-      font-family: var(--font-display); font-weight: 600; font-size: 15px;
-      color: rgba(255,255,255,0.4); padding: 14px 28px;
-      cursor: pointer; border-bottom: 3px solid transparent;
-      margin-bottom: -3px; transition: all 0.2s;
-      white-space: nowrap; letter-spacing: 0.04em;
-    }
-    nav button:hover { color: var(--neon-yellow); }
-    nav button.active {
-      color: var(--neon-cyan); border-bottom-color: var(--neon-cyan);
-      text-shadow: 0 0 12px rgba(94,220,244,0.4);
-    }
-    nav button .count {
-      display: inline-block; margin-left: 8px;
-      font-family: var(--font-mono); font-size: 10px;
-      background: rgba(94,220,244,0.12); color: var(--neon-cyan);
-      padding: 2px 8px; vertical-align: 2px;
-    }
+    /* ---- REGULATION THEME ---- */
+    .tab-theme-regulation .card{background:rgba(226,213,242,.92);border:none;padding:28px 28px;margin-bottom:20px;box-shadow:6px 6px 0 rgba(15,27,61,.15);color:var(--deep-navy);}
+    .tab-theme-regulation .card:hover{transform:translateY(-2px);box-shadow:8px 8px 0 rgba(15,27,61,.2);}
+    .tab-theme-regulation .card::before,.tab-theme-regulation .card::after{border-color:var(--deep-navy);width:16px;height:16px;border-width:4px;}
+    .tab-theme-regulation .card-source{color:rgba(15,27,61,.55);}
+    .tab-theme-regulation .card-date{color:rgba(15,27,61,.4);}
+    .tab-theme-regulation .card-title a{color:var(--deep-navy);}
+    .tab-theme-regulation .card-title a:hover{color:#1a3a7a;}
+    .tab-theme-regulation .card-summary{color:rgba(15,27,61,.6);}
+    .tab-theme-regulation .card-toggle{color:var(--deep-navy);opacity:.3;}
+    .tab-theme-regulation .detail-panel{background:rgba(226,213,242,.6);border-color:rgba(15,27,61,.08);color:var(--deep-navy);}
+    .tab-theme-regulation .detail-panel::before,.tab-theme-regulation .detail-panel::after{border-color:var(--deep-navy);}
+    .tab-theme-regulation .detail-label{color:rgba(15,27,61,.5);}
+    .tab-theme-regulation .detail-body{color:rgba(15,27,61,.78);}
+    .tab-theme-regulation .detail-link{color:white;background:var(--deep-navy);}
+    .tab-theme-regulation .detail-link:hover{color:var(--neon-yellow);}
 
-    /* Cards list */
-    .news-list { display: none; }
-    .news-list.active { display: block; }
+    /* ---- LEGAL THEME ---- */
+    .tab-theme-legal .card{background:rgba(240,166,202,.92);border:2px solid rgba(15,27,61,.1);padding:28px 28px;margin-bottom:20px;color:var(--deep-navy);}
+    .tab-theme-legal .card:hover{border-color:rgba(15,27,61,.25);}
+    .tab-theme-legal .card::before,.tab-theme-legal .card::after{border-color:var(--deep-navy);width:16px;height:16px;border-width:4px;}
+    .tab-theme-legal .card-source{color:rgba(15,27,61,.5);}
+    .tab-theme-legal .card-date{color:rgba(15,27,61,.35);}
+    .tab-theme-legal .card-title a{color:var(--deep-navy);}
+    .tab-theme-legal .card-title a:hover{color:#1a3a7a;}
+    .tab-theme-legal .card-summary{color:rgba(15,27,61,.6);}
+    .tab-theme-legal .card-toggle{color:var(--deep-navy);opacity:.3;}
+    .tab-theme-legal .detail-panel{background:rgba(240,166,202,.45);border-color:rgba(15,27,61,.06);color:var(--deep-navy);}
+    .tab-theme-legal .detail-panel::before,.tab-theme-legal .detail-panel::after{border-color:var(--deep-navy);}
+    .tab-theme-legal .detail-label{color:rgba(15,27,61,.5);}
+    .tab-theme-legal .detail-body{color:rgba(15,27,61,.78);}
+    .tab-theme-legal .detail-link{color:white;background:var(--deep-navy);}
+    .tab-theme-legal .detail-link:hover{color:var(--neon-pink);}
 
-    /* ============================================== */
-    /*  TAB 1: AI 重大进展  —  Slide 10 style (dark void + starfield vibe)  */
-    /* ============================================== */
-    .tab-theme-progress .card {
-      background: rgba(15,27,61,0.7);
-      border: 2px solid rgba(94,220,244,0.12);
-      padding: 24px 28px; margin-bottom: 14px;
-      position: relative; cursor: pointer;
-      transition: border-color 0.2s, transform 0.15s;
-    }
-    .tab-theme-progress .card:hover { border-color: rgba(94,220,244,0.35); transform: translateY(-1px); }
-    .tab-theme-progress .card::before {
-      content: ""; position: absolute; top: -2px; left: -2px;
-      width: 14px; height: 14px;
-      border-top: 3px solid var(--neon-cyan);
-      border-left: 3px solid var(--neon-cyan);
-    }
-    .tab-theme-progress .card::after {
-      content: ""; position: absolute; bottom: -2px; right: -2px;
-      width: 14px; height: 14px;
-      border-bottom: 3px solid var(--neon-cyan);
-      border-right: 3px solid var(--neon-cyan);
-    }
+    /* ---- FOOTER ---- */
+    footer{text-align:center;padding:48px 20px;font-family:var(--font-mono);font-size:11px;color:rgba(255,255,255,.25);letter-spacing:.06em;}
+    footer a{color:var(--neon-cyan);text-decoration:none;}
+    footer a:hover{text-decoration:underline;}
 
-    /* ============================================== */
-    /*  TAB 2: AI 监管动态  —  Slide 9 style (lavender grid + tier card shadows)  */
-    /* ============================================== */
-    .tab-theme-regulation .card {
-      background: rgba(226,213,242,0.92);
-      border: none;
-      padding: 28px 28px; margin-bottom: 20px;
-      position: relative; cursor: pointer;
-      box-shadow: 6px 6px 0 rgba(15,27,61,0.15);
-      color: var(--deep-navy);
-      transition: transform 0.15s, box-shadow 0.15s;
-    }
-    .tab-theme-regulation .card:hover { transform: translateY(-2px); box-shadow: 8px 8px 0 rgba(15,27,61,0.2); }
-    .tab-theme-regulation .card::before {
-      content: ""; position: absolute; top: -2px; left: -2px;
-      width: 16px; height: 16px;
-      border-top: 4px solid var(--deep-navy);
-      border-left: 4px solid var(--deep-navy);
-    }
-    .tab-theme-regulation .card::after {
-      content: ""; position: absolute; bottom: -2px; right: -2px;
-      width: 16px; height: 16px;
-      border-bottom: 4px solid var(--deep-navy);
-      border-right: 4px solid var(--deep-navy);
-    }
-    /* Light-theme card text overrides */
-    .tab-theme-regulation .card-source { color: rgba(15,27,61,0.55); }
-    .tab-theme-regulation .card-date { color: rgba(15,27,61,0.4); }
-    .tab-theme-regulation .card-title a { color: var(--deep-navy); }
-    .tab-theme-regulation .card-title a:hover { color: #1a3a7a; }
-    .tab-theme-regulation .card-summary { color: rgba(15,27,61,0.6); }
-    .tab-theme-regulation .card-toggle { color: var(--deep-navy); opacity: 0.3; }
-    .tab-theme-regulation .detail-panel {
-      background: rgba(226,213,242,0.6);
-      border: 1px solid rgba(15,27,61,0.08);
-      color: var(--deep-navy);
-    }
-    .tab-theme-regulation .detail-panel::before,
-    .tab-theme-regulation .detail-panel::after { border-color: var(--deep-navy); }
-    .tab-theme-regulation .detail-label { color: rgba(15,27,61,0.5); }
-    .tab-theme-regulation .detail-body { color: rgba(15,27,61,0.78); }
-    .tab-theme-regulation .detail-link { color: white; background: var(--deep-navy); }
-    .tab-theme-regulation .detail-link:hover { color: var(--neon-yellow); }
+    /* ---- LOADING ---- */
+    .loading{text-align:center;padding:60px 20px;font-family:var(--font-mono);font-size:12px;color:rgba(255,255,255,.3);letter-spacing:.08em;}
+    .empty{text-align:center;padding:80px 20px;font-family:var(--font-mono);font-size:13px;color:rgba(255,255,255,.3);letter-spacing:.08em;}
 
-    /* ============================================== */
-    /*  TAB 3: 法律 AI  —  Slide 6 style (pink grid + timeline feel)  */
-    /* ============================================== */
-    .tab-theme-legal .card {
-      background: rgba(240,166,202,0.92);
-      border: 2px solid rgba(15,27,61,0.1);
-      padding: 28px 28px; margin-bottom: 20px;
-      position: relative; cursor: pointer;
-      color: var(--deep-navy);
-      transition: border-color 0.2s;
-    }
-    .tab-theme-legal .card::before {
-      content: ""; position: absolute; top: -2px; left: -2px;
-      width: 16px; height: 16px;
-      border-top: 4px solid var(--deep-navy);
-      border-left: 4px solid var(--deep-navy);
-    }
-    .tab-theme-legal .card::after {
-      content: ""; position: absolute; bottom: -2px; right: -2px;
-      width: 16px; height: 16px;
-      border-bottom: 4px solid var(--deep-navy);
-      border-right: 4px solid var(--deep-navy);
-    }
-    .tab-theme-legal .card:hover { border-color: rgba(15,27,61,0.25); }
-    /* Pink-theme card text */
-    .tab-theme-legal .card-source { color: rgba(15,27,61,0.5); }
-    .tab-theme-legal .card-date { color: rgba(15,27,61,0.35); }
-    .tab-theme-legal .card-title a { color: var(--deep-navy); }
-    .tab-theme-legal .card-title a:hover { color: #1a3a7a; }
-    .tab-theme-legal .card-summary { color: rgba(15,27,61,0.6); }
-    .tab-theme-legal .card-toggle { color: var(--deep-navy); opacity: 0.3; }
-    .tab-theme-legal .detail-panel {
-      background: rgba(240,166,202,0.45);
-      border: 1px solid rgba(15,27,61,0.06);
-      color: var(--deep-navy);
-    }
-    .tab-theme-legal .detail-panel::before,
-    .tab-theme-legal .detail-panel::after { border-color: var(--deep-navy); }
-    .tab-theme-legal .detail-label { color: rgba(15,27,61,0.5); }
-    .tab-theme-legal .detail-body { color: rgba(15,27,61,0.78); }
-    .tab-theme-legal .detail-link { color: white; background: var(--deep-navy); }
-    .tab-theme-legal .detail-link:hover { color: var(--neon-pink); }
-
-    /* Common card elements */
-    .card-header {
-      display: flex; align-items: center; gap: 10px;
-      margin-bottom: 10px; flex-wrap: wrap;
-    }
-    .card-source {
-      font-family: var(--font-mono); font-size: 10px; font-weight: 700;
-      letter-spacing: 0.08em; text-transform: uppercase; color: var(--neon-yellow);
-    }
-    .card-date {
-      font-family: var(--font-mono); font-size: 10px; color: rgba(255,255,255,0.35);
-    }
-    .card-category {
-      font-family: var(--font-mono); font-size: 9px; font-weight: 700;
-      letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 8px;
-    }
-    .cat-ai-progress { background: rgba(94,220,244,0.12); color: var(--neon-cyan); border: 1px solid rgba(94,220,244,0.25); }
-    .cat-ai-regulation { background: rgba(240,166,202,0.12); color: var(--neon-pink); border: 1px solid rgba(240,166,202,0.25); }
-    .cat-legal-ai { background: rgba(244,208,63,0.12); color: var(--neon-yellow); border: 1px solid rgba(244,208,63,0.25); }
-
-    .card-title {
-      font-family: var(--font-body); font-size: 16px; font-weight: 600;
-      line-height: 1.5; margin-bottom: 4px;
-    }
-    .card-title a { color: #d8dde8; text-decoration: none; transition: color 0.2s; }
-    .card-title a:hover { color: var(--neon-cyan); }
-
-    .card-summary {
-      font-family: var(--font-body); font-size: 13px;
-      color: rgba(255,255,255,0.5); line-height: 1.65;
-    }
-
-    .card-toggle {
-      position: absolute; right: 28px; top: 24px;
-      font-family: var(--font-mono); font-size: 18px; font-weight: 700;
-      color: var(--neon-cyan); opacity: 0.4;
-      transition: all 0.3s; user-select: none;
-    }
-    .card--first { cursor: default; }
-    .card--first .card-toggle { display: none; }
-
-    /* ---- DETAIL PANEL ---- */
-    .detail-panel {
-      display: none; margin-top: 16px;
-      padding: 28px 28px 24px;
-      background: rgba(15,27,61,0.55);
-      border: 1px solid rgba(94,220,244,0.1);
-      position: relative; color: rgba(255,255,255,0.8);
-    }
-    .card--first .detail-panel { display: block; }
-    .card--expanded .detail-panel { display: block; }
-    .detail-panel::before {
-      content: ""; position: absolute; top: 0; left: 0;
-      width: 18px; height: 18px;
-      border-top: 3px solid var(--neon-cyan);
-      border-left: 3px solid var(--neon-cyan);
-    }
-    .detail-panel::after {
-      content: ""; position: absolute; bottom: 0; right: 0;
-      width: 18px; height: 18px;
-      border-bottom: 3px solid var(--neon-cyan);
-      border-right: 3px solid var(--neon-cyan);
-    }
-    .detail-label {
-      font-family: var(--font-mono); font-size: 10px; font-weight: 700;
-      letter-spacing: 0.15em; text-transform: uppercase;
-      color: var(--neon-yellow); margin-bottom: 14px;
-    }
-    .detail-body {
-      font-family: var(--font-body); font-size: 14px;
-      line-height: 1.85; color: rgba(255,255,255,0.7);
-      white-space: pre-line;
-    }
-    .detail-link {
-      display: inline-block; margin-top: 18px; padding: 10px 24px;
-      font-family: var(--font-display); font-weight: 700; font-size: 12px;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--deep-navy); background: var(--neon-cyan);
-      text-decoration: none;
-      box-shadow: 3px 0 0 0 var(--deep-navy), 0 3px 0 0 var(--deep-navy), 3px 3px 0 0 var(--deep-navy), 6px 3px 0 0 var(--neon-yellow), 3px 6px 0 0 var(--neon-yellow), 6px 6px 0 0 var(--neon-yellow);
-      transition: transform 0.1s, box-shadow 0.1s;
-    }
-    .detail-link:hover {
-      transform: translate(2px, 2px);
-      box-shadow: 1px 0 0 0 var(--deep-navy), 0 1px 0 0 var(--deep-navy), 1px 1px 0 0 var(--deep-navy), 2px 1px 0 0 var(--neon-yellow), 1px 2px 0 0 var(--neon-yellow), 2px 2px 0 0 var(--neon-yellow);
-    }
-
-    /* ---- Empty ---- */
-    .empty {
-      text-align: center; padding: 80px 20px;
-      font-family: var(--font-mono); font-size: 13px;
-      color: rgba(255,255,255,0.3); letter-spacing: 0.08em;
-    }
-
-    /* ---- Footer ---- */
-    footer {
-      text-align: center; padding: 48px 20px;
-      font-family: var(--font-mono); font-size: 11px;
-      color: rgba(255,255,255,0.25); letter-spacing: 0.06em;
-    }
-    footer a { color: var(--neon-cyan); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-
-    /* ---- Responsive ---- */
-    @media (max-width: 640px) {
-      header { padding: 36px 0 20px; }
-      header h1 { font-size: 22px; text-shadow: 2px 2px 0 var(--neon-yellow), 4px 4px 0 var(--deep-navy); }
-      nav button { padding: 12px 16px; font-size: 13px; }
-      .card { padding: 16px 18px; }
-      .card-title { font-size: 14px; }
-      .detail-panel { padding: 24px 20px 20px; }
-      .card-toggle { right: 18px; top: 16px; }
+    /* Responsive */
+    @media(max-width:640px){
+      header{padding:36px 0 20px;}
+      header h1{font-size:22px;text-shadow:2px 2px 0 var(--neon-yellow),4px 4px 0 var(--deep-navy);}
+      .nav-primary button{padding:12px 16px;font-size:13px;}
+      .card{padding:16px 18px;}
+      .card-title{font-size:14px;}
+      .detail-panel{padding:24px 20px 20px;}
+      .card-toggle{right:18px;top:16px;}
+      .search-bar{flex-direction:column;}
     }
   </style>
 </head>
@@ -391,9 +168,7 @@
   <div class="bg-grid" id="bgGrid"></div>
   <div class="starfield" id="starfield"></div>
   <div class="pixel-particles" id="particles"></div>
-  <div class="scanlines"></div>
-  <div class="grain"></div>
-  <div class="vignette"></div>
+  <div class="scanlines"></div><div class="grain"></div><div class="vignette"></div>
 
   <div class="container">
     <header>
@@ -402,207 +177,213 @@
       <div class="update-time">LAST UPDATE <span id="updateTime">LOADING...</span></div>
     </header>
 
-    <nav>
-      <button class="active" data-tab="ai-progress">
-        AI 重大进展 <span class="count" id="count-progress">0</span>
-      </button>
-      <button data-tab="ai-regulation">
-        AI 监管动态 <span class="count" id="count-regulation">0</span>
-      </button>
-      <button data-tab="legal-ai">
-        法律 AI <span class="count" id="count-legal">0</span>
-      </button>
+    <nav class="nav-primary" id="navPrimary">
+      <button class="active" data-tab="ai-progress">AI 重大进展 <span class="count" id="count-progress">0</span></button>
+      <button data-tab="ai-regulation">AI 监管动态 <span class="count" id="count-regulation">0</span></button>
+      <button data-tab="legal-ai">法律 AI <span class="count" id="count-legal">0</span></button>
+    </nav>
+    <nav class="nav-secondary" id="navSecondary">
+      <button data-tab="search">搜索检索</button>
+      <button data-tab="weekly">周度要闻</button>
+      <button data-tab="monthly">月度要闻</button>
+      <button data-tab="yearly">年度回顾</button>
     </nav>
 
-    <div id="news-progress" class="news-list active"></div>
-    <div id="news-regulation" class="news-list"></div>
-    <div id="news-legal" class="news-list"></div>
+    <!-- News tabs -->
+    <div id="panel-ai-progress" class="news-list active"></div>
+    <div id="panel-ai-regulation" class="news-list"></div>
+    <div id="panel-legal-ai" class="news-list"></div>
+    <!-- Search -->
+    <div id="panel-search" class="news-list"></div>
+    <!-- Summaries -->
+    <div id="panel-weekly" class="news-list"></div>
+    <div id="panel-monthly" class="news-list"></div>
+    <div id="panel-yearly" class="news-list"></div>
 
     <footer>
-      <p>DATA SOURCES: GOOGLE NEWS · IAPP · TECHCRUNCH · ARXIV · HACKER NEWS · ARTIFICIAL LAWYER · JIQIZHIXIN</p>
-      <p style="margin-top:4px;">DAILY AUTO-UPDATE VIA GITHUB ACTIONS</p>
+      <p>DATA: GOOGLE NEWS · IAPP · TECHCRUNCH · THE VERGE · VENTUREBEAT · ARXIV · HN · JIQIZHIXIN · XINHUA · THEPAPER</p>
+      <p style="margin-top:4px;">DAILY AUTO-UPDATE · ARCHIVE · SEARCH · WEEKLY/MONTHLY/YEARLY REVIEWS</p>
     </footer>
   </div>
 
   <script>
-    (function () {
-      // Generate stars
-      const sf = document.getElementById("starfield");
-      for (let i = 0; i < 50; i++) {
-        const star = document.createElement("div");
-        star.className = "star";
-        star.style.left = Math.random() * 100 + "%";
-        star.style.top = Math.random() * 100 + "%";
-        sf.appendChild(star);
+  (function(){
+    // Stars & particles
+    const sf=document.getElementById("starfield");
+    for(let i=0;i<50;i++){const s=document.createElement("div");s.className="star";s.style.left=Math.random()*100+"%";s.style.top=Math.random()*100+"%";sf.appendChild(s);}
+    const pp=document.getElementById("particles");
+    const cols=["var(--neon-cyan)","var(--neon-pink)","var(--neon-yellow)"];
+    for(let i=0;i<16;i++){const p=document.createElement("div");p.className="p";p.style.background=cols[i%3];p.style.left=Math.random()*100+"%";p.style.top=Math.random()*100+"%";p.style.animationDelay=Math.random()*5+"s";p.style.animationDuration=(6+Math.random()*6)+"s";pp.appendChild(p);}
+
+    const panels={
+      "ai-progress":document.getElementById("panel-ai-progress"),
+      "ai-regulation":document.getElementById("panel-ai-regulation"),
+      "legal-ai":document.getElementById("panel-legal-ai"),
+      "search":document.getElementById("panel-search"),
+      "weekly":document.getElementById("panel-weekly"),
+      "monthly":document.getElementById("panel-monthly"),
+      "yearly":document.getElementById("panel-yearly"),
+    };
+
+    const counts={"ai-progress":document.getElementById("count-progress"),"ai-regulation":document.getElementById("count-regulation"),"legal-ai":document.getElementById("count-legal")};
+
+    const catLabels={"ai-progress":["cat-ai-progress","AI Progress"],"ai-regulation":["cat-ai-regulation","AI Regulation"],"legal-ai":["cat-legal-ai","Legal AI"]};
+    const themeClasses={"ai-progress":"tab-theme-progress","ai-regulation":"tab-theme-regulation","legal-ai":"tab-theme-legal"};
+    const gridColors={"ai-progress":"rgba(94,220,244,.06)","ai-regulation":"rgba(15,27,61,.05)","legal-ai":"rgba(15,27,61,.06)","search":"rgba(94,220,244,.06)","weekly":"rgba(15,27,61,.05)","monthly":"rgba(15,27,61,.06)","yearly":"rgba(94,220,244,.06)"};
+    const bgGrid=document.getElementById("bgGrid");
+
+    function setTheme(cat){
+      Object.values(themeClasses).forEach(c=>document.body.classList.remove(c));
+      if(themeClasses[cat]) document.body.classList.add(themeClasses[cat]);
+      const gc=gridColors[cat]||"rgba(94,220,244,.06)";
+      bgGrid.style.backgroundImage=`linear-gradient(${gc} 1px,transparent 1px),linear-gradient(90deg,${gc} 1px,transparent 1px)`;
+    }
+
+    function esc(s){if(!s)return"";const d=document.createElement("div");d.textContent=s;return d.innerHTML;}
+
+    // ---- Render news cards ----
+    function renderCards(items,el){
+      if(!items.length){el.innerHTML='<div class="empty">NO NEWS AVAILABLE</div>';return;}
+      el.innerHTML=items.map((item,idx)=>{
+        const hasA=item.analysis&&item.analysis.trim().length>0;
+        const isFirst=idx===0&&hasA;
+        let cls="card";if(isFirst)cls+=" card--first";else if(hasA)cls+=" card--collapsible";
+        const catCls=catLabels[item.category]?catLabels[item.category][0]:"";const catTxt=catLabels[item.category]?catLabels[item.category][1]:item.category;
+        const aHTML=hasA?`<div class="detail-panel"><div class="detail-label">AI Analysis &amp; Detail</div><div class="detail-body">${esc(item.analysis||"")}</div><a class="detail-link" href="${esc(item.url)}" target="_blank" rel="noopener">Original Source</a></div>`:"";
+        return `<article class="${cls}"><div class="card-header"><span class="card-source">${esc(item.source)}</span><span class="card-date">${item.date||""}</span><span class="card-category ${catCls}">${catTxt}</span></div><h3 class="card-title"><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h3>${item.summary?`<p class="card-summary">${esc(item.summary)}</p>`:""}${hasA&&!isFirst?'<span class="card-toggle">+</span>':""}${aHTML}</article>`;
+      }).join("");
+      el.querySelectorAll(".card--collapsible").forEach(card=>{card.addEventListener("click",function(e){if(e.target.tagName==="A")return;this.classList.toggle("card--expanded");const t=this.querySelector(".card-toggle");if(t)t.textContent=this.classList.contains("card--expanded")?"-":"+";});});
+    }
+
+    // ---- Render summary page ----
+    function renderSummary(data,el){
+      if(!data||!data.items||!data.items.length){el.innerHTML='<div class="empty">NO DATA YET</div>';return;}
+      let html="";
+      if(data.overview){
+        html+=`<div class="summary-overview"><div class="overview-label">${esc(data.label)} REVIEW</div><div class="overview-text">${esc(data.overview)}</div></div>`;
       }
+      html+=`<div class="search-info">${data.total} ITEMS · ${data.period||""}</div>`;
+      html+=data.items.slice(0,20).map(item=>{
+        const catCls=catLabels[item.category]?catLabels[item.category][0]:"";const catTxt=catLabels[item.category]?catLabels[item.category][1]:item.category;
+        return `<article class="card"><div class="card-header"><span class="card-source">${esc(item.source)}</span><span class="card-date">${item.date||item.archivedDate||""}</span><span class="card-category ${catCls}">${catTxt}</span></div><h3 class="card-title"><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h3>${item.summary?`<p class="card-summary">${esc(item.summary)}</p>`:""}</article>`;
+      }).join("");
+      el.innerHTML=html;
+    }
 
-      // Generate floating particles
-      const pp = document.getElementById("particles");
-      const colors = ["var(--neon-cyan)", "var(--neon-pink)", "var(--neon-yellow)"];
-      for (let i = 0; i < 16; i++) {
-        const p = document.createElement("div");
-        p.className = "p";
-        p.style.background = colors[i % 3];
-        p.style.left = Math.random() * 100 + "%";
-        p.style.top = Math.random() * 100 + "%";
-        p.style.animationDelay = Math.random() * 5 + "s";
-        p.style.animationDuration = (6 + Math.random() * 6) + "s";
-        pp.appendChild(p);
-      }
+    // ---- Search ----
+    function renderSearch(data,el,query,catFilter){
+      let items=data.items||[];
+      const q=query.toLowerCase();
+      if(q) items=items.filter(i=>i.title.toLowerCase().includes(q)||(i.summary||"").toLowerCase().includes(q)||(i.source||"").toLowerCase().includes(q));
+      if(catFilter&&catFilter!=="all") items=items.filter(i=>i.category===catFilter);
 
-      const container = {
-        "ai-progress": document.getElementById("news-progress"),
-        "ai-regulation": document.getElementById("news-regulation"),
-        "legal-ai": document.getElementById("news-legal"),
-      };
+      const pageSize=20,page=0,totalPages=Math.ceil(items.length/pageSize);
+      const pageItems=items.slice(0,pageSize);
 
-      const counts = {
-        "ai-progress": document.getElementById("count-progress"),
-        "ai-regulation": document.getElementById("count-regulation"),
-        "legal-ai": document.getElementById("count-legal"),
-      };
+      let html='<div class="search-bar">';
+      html+=`<input type="text" id="searchInput" placeholder="SEARCH..." value="${esc(query)}" autofocus>`;
+      html+=`<select id="searchCat"><option value="all" ${catFilter==="all"?"selected":""}>ALL</option><option value="ai-progress" ${catFilter==="ai-progress"?"selected":""}>AI PROGRESS</option><option value="ai-regulation" ${catFilter==="ai-regulation"?"selected":""}>AI REGULATION</option><option value="legal-ai" ${catFilter==="legal-ai"?"selected":""}>LEGAL AI</option></select>`;
+      html+='</div>';
+      html+=`<div class="search-info">${items.length} RESULTS${data.total?` / ${data.total} TOTAL ARCHIVED`:`${q||catFilter!=="all"?"":` (${data.total} ARCHIVED)`}`}</div>`;
 
-      const catLabels = {
-        "ai-progress":     ["cat-ai-progress",     "AI Progress"],
-        "ai-regulation":   ["cat-ai-regulation",   "AI Regulation"],
-        "legal-ai":        ["cat-legal-ai",        "Legal AI"],
-      };
-
-      // Tab → body class mapping
-      const themeClasses = {
-        "ai-progress": "tab-theme-progress",
-        "ai-regulation": "tab-theme-regulation",
-        "legal-ai": "tab-theme-legal",
-      };
-
-      // Tab → grid color mapping
-      const gridColors = {
-        "ai-progress": "rgba(94,220,244,0.06)",
-        "ai-regulation": "rgba(15,27,61,0.05)",
-        "legal-ai": "rgba(15,27,61,0.06)",
-      };
-
-      const bgGrid = document.getElementById("bgGrid");
-
-      function setTheme(cat) {
-        // Switch body class
-        Object.values(themeClasses).forEach(c => document.body.classList.remove(c));
-        document.body.classList.add(themeClasses[cat]);
-        // Switch grid color
-        bgGrid.style.backgroundImage =
-          `linear-gradient(${gridColors[cat]} 1px, transparent 1px),` +
-          `linear-gradient(90deg, ${gridColors[cat]} 1px, transparent 1px)`;
-      }
-
-      function esc(str) {
-        if (!str) return "";
-        const div = document.createElement("div");
-        div.textContent = str;
-        return div.innerHTML;
-      }
-
-      function renderCards(items, el) {
-        if (!items.length) {
-          el.innerHTML = '<div class="empty">NO NEWS AVAILABLE</div>';
-          return;
-        }
-
-        el.innerHTML = items.map((item, idx) => {
-          const hasAnalysis = item.analysis && item.analysis.trim().length > 0;
-          const isFirst = idx === 0 && hasAnalysis;
-          let cls = "card";
-          if (isFirst) cls += " card--first";
-          else if (hasAnalysis) cls += " card--collapsible";
-
-          const catCls = catLabels[item.category] ? catLabels[item.category][0] : "";
-          const catTxt = catLabels[item.category] ? catLabels[item.category][1] : item.category;
-
-          const analysisHTML = hasAnalysis ? `
-            <div class="detail-panel">
-              <div class="detail-label">AI Analysis &amp; Detail</div>
-              <div class="detail-body">${esc(item.analysis || "")}</div>
-              <a class="detail-link" href="${esc(item.url)}" target="_blank" rel="noopener">Original Source</a>
-            </div>` : "";
-
-          return `
-            <article class="${cls}">
-              <div class="card-header">
-                <span class="card-source">${esc(item.source)}</span>
-                <span class="card-date">${item.date || ""}</span>
-                <span class="card-category ${catCls}">${catTxt}</span>
-              </div>
-              <h3 class="card-title">
-                <a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a>
-              </h3>
-              ${item.summary ? `<p class="card-summary">${esc(item.summary)}</p>` : ""}
-              ${hasAnalysis && !isFirst ? '<span class="card-toggle">+</span>' : ""}
-              ${analysisHTML}
-            </article>`;
-        }).join("");
-
-        el.querySelectorAll(".card--collapsible").forEach(card => {
-          card.addEventListener("click", function (e) {
-            if (e.target.tagName === "A") return;
-            this.classList.toggle("card--expanded");
-            const toggle = this.querySelector(".card-toggle");
-            if (toggle) {
-              toggle.textContent = this.classList.contains("card--expanded") ? "-" : "+";
-            }
-          });
+      if(!pageItems.length){html+='<div class="empty">NO RESULTS</div>';}
+      else{
+        pageItems.forEach(item=>{
+          const catCls=catLabels[item.category]?catLabels[item.category][0]:"";const catTxt=catLabels[item.category]?catLabels[item.category][1]:item.category;
+          html+=`<article class="card"><div class="card-header"><span class="card-source">${esc(item.source)}</span><span class="card-date">${item.date||item.archivedDate||""}</span><span class="card-category ${catCls}">${catTxt}</span></div><h3 class="card-title"><a href="${esc(item.url)}" target="_blank" rel="noopener">${esc(item.title)}</a></h3>${item.summary?`<p class="card-summary">${esc(item.summary)}</p>`:""}</article>`;
         });
       }
-
-      // ---- Data loading ----
-      let cachedData = null;
-
-      function loadTab(cat, el) {
-        if (cachedData) {
-          const items = cachedData.items.filter(i => i.category === cat);
-          counts[cat].textContent = items.length;
-          renderCards(items, el);
-          return;
-        }
-
-        fetch("data.json")
-          .then(r => r.json())
-          .then(data => {
-            cachedData = data;
-            document.getElementById("updateTime").textContent =
-              new Date(data.updated).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" });
-
-            const items = data.items.filter(i => i.category === cat);
-            counts[cat].textContent = items.length;
-            renderCards(items, el);
-          })
-          .catch(err => {
-            console.error("LOAD FAILED:", err);
-            el.innerHTML = '<div class="empty">DATA LOAD ERROR</div>';
-          });
+      if(totalPages>1){
+        html+='<div class="search-pagination">';
+        for(let p=0;p<Math.min(totalPages,10);p++) html+=`<button class="${p===0?"active":""}" data-page="${p}">${p+1}</button>`;
+        html+='</div>';
       }
+      el.innerHTML=html;
 
-      // Initial load
-      setTheme("ai-progress");
-      loadTab("ai-progress", container["ai-progress"]);
+      // Bind search input
+      const inp=document.getElementById("searchInput");
+      const sel=document.getElementById("searchCat");
+      if(inp){
+        let timer;
+        inp.addEventListener("input",()=>{clearTimeout(timer);timer=setTimeout(()=>renderSearch(data,el,inp.value,sel.value),300);});
+        sel.addEventListener("change",()=>renderSearch(data,el,inp.value,sel.value));
+      }
+    }
 
-      // Tab switching
-      document.querySelectorAll("nav button").forEach(btn => {
-        btn.addEventListener("click", () => {
-          document.querySelectorAll("nav button").forEach(b => b.classList.remove("active"));
-          document.querySelectorAll(".news-list").forEach(l => l.classList.remove("active"));
-          btn.classList.add("active");
+    // ---- Cache ----
+    let cachedMain=null,cachedAll=null,cachedWeekly=null,cachedMonthly=null,cachedYearly=null;
 
-          const cat = btn.dataset.tab;
-          const el = container[cat];
-          el.classList.add("active");
+    function activateTab(tab){
+      document.querySelectorAll("#navPrimary button, #navSecondary button").forEach(b=>b.classList.remove("active"));
+      Object.values(panels).forEach(p=>p.classList.remove("active"));
+      // Highlight correct button
+      const pb=document.querySelector(`#navPrimary [data-tab="${tab}"]`);
+      const sb=document.querySelector(`#navSecondary [data-tab="${tab}"]`);
+      if(pb)pb.classList.add("active");else if(sb)sb.classList.add("active");
+      panels[tab].classList.add("active");
+      setTheme(tab);
 
-          setTheme(cat);
+      if(["ai-progress","ai-regulation","legal-ai"].includes(tab)){
+        if(panels[tab].children.length===0) loadMainTab();
+      }else if(tab==="search"){
+        if(panels[tab].children.length===0) loadSearch();
+      }else if(tab==="weekly"){
+        if(panels[tab].children.length===0) loadSummary("weekly","summary-weekly.json");
+      }else if(tab==="monthly"){
+        if(panels[tab].children.length===0) loadSummary("monthly","summary-monthly.json");
+      }else if(tab==="yearly"){
+        if(panels[tab].children.length===0) loadSummary("yearly","summary-yearly.json");
+      }
+    }
 
-          if (el.children.length === 0) {
-            loadTab(cat, el);
-          }
+    // ---- Load main news ----
+    function loadMainTab(){
+      fetch("data.json").then(r=>r.json()).then(data=>{
+        cachedMain=data;
+        document.getElementById("updateTime").textContent=new Date(data.updated).toLocaleString("zh-CN",{timeZone:"Asia/Shanghai"});
+        ["ai-progress","ai-regulation","legal-ai"].forEach(cat=>{
+          const items=data.items.filter(i=>i.category===cat);
+          if(counts[cat])counts[cat].textContent=items.length;
+          if(panels[cat].classList.contains("active"))renderCards(items,panels[cat]);
         });
+      }).catch(err=>{console.error(err);Object.values(panels).forEach(p=>{if(p.classList.contains("active"))p.innerHTML='<div class="empty">DATA LOAD ERROR</div>';});});
+    }
+
+    // ---- Load search ----
+    function loadSearch(){
+      panels.search.innerHTML='<div class="loading">LOADING ARCHIVE...</div>';
+      if(cachedAll){renderSearch(cachedAll,panels.search,"","all");return;}
+      fetch("all.json").then(r=>r.json()).then(data=>{
+        cachedAll=data;
+        renderSearch(data,panels.search,"","all");
+      }).catch(()=>{
+        // Fallback: use main data
+        if(cachedMain){renderSearch({total:cachedMain.total,items:cachedMain.items},panels.search,"","all");}
+        else{panels.search.innerHTML='<div class="empty">ARCHIVE NOT AVAILABLE YET</div>';}
       });
-    })();
+    }
+
+    function loadSummary(key,file){
+      const el=panels[key];
+      el.innerHTML='<div class="loading">LOADING...</div>';
+      const cacheMap={weekly:"cachedWeekly",monthly:"cachedMonthly",yearly:"cachedYearly"};
+      const existing=eval(cacheMap[key]);
+      if(existing){renderSummary(existing,el);return;}
+
+      fetch(file).then(r=>r.json()).then(data=>{
+        eval(`${cacheMap[key]}=data`);
+        renderSummary(data,el);
+      }).catch(()=>{el.innerHTML='<div class="empty">NOT AVAILABLE YET (generated on schedule)</div>';});
+    }
+
+    // ---- Button events ----
+    document.querySelectorAll("#navPrimary button, #navSecondary button").forEach(btn=>{
+      btn.addEventListener("click",()=>{activateTab(btn.dataset.tab);});
+    });
+
+    // ---- Init ----
+    loadMainTab();
+  })();
   </script>
 </body>
 </html>
