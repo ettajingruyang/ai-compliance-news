@@ -20,30 +20,39 @@ const parser = new Parser({
 
 // ––– 信息源 –––
 
-function gNews(q) {
-  return `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
+function gNews(q, locale = "US") {
+  const gl = locale === "CN" ? "CN" : "US";
+  const hl = locale === "CN" ? "zh-CN" : "en-US";
+  const ceid = locale === "CN" ? "CN:zh-Hans" : "US:en";
+  return `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=${hl}&gl=${gl}&ceid=${ceid}`;
+}
+
+// Google News 中文版（从 GitHub Actions US 服务器可访问）
+function gNewsCN(q) {
+  return `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=zh-CN&gl=CN&ceid=CN:zh-Hans`;
 }
 
 const sources = {
-  googleNews: [
-    // AI进展 (中文)
-    { query: '("大模型" OR "AI模型" OR "人工智能") AND (发布 OR 开源 OR 上线 OR 推出 OR 突破)', cat: "ai-progress" },
-    { query: '(OpenAI OR Anthropic OR 百度 OR 阿里 OR 华为 OR DeepSeek OR 智谱 OR Kimi OR 字节) AND (发布 OR 推出 OR 开源 OR 融资 OR 上市)', cat: "ai-progress" },
-    // AI进展 (英文)
-    { query: '("AI model" OR "GPT" OR "foundation model" OR "LLM") AND (release OR launch OR breakthrough OR announce) -regulation -law -ban -executive -order', cat: "ai-progress" },
-    { query: '(OpenAI OR Anthropic OR "Google DeepMind" OR Meta OR DeepSeek OR xAI) AND (release OR launch OR funding OR IPO OR model) -regulation -lawsuit -ban', cat: "ai-progress" },
-    // AI 监管 (中文)
-    { query: '("AI监管" OR "人工智能治理" OR "AI立法" OR "算法备案" OR "数据合规")', cat: "ai-regulation" },
-    // AI 监管 (英文)
+  // Google News 中文源
+  googleNewsCN: [
+    { query: "大模型 OR 人工智能 发布 OR 开源 OR 融资", cat: "ai-progress" },
+    { query: "DeepSeek OR 智谱 OR 百度文心 OR 阿里通义 OR 字节豆包 OR 华为盘古", cat: "ai-progress" },
+    { query: "AI监管 OR 人工智能治理 OR 算法备案 OR 数据合规 OR 网信办", cat: "ai-regulation" },
+    { query: "法律AI OR AI法律 OR 智慧法院 OR 合规科技 OR 法律科技", cat: "legal-ai" },
+  ],
+  // Google News 英文源
+  googleNewsUS: [
+    { query: '("AI model" OR "GPT" OR "foundation model" OR "LLM") AND (release OR launch OR breakthrough OR announce) -regulation -law -ban', cat: "ai-progress" },
+    { query: '(OpenAI OR Anthropic OR "Google DeepMind" OR Meta OR DeepSeek OR xAI) AND (release OR launch OR funding OR IPO) -regulation -lawsuit -ban', cat: "ai-progress" },
     { query: '("EU AI Act" OR "AI regulation" OR "AI legislation" OR "AI Act") AND (law OR policy OR enforcement OR compliance)', cat: "ai-regulation" },
     { query: '("AI governance" OR "AI executive order" OR "FTC AI" OR "AI liability" OR "AI fine" OR "AI lawsuit")', cat: "ai-regulation" },
-    // 法律AI (中文)
-    { query: '("法律AI" OR "AI法律" OR "智能司法" OR "合规科技" OR "AI律师")', cat: "legal-ai" },
-    // 法律AI (英文)
     { query: '("legal AI" OR "AI lawyer" OR "legal tech" OR "AI legal" OR "AI contract") AND (AI OR platform OR startup OR funding OR tool)', cat: "legal-ai" },
   ],
   rss: [
-    // 境外
+    // === 境外权威媒体 ===
+    { url: "https://feeds.content.dowjones.io/public/rss/socialeconomyfeed", cat: "ai-progress" },
+    { url: "https://www.wired.com/feed/tag/ai/latest/rss", cat: "ai-progress" },
+    // === 境外专业AI源 ===
     { url: "https://iapp.org/news/feed/", cat: "ai-regulation" },
     { url: "https://techcrunch.com/category/artificial-intelligence/feed/", cat: "ai-progress" },
     { url: "https://www.technologyreview.com/topic/artificial-intelligence/feed/", cat: "ai-progress" },
@@ -51,11 +60,9 @@ const sources = {
     { url: "https://feeds.feedblitz.com/abajournal/topstories", cat: "legal-ai" },
     { url: "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml", cat: "ai-progress" },
     { url: "https://venturebeat.com/category/ai/feed/", cat: "ai-progress" },
-    // 中国
-    { url: "https://www.jiqizhixin.com/rss", cat: "ai-progress" },
-    { url: "https://rsshub.app/36kr/motif/327403059714547", cat: "ai-progress" },
-    { url: "https://rsshub.app/thepaper/feature/27203", cat: "ai-regulation" },
-    { url: "https://rsshub.app/xinhua/ai", cat: "ai-regulation" },
+    // === 中国源 ===
+    { url: "https://www.36kr.com/feed", cat: "ai-progress", region: "cn" },
+    { url: "https://rsshub.app/caixin/latest", cat: "ai-regulation", region: "cn" },
   ],
   hn: [
     { query: "AI regulation", cat: "ai-regulation" },
@@ -100,11 +107,11 @@ function todayStr() {
 function scoreByKeywords(title) {
   const t = title.toLowerCase();
   let score = 0;
+  // 英文
   if (/eu ai act|european (union|commission|parliament)/.test(t)) score += 5;
   if (/supreme court|federal court|landmark|ruling/.test(t)) score += 5;
   if (/ftc|sec|doj|department of justice/.test(t)) score += 4;
   if (/white house|executive order|president/.test(t)) score += 4;
-  if (/china|chinese|beijing|中国|算法/.test(t)) score += 4;
   if (/openai|gpt-5|gpt-4|chatgpt/.test(t)) score += 5;
   if (/anthropic|claude/.test(t)) score += 4;
   if (/google deepmind|gemini|alphafold/.test(t)) score += 5;
@@ -115,7 +122,16 @@ function scoreByKeywords(title) {
   if (/releas|launch|announce|unveil|introduce/.test(t)) score += 2;
   if (/law firm|legal tech|legal AI|AI lawyer|court.*AI/.test(t)) score += 4;
   if (/copyright|intellectual property|patent/.test(t)) score += 3;
-  if (title.length > 30 && title.length < 150) score += 1;
+  // 中文关键词（高分确保中国新闻不被挤出）
+  if (/网信办|工信部|国务院|最高法院|最高检|信安标委/.test(t)) score += 6;
+  if (/算法备案|数据合规|个人信息保护|生成式|深度合成|大模型|基座模型|基础模型/.test(t)) score += 6;
+  if (/deepseek|深度求索|百度|阿里|华为|字节|腾讯|科大讯飞|商汤|旷视/.test(t)) score += 5;
+  if (/智谱|月之暗面|kimi|百川|minimax|零一万物|阶跃星辰|面壁|生数/.test(t)) score += 5;
+  if (/发布|开源|上线|推出|融资|ipo|上市|收购/.test(t)) score += 3;
+  if (/监管|立法|处罚|罚款|整改|约谈|下架|禁令/.test(t)) score += 4;
+  if (/智慧法院|智慧司法|法律科技|合规科技/.test(t)) score += 5;
+  if (/中国|北京|上海|深圳|杭州|清华|北大|中科院/.test(t)) score += 3;
+  if (title.length > 10 && title.length < 200) score += 1;
   return score;
 }
 
@@ -123,9 +139,10 @@ function scoreByKeywords(title) {
 // 抓取函数
 // ============================================================
 
-async function fetchGoogleNews({ query, cat }) {
+async function fetchGoogleNews({ query, cat, locale }) {
   try {
-    const feed = await parser.parseURL(gNews(query));
+    const url = locale === "CN" ? gNewsCN(query) : gNews(query);
+    const feed = await parser.parseURL(url);
     return feed.items.map(item => ({
       id: "g-" + slug(item.link || item.title),
       title: item.title?.trim() || "",
@@ -135,11 +152,12 @@ async function fetchGoogleNews({ query, cat }) {
       date: item.pubDate ? new Date(item.pubDate).toISOString().split("T")[0] : "",
       category: cat,
       score: scoreByKeywords(item.title || ""),
+      region: locale === "CN" ? "cn" : "",
     }));
   } catch { return []; }
 }
 
-async function fetchRSS({ url, cat }) {
+async function fetchRSS({ url, cat, region }) {
   try {
     const feed = await parser.parseURL(url);
     const host = new URL(url).hostname.replace(/^www\./, "");
@@ -152,6 +170,7 @@ async function fetchRSS({ url, cat }) {
       date: item.pubDate ? new Date(item.pubDate).toISOString().split("T")[0] : item.isoDate?.split("T")[0] || "",
       category: cat,
       score: scoreByKeywords(item.title || ""),
+      region: region || "",
     }));
   } catch { return []; }
 }
@@ -243,27 +262,30 @@ async function curateWithAI(items, cat, catName) {
   ).join("\n\n");
 
   const categoryDefinitions = {
-    "ai-progress": "AI行业重大进展：聚焦AI公司产品发布（如新模型、新功能上线）、技术突破、重大融资/IPO、行业并购、AI基础设施重大建设。**注意：不包括政策法规、行政处罚、诉讼案件、版权纠纷、监管动态**——这些属于AI监管。",
-    "ai-regulation": "AI监管动态：聚焦各国AI立法进程、行政命令、监管机构执法行动、AI相关诉讼判决、数据隐私处罚、AI安全合规要求、反垄断调查。**注意：不包括AI公司产品发布、技术突破、融资消息**——这些属于AI进展。",
-    "legal-ai": "法律AI行业动态：聚焦法律科技公司的产品发布、融资、合作、并购，AI在法律服务中的应用（合同审查、法律研究、诉讼预测等），法律行业对AI的采用趋势。**注意：不包括政府AI立法监管政策、AI版权诉讼判决**——这些属于AI监管。",
+    "ai-progress": "AI重大进展：OpenAI/Google/Anthropic/Meta/微软/苹果/英伟达/DeepSeek/百度/阿里/腾讯/华为/字节等头部公司的新模型发布、重大产品更新、技术突破、巨额融资/IPO、行业并购、AI芯片与基础设施。排除：政策法规、行政令、诉讼罚款、监管动态。",
+    "ai-regulation": "AI监管动态：各国AI立法/修法、总统/总理签署AI行政令、FTC/SEC/欧盟/中国网信办等AI执法调查罚款、AI版权隐私反垄断诉讼判决、数据安全新规。排除：AI公司产品发布、融资、技术突破。",
+    "legal-ai": "法律AI行业：法律科技公司融资/并购/产品发布、头部律所采用AI工具的合作、司法系统AI应用、合规科技。排除：政府AI监管政策、版权诉讼。",
   };
 
   const def = categoryDefinitions[cat] || "";
 
-  const prompt = `你是一个AI行业的专业编辑。请从以下候选新闻中，为"${catName}"栏目挑选最重要的5条新闻。
+  const prompt = `你是"${catName}"栏目的主编。从以下候选新闻中挑选最重要的5条。
 
-⚠️ 栏目定义（严格遵守）：
+栏目定义：
 ${def}
 
-挑选标准：
-- 优先选择对该栏目领域有重大影响的新闻
-- 略过纯营销内容、重复报道、无实质信息的文章
-- 如果候选新闻中有明显不属于本栏目的（属于另外两个栏目），坚决排除
+选择优先级：
+1.(最高) OpenAI/Google/Anthropic/Meta/微软/苹果/英伟达/特斯拉/DeepSeek/百度/阿里/腾讯/华为/字节等头部公司的重大新闻；WSJ/FT/Bloomberg/路透/IAPP/TechCrunch/Wired等权威来源
+2.(高) 上述公司之外的实质性内容：重大产品发布、突破性技术、大规模融资、重要合作
+3.(普通) 行业分析/研究报告/趋势
+4.(排除) 公关软文、重复报道、与AI无关
 
-请返回JSON数组，每个元素包含：选中的序号(index, 数字)、选择理由(reason, 中文, 15字以内)。
-只返回JSON，不要其他文字。
+每5条必须包含至少1条中国相关新闻（中国公司/政策/市场/中文权威来源）。
 
-候选新闻：
+返回JSON：[{index:数字, reason:"15字理由"}]
+只返回JSON。
+
+候选：
 ${list}`;
 
   try {
@@ -279,73 +301,37 @@ ${list}`;
 
 async function analyzeCategoryItems(items, catName) {
   if (items.length === 0) return {};
-
-  const catContext = {
-    "AI重大进展": "这些新闻属于AI行业重大进展栏目。请从技术/产品/商业角度解读，不要过度关注监管合规层面。",
-    "AI监管动态": "这些新闻属于AI监管动态栏目。请从政策/法律/合规角度解读，重点分析监管影响和行业合规启示。",
-    "法律AI": "这些新闻属于法律AI行业动态栏目。请从法律科技行业角度解读，重点分析对法律服务市场和法律行业的影响。",
-  };
-
-  const list = items.map((item, i) =>
-    `[${i + 1}] 标题: ${item.title}\n    来源: ${item.source}\n    日期: ${item.date}\n    原始摘要: ${item.summary?.substring(0, 300) || "无"}`
-  ).join("\n\n");
-
-  const prompt = `你是一个AI行业的资深分析师。请为以下"${catName}"栏目的${items.length}条新闻分别撰写详细解读。
-
-${catContext[catName] || ""}
-
-每条解读要求（350-500字中文），按以下结构组织：
-【事件概述】2-3句话介绍核心事件
-【关键信息】2-3个要点（用 - 开头）
-【行业影响】短期和长期影响分析
-
-格式示例：
-【事件概述】xxx公司于近日发布了xxx产品，这是xxx领域的一次重大突破……
-【关键信息】
-- 要点一
-- 要点二
-【行业影响】该事件标志着xxx，短期内xxx，长期来看xxx……
-
-注意：不要markdown标题，不要附原文链接，不要emoji。
-
-请返回JSON数组：序号(index)、解读(analysis)。只返回JSON。`;
-
-  try {
-    const resp = await askDeepSeek([{ role: "user", content: prompt }]);
-    let jsonStr = resp.match(/\[[\s\S]*\]/)?.[0];
-    if (!jsonStr) return await analyzeOneByOne(items);
-    jsonStr = jsonStr.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F]/g, "");
-    let json;
-    try { json = JSON.parse(jsonStr); } catch { return await analyzeOneByOne(items); }
-    const map = {};
-    json.forEach(j => { if (j.index != null) map[j.index] = j.analysis || ""; });
-    return map;
-  } catch (err) {
-    console.log(`    ⚠️ 批量分析(${catName}): ${err.message}`);
-    return {};
-  }
+  // 逐条生成，确保标题和内容不会混淆
+  return await analyzeOneByOne(items, catName);
 }
 
-async function analyzeOneByOne(items) {
+async function analyzeOneByOne(items, catName) {
   const map = {};
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
-    const prompt = `请为以下这条新闻撰写详细解读（350-500字中文）。
+    console.log(`    分析第${i+1}/5条: ${item.title.substring(0, 30)}...`);
+    const prompt = `请为以下这条"${catName}"新闻撰写解读（约200-350字中文）。
 
-【事件概述】2-3句话核心事件
-【关键信息】2-3个要点（用 - 开头）
-【行业影响】短期和长期影响
+⚠️ 最关键要求：解读内容必须严格基于该新闻的标题和摘要，不要编造标题和摘要中没有的信息。不得张冠李戴。
 
-新闻：${item.title}
+结构：
+【事件概述】4-6句话，基于标题和摘要详细介绍该事件。必须写出真实公司/机构/人名称，日期必须具体。禁止使用"某公司""某律所""某机构"等模糊表述。
+【行业影响】2-3句话分析重要性。
+
+标题：${item.title}
 来源：${item.source}
-摘要：${item.summary?.substring(0, 300) || "无"}
+日期：${item.date}
+摘要：${item.summary || "无"}
 
-不要markdown，不要链接，不要emoji。`;
+不要markdown，不要链接，不要emoji。直接返回解读文本。`;
 
     try {
       const text = await askDeepSeek([{ role: "user", content: prompt }]);
       map[i + 1] = text.trim();
-    } catch { map[i + 1] = ""; }
+    } catch (err) {
+      console.log(`      失败: ${err.message}`);
+      map[i + 1] = "";
+    }
   }
   return map;
 }
@@ -413,7 +399,8 @@ async function main() {
 
   // 1. 抓取
   const tasks = [
-    ...sources.googleNews.map(q => fetchGoogleNews(q)),
+    ...sources.googleNewsCN.map(q => fetchGoogleNews({ ...q, locale: "CN" })),
+    ...sources.googleNewsUS.map(q => fetchGoogleNews(q)),
     ...sources.rss.map(r => fetchRSS(r)),
     ...sources.hn.map(h => fetchHN(h)),
   ];
@@ -437,6 +424,45 @@ async function main() {
   const cutoff = new Date(Date.now() - 7 * 86400000).toISOString().split("T")[0];
   all = all.filter(item => item.date >= cutoff);
   console.log(`📊 近7天: ${all.length} 条`);
+
+  // 3.5 事后分类调整
+  // 3.5a：过滤非AI新闻
+  const aiKeywords = /AI|人工智能|大模型|LLM|GPT|ChatGPT|Claude|DALL|Midjourney|Stable Diffusion|Gemini|AlphaFold|模型|算法|机器学习|深度学习|神经网络|机器人|自动驾驶|AI模型|生成式|深度学习|NLP|计算机视觉|machine learning|deep learning|neural network|transformer|diffusion|生成式AI|大语言模型|基座模型|向量数据库|RAG|Agent|智能体|提示词|prompt|fine-?tun|训练|推理|算力|GPU|芯片|数据中心|AI芯片/;
+  let preFiltered = all.length;
+  all = all.filter(item => {
+    const t = (item.title || "") + " " + (item.summary || "");
+    return aiKeywords.test(t);
+  });
+  if (all.length < preFiltered) console.log(`📊 过滤非AI新闻: ${preFiltered - all.length} 条`);
+
+  // 3.5b：36kr中国新闻按内容分发到三个分类
+  const cnRegKW = /监管|处罚|罚款|禁令|立法|网信办|工信部|数据合规|个人信息|隐私|安全审查|约谈|下架|整改|备案|算法推荐|深度合成/;
+  const cnLegalKW = /法律|法院|法官|律师|司法|诉讼|仲裁|合同|合规科技|智慧法院|AI律师|AI法律|法务/;
+  let cnDistributed = 0;
+  for (const item of all) {
+    if (item.region === "cn") {
+      if (cnRegKW.test(item.title || "")) {
+        item.category = "ai-regulation";
+        cnDistributed++;
+      } else if (cnLegalKW.test(item.title || "")) {
+        item.category = "legal-ai";
+        cnDistributed++;
+      }
+      // else stays ai-progress
+    }
+  }
+  if (cnDistributed > 0) console.log(`📊 36kr中文新闻分发: ${cnDistributed} 条 → 监管/法律AI`);
+
+  // 3.5b：明显属于监管的英文新闻纠正
+  const regKW = /executive order|president.*sign|white house.*ai|ai.*ban|ai.*fine|ai.*penalty|ai.*lawsuit|ai.*court.*rul|ai.*regulation|ai.*legislation|ai.*act|eu.*ai|ftc.*ai|doj.*ai|ai.*probe|ai.*investigation|ai.*enforcement/i;
+  let reclassified = 0;
+  for (const item of all) {
+    if (item.category === "ai-progress" && regKW.test(item.title.toLowerCase() || "")) {
+      item.category = "ai-regulation";
+      reclassified++;
+    }
+  }
+  if (reclassified > 0) console.log(`📊 英文重分类: ${reclassified} 条 → ai-regulation`);
 
   // 4. 精选 + 分析
   const catNames = { "ai-progress": "AI重大进展", "ai-regulation": "AI监管动态", "legal-ai": "法律AI" };
@@ -464,11 +490,47 @@ async function main() {
       selected = selected.concat(rest);
     }
 
+    // 每分类固定1条中国新闻，不多不少
+    function isCNItem(item) {
+      if (item.region === "cn") return true;
+      if (item.source && /(36kr|虎嗅|jiqizhixin|机器之心|澎湃|新华|人民|sina|sohu|netease|qq\.com|baidu|zhihu|财新|钛媒体|极客公园)/i.test(item.source)) return true;
+      const cnChars = (item.title || "").match(/[一-鿿]/g)?.length || 0;
+      const enChars = (item.title || "").match(/[a-zA-Z]/g)?.length || 0;
+      if (cnChars > 15 && cnChars > enChars * 3) return true;
+      return false;
+    }
+
+    const cnItems = items.filter(i => !selected.includes(i) && isCNItem(i))
+      .sort((a, b) => (b.score || 0) - (a.score || 0));
+    const nonCNSelected = selected.filter(i => !isCNItem(i));
+    const cnSelected = selected.filter(isCNItem);
+
+    if (cnSelected.length >= 2) {
+      // 太多中国新闻：只保留最高分那条，其余换回境外
+      const keep = cnSelected.sort((a, b) => (b.score || 0) - (a.score || 0))[0];
+      const extra = cnSelected.filter(i => i !== keep);
+      selected = [...nonCNSelected, keep];
+      const pool = items.filter(i => !selected.includes(i) && !isCNItem(i)).sort((a, b) => (b.score || 0) - (a.score || 0));
+      for (let i = 0; i < Math.min(extra.length, pool.length); i++) {
+        selected.push(pool[i]);
+      }
+      selected = selected.slice(0, PER_CATEGORY);
+      console.log(`  中国新闻过多(${cnSelected.length}条)，削减为1条`);
+    } else if (cnSelected.length === 0 && cnItems.length > 0) {
+      // 没有中国新闻：替换最低分境外新闻
+      const lowest = [...nonCNSelected].sort((a, b) => (a.score || 0) - (b.score || 0))[0];
+      selected = selected.filter(i => i !== lowest);
+      selected.push(cnItems[0]);
+      console.log(`  补入中国新闻: ${cnItems[0].title?.substring(0, 40)}`);
+    }
+    console.log(`  中国新闻: ${selected.filter(isCNItem).length}/${PER_CATEGORY}`);
+
     for (const item of selected) {
       if (item.reason) {
         item.summary = `【编辑推荐】${item.reason}\n${item.summary || ""}`;
       }
       delete item.reason;
+      delete item.region;
       delete item.score;
     }
 
