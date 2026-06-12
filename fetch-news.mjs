@@ -203,6 +203,7 @@ async function askDeepSeek(messages) {
     method: "POST",
     headers: { "Content-Type": "application/json", "Authorization": `Bearer ${DEEPSEEK_KEY}` },
     body: JSON.stringify({ model: "deepseek-chat", messages, temperature: 0.7, max_tokens: 4096 }),
+    signal: AbortSignal.timeout(60000),
   });
   if (!res.ok) throw new Error(`DeepSeek API ${res.status}: ${await res.text()}`);
   return (await res.json()).choices[0].message.content;
