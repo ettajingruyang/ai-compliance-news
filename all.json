@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-12T10:12:49.188Z",
-  "total": 45,
+  "updated": "2026-06-13T10:19:10.473Z",
+  "total": 51,
   "items": [
     {
       "id": "r-https-techcrunch-com-2026-06-09-anthropics-claude-fable-5-is-a-version-of-mythos",
@@ -451,6 +451,66 @@
       "date": "2026-06-08",
       "category": "legal-ai",
       "analysis": "【事件概述】2026年6月8日，戴尔科技公司宣布与印度律师事务所Lakshmikumaran & Sridharan达成合作，该律所将采用戴尔推出的AI法律助手。这一合作标志着戴尔科技首次与印度头部律所共同部署其AI法律工具，旨在通过人工智能技术提升法律工作的效率与准确性。根据《印度时报》的报道，该AI助手将辅助律师进行文件审查、案例检索及法律文书起草等任务。双方均未透露具体的部署时间表及合同金额，但强调该合作是戴尔科技在亚洲法律科技领域的重要布局。\n\n【行业影响】此次合作表明，全球科技巨头正加速将AI工具渗透至传统法律服务业，尤其是亚洲市场。戴尔与Lakshmikumaran & Sridharan的联手，可能推动更多印度及周边地区的律所效仿，从而加速法律行业从人工密集型向技术驱动型转型的进程。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmirkfvx3lxtfbjluntvnhns2zubk82ank5rxzqqtzpc",
+      "title": "OpenAI、Anthropic急了？外媒曝创企转向中国更便宜开源模型，特定场景成本能降95% - 智东西",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBjLUNTVnhNS2Zubk82ank5RXZQQTZPc0JRVzlFVC1iSWEzQXJoeVVFSXdhRFd1cWdvMG9xWFZUWHJQT3dTZXc?oc=5",
+      "source": "智东西",
+      "summary": "【编辑推荐】创企转向中国开源模型，成本优势显著\nOpenAI、Anthropic急了？外媒曝创企转向中国更便宜开源模型，特定场景成本能降95% 智东西",
+      "date": "2026-06-12",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月12日，据智东西援引外媒报道，由于OpenAI和Anthropic等美国AI巨头提供的闭源模型价格较高，越来越多的初创企业开始转向中国更便宜的开源模型。报道指出，在特定应用场景下，使用中国开源模型的成本相比美国闭源模型能降低高达95%。这一趋势反映出全球AI市场正在出现显著的价格分化，低成本的开源方案正吸引资金紧张的初创公司。OpenAI与Anthropic可能因此面临客户流失的压力，而中国开源模型凭借性价比优势正在抢占更多市场份额。\n\n【行业影响】该事件表明，在AI应用落地的关键阶段，成本已成为决定企业选择模型的重要因素。中国开源模型的崛起可能迫使美国头部AI公司调整定价策略，同时加速全球AI生态从“闭源高价”向“开源低价”的多元化竞争格局转变。"
+    },
+    {
+      "id": "r-https-36kr-com-p-3849942472512769-f-rss",
+      "title": "氪星晚报｜SpaceX确定发行价，募资750亿美元创史上最大IPO；OpenAI CEO奥特曼推迟访韩计划；中央网信办举报中心开设“涉AI应用乱象举报专区”",
+      "url": "https://36kr.com/p/3849942472512769?f=rss",
+      "source": "36kr.com",
+      "summary": "【编辑推荐】中央网信办开设AI举报专区，中国监管重要动态\n大公司： OpenAI CEO奥特曼推迟访韩计划 据报道，OpenAI首席执行官山姆·奥特曼因个人原因推迟访韩计划。奥特曼原定于14日至15日访韩，会见三星电子、Kakao、NAVER等企业负责人。 Alphabet旗下自动驾驶公司Waymo将推出30美元月费会员计划 当地时间6月11日，Alphabet旗下自动驾驶公司Waymo宣布，将推出仅限受邀用户参与的Waymo Premier30美元月费会员计划，会员可享受优先接送、每次行程10%的乘车返现（以乘车积分形式返还）、在新城市优先体验Waymo服务以及每月最多五次免费取消行程等权益。Waymo表示，最初将通过应用程序和电子邮件向美国旧金山",
+      "date": "2026-06-12",
+      "category": "ai-regulation",
+      "analysis": "【事件概述】2026年6月12日，据36氪报道，中央网信办举报中心正式开设“涉AI应用乱象举报专区”，这是中国在人工智能监管领域的重要动态。同日，OpenAI首席执行官山姆·奥特曼因个人原因推迟原定于6月14日至15日访问韩国的计划，原计划中他将与三星电子、Kakao、NAVER等企业负责人会面。此外，Alphabet旗下自动驾驶公司Waymo于6月11日宣布推出30美元月费会员计划Waymo Premier，仅限受邀用户参与，提供优先接送、乘车返现等权益。该计划最初在旧金山通过应用和邮件邀请用户。\n\n【行业影响】中央网信办开设AI举报专区，标志着中国对AI应用乱象的监管进入具体化、常态化阶段，有助于规范AI技术落地中的虚假信息、算法歧视等问题。Waymo的会员计划则显示自动驾驶商业化正从单次出行向订阅制服务演进，可能重塑出行行业的用户黏性与盈利模式。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmikafbvv95cuxqcuf3txdqrw0tdjdox0dewwhqqkvxs",
+      "title": "美国多州据报对OpenAI发起调查",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcUF3TXdqRW0tdjdoX0dEWWhqQkVxSDY5V3U0V1RJLVVVQThLMFc4QkNJLU9vMkdFMlU4ZS00V29lX201MldfWUdZNHZzVTIxeG43UEdNSEUwMmUtdXptWHpiNWh0eDNzdG5BN1Z3VGpwQThBOWFCWmxjRVBCZUNySl96cW5HYVpkZzlIRHh6M2U?oc=5",
+      "source": "Breakingthenews.net",
+      "summary": "【编辑推荐】美国多州据报对OpenAI发起调查，头部公司重大执法",
+      "date": "2026-06-13",
+      "category": "ai-regulation",
+      "analysis": "【事件概述】2026年6月13日，据Breakingthenews.net报道，美国多个州已对人工智能头部公司OpenAI发起调查。该报道将此次行动定性为“头部公司重大执法”，意味着调查涉及OpenAI的核心业务或合规问题。目前具体调查的州名单、调查重点及法律依据尚未在标题与摘要中披露。这一动态标志着美国州级监管机构对AI行业领军企业的直接介入，而非仅限于联邦层面的关注。\n\n【行业影响】此次多州联合调查将显著提升AI行业的合规压力，尤其对OpenAI这类拥有广泛用户基础和数据流量的公司，可能面临跨州协调的复杂法律挑战。若调查结果导致处罚或业务限制，将直接为全球AI企业设立监管先例，促使其他公司重新评估自身在数据使用、算法透明度等方面的合规框架。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmiugfbvv95cuxot1brajlynhpovefjanvttffhzhjey",
+      "title": "Lammy在伦敦科技周宣布为皇家法院引入AI法律助理",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOT1BrajlYNHpoVEFjanVtTFFhZHJEY2hrZWlyaWxTdzU3RFZhd3Y4NU1tV3VqZ1I3WUEwLWxqSkdfRFYxQk5sVTVOSWJuVHNIalJGRVpKZWlCRlNwZEFValNxckMxUXV0RHhPUGhYUTdfdFlCMGtMc19jNnpwZDNROGgxbEdOWVRWMU5ycko1a0pJdnF6U2RqQnd0ckFtdjYyNnAxWUIweDZIclBwWFJydzVka3lxNmI2S0E?oc=5",
+      "source": "Computer Weekly",
+      "summary": "英国皇家法院采用AI法律助理，司法系统重大应用",
+      "date": "2026-06-10",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月10日，英国司法大臣沙巴纳·马哈茂德（Shabana Mahmood，常被媒体称为“Lammy”）在伦敦科技周上宣布，英国皇家法院将正式引入AI法律助理。该系统旨在辅助法官和法院工作人员处理法律文书、案件摘要及证据整理等重复性工作。这是英国司法系统首次在核心审判流程中部署人工智能工具，标志着AI从辅助检索迈向实质性司法应用。该AI法律助理由英国司法部与科技公司合作开发，目前已在部分皇家法院试点，预计年内推广至更多法庭。\n\n【行业影响】此举将显著提升法院案件处理效率，缓解英国长期存在的案件积压问题。同时，它为全球司法系统的数字化转型提供了可参考的实践样本，可能加速其他普通法国家（如美国、澳大利亚）对AI法律助手的政策评估与试点部署。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmijgfbvv95cuxna0pbrtnqzxfdvxdene5zt1vorhrjt",
+      "title": "Legora与Wolters Kluwer将SEC规则和美国法规整合至AI工作流",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNa0pBRTNqZXFDVXdENE5zT1VoRHRJTmdrS1FZZVp6ZW9fUVZXUDI2STRaTjBQNjFHR1BaU0JGR3lCM0E5WVpTdTg1YmR4aHJiREJrQ2N1Q2pvYmo4NUo5OWFfaS15UFNEOTFFb2txZjN0QVQtMVZCRVIwV3lCQzlQc2JHWmdySVpVdDBSTjZn?oc=5",
+      "source": "Lawyer Monthly",
+      "summary": "Legora与Wolters Kluwer合作，整合法规进AI工作流",
+      "date": "2026-06-12",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月12日，法律科技公司Legora与专业信息服务机构Wolters Kluwer宣布达成合作，双方将共同把美国证券交易委员会（SEC）规则及美国联邦法规直接整合进Legora的AI工作流中。据Lawyer Monthly报道，此次合作旨在通过AI技术，使法律从业者能够在日常工作中实时调用并处理这些复杂的监管文本。具体而言，Wolters Kluwer提供的法规数据库将被无缝嵌入Legora的AI系统，从而减少律师手动检索和核对法规的时间。这一整合预计将覆盖SEC的披露要求、交易规则以及更广泛的美国法典相关章节，并直接服务于法律实务中的合规审查与文书起草环节。Legora与Wolters Kluwer均表示，该工作流已于近期完成初步测试，并计划向订阅用户开放。\n\n【行业影响】此次合作标志着法律AI从通用问答向垂直监管领域的深度渗透，通过将权威法规库直接嵌入AI工作流，显著提升了法律实务中合规操作的准确性与效率。对于律所及企业法务部门而言，这预示着未来AI工具将更紧密绑定官方数据源，从而降低因信息滞后或引用错误引发的执业风险。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmi7gfbvv95cuxosdf2rdrtqwvusk1oymfkddf4zvprc",
+      "title": "法律AI需求推动估值56亿美元初创公司扩张，Legora开设伦敦工程中心及三个欧洲办事处",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOSDF2RDRtQWVUSk1OYmFkdDF4ZVpRc1pLMjdTZ3hqdFVzQXg1T0NkSV9MU1BtOEM5Y0NVWHNSVi11NVRMSTN4MEtKZHNUZUM3LWZzYWZlNGxGZVB6bGF3Zk9LZHVOQmh6NEZ3UU5iTHU3YW54R2dIbm5EMmRycTFNd2NjYXNIX1IyQXBjSHBPT2JsZVlEU1RQNk1BeXhqdF94bWppZWtsNzIyNk5HQWp1aUlsSWdzTkZPRFlybkRJODZwMEhnSkpxODJ3VDlSRlJzMjFKRGFlV2JLMWUydF9vbTBfd0NJSUJrZTdhMWlB?oc=5",
+      "source": "Tech Funding News",
+      "summary": "估值56亿美元法律AI初创扩张，行业重要动态",
+      "date": "2026-06-11",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月11日，据Tech Funding News报道，估值达56亿美元的法律AI初创公司Legora宣布扩张，将在伦敦开设一个工程中心，并同时在欧洲设立三个新办事处。该公司的扩张计划直接源于市场对法律AI产品的强劲需求，旨在通过增设欧洲据点来增强其技术研发能力和区域服务覆盖。Legora此前已凭借其法律AI平台在行业内获得较高估值，此次布局进一步凸显其加速全球化的战略意图。这一举措标志着法律科技领域头部企业正从单一产品输出转向本土化工程与商业能力建设。\n\n【行业影响】Legora的扩张表明，法律AI已从概念验证阶段进入规模化商业落地期，高估值公司开始通过实体办公室而非纯远程模式深耕区域市场。这或将推动更多法律科技初创企业跟进设立欧洲工程中心，加速人工智能在法律文书处理、合同审查等核心场景的渗透率提升。"
     }
   ]
 }
