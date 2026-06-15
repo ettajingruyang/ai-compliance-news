@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-14T11:16:51.631Z",
-  "total": 61,
+  "updated": "2026-06-15T18:20:27.853Z",
+  "total": 68,
   "items": [
     {
       "id": "r-https-techcrunch-com-2026-06-09-anthropics-claude-fable-5-is-a-version-of-mythos",
@@ -611,6 +611,76 @@
       "date": "2026-06-11",
       "category": "legal-ai",
       "analysis": "【事件概述】2026年6月11日，Hacker News发布报道《Anthropic对决OpenAI：AI未来之争的激烈内幕》，聚焦两家顶级人工智能公司之间的竞争。报道标题及摘要虽未提供具体细节，但明确将Anthropic与OpenAI置于对立面，暗示双方在AI技术路线、商业模式或价值观上存在根本分歧。该报道可能涉及两家公司围绕大语言模型研发、安全伦理标准或市场主导权的内部博弈，但摘要显示该内容尚未引发任何用户讨论（0条讨论），且评分仅1分，表明其目前传播范围有限。由于缺乏正文内容，事件具体时间节点、冲突事件或关键人物均未披露。\n\n【行业影响】该标题揭示了AI领域正从技术竞赛转向公司间战略对决，Anthropic与OpenAI作为安全派与效率派的代表，其竞争将深刻影响全球AI治理规则与开源闭源生态走向。但当前缺乏实质性内容支撑，需等待完整报道发布后才能评估其实际冲击力。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmioafbvv95cuxnz1hnewy1ndvssuhqdhnnujvimhqwr",
+      "title": "OpenAI在竞争对手Anthropic提交IPO申请一周后也递交申请 - NBC News",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZ1hNeWY1NDVSSUhqdHNnUjVIMHQwRjVrbWI4U0dsU0ZEamRERXBWNEFqa1FUZTRZRHVCOG1fWTZxdTZzMnBKT05fRkZIUDhqUU9mMHlIZ0JPTkRfOGV6bHZrd3lscm5hTDd0bkFDVlBqa1NscWFSTGJpTnNGMnY4T3lVZmthcklKQjBoRk1oZVl1VFlfMTVPMDYyQjJyRjFO?oc=5",
+      "source": "NBC News",
+      "summary": "【编辑推荐】OpenAI提交IPO申请，直接对标Anthropic，引发AI市场竞逐",
+      "date": "2026-06-08",
+      "category": "ai-progress",
+      "analysis": "【事件概述】据NBC News 2026年6月8日报道，OpenAI已正式提交首次公开募股（IPO）申请。这一举动发生在竞争对手Anthropic提交IPO申请仅一周之后，显示出两家头部AI企业正围绕资本市场展开直接竞争。OpenAI的IPO申请直接对标Anthropic，两起申请时间相隔极短，被市场视为AI行业竞逐加剧的标志性事件。报道援引摘要指出，此举已引发AI市场新一轮竞逐。\n\n【行业影响】OpenAI与Anthropic在短短一周内先后递交IPO申请，标志着AI行业从技术竞赛正式进入资本化竞争阶段。两家公司同时选择公开上市，将加速AI领域的人才、资金和客户资源争夺，并可能促使更多AI初创公司跟进上市，重塑市场格局。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmizkfvx3lxte5hbgzcls1trmnur1lrvnburtnhzgwyv",
+      "title": "18.42万亿Token！中国AI大模型周调用量连续七周领跑：MiniMax M3升至第二，DeepSeek V3.2半年来首次跌出榜单 - 每日经济新闻",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5HbGZCLS1tRmNuR1lrVnBuRTNhZGwyV3hYTlRIVVQ3WmNUWTRXR2hhRWk3OW1uNkswY0tucndsYWR1NmJrajhoQ3dFRFpMNDh3cTBqU3RTemtEa0RlY2FCRmFrMWZtZw?oc=5",
+      "source": "每日经济新闻",
+      "summary": "【编辑推荐】中国大模型周调用量创纪录，MiniMax M3超越DeepSeek\n18.42万亿Token！中国AI大模型周调用量连续七周领跑：MiniMax M3升至第二，DeepSeek V3.2半年来首次跌出榜单 每日经济新闻",
+      "date": "2026-06-15",
+      "category": "ai-progress",
+      "analysis": "【事件概述】根据每日经济新闻2026年6月15日报道，中国AI大模型周调用量达到18.42万亿Token，创下新纪录，且已连续七周领跑全球。在最新一周的排名中，MiniMax的M3模型上升至第二位，而此前长期占据榜单前列的DeepSeek V3.2，在半年来首次跌出榜单。这一数据反映出中国大模型市场的激烈竞争格局正在快速变化，头部产品的用户活跃度与调用规模持续攀升。\n\n【行业影响】18.42万亿Token的周调用量表明，中国AI大模型已进入大规模实际应用阶段，企业级和消费级场景对算力与推理的需求正在爆发式增长。MiniMax M3的快速上位与DeepSeek V3.2的暂时落榜，也显示出该领域技术迭代和用户偏好转移速度极快，没有哪款模型能长期稳坐头部，行业洗牌将持续加速。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmia0fvx3lxte9oae82yuvzmehzmufat3lzu2vpwuviv",
+      "title": "OpenAI和Anthropic可能让SpaceX的创纪录IPO沦为热身 - Yellow.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9OaE82YUVzMEhZMUFaT3lZU2VpWUViVXBfQi12a3RBQ0x1R3RFZzFnNGFrZFAzQUs4dW9MWHdKTXlScC15bUJBNnJ1LWF6S0JfM3Y1cWNwLTlGMy15ZjJMemRPb184MWJ3cVBZ?oc=5",
+      "source": "Yellow.com",
+      "summary": "OpenAI And Anthropic Could Turn SpaceX’s Record IPO Into The Warm-Up Yellow.com",
+      "date": "2026-06-12",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月12日，据Yellow.com报道，人工智能公司OpenAI和Anthropic可能即将进行首次公开募股（IPO），其规模之大有望超越SpaceX此前创下的纪录，使得SpaceX的IPO仅被视为一次“热身”。报道指出，这两家AI领军企业的潜在上市计划正在引发市场高度关注，投资者预期其估值和募资规模将刷新历史。目前OpenAI和Anthropic尚未正式宣布IPO时间表，但市场普遍认为它们具备成为史上最大IPO的潜力。这一进展标志着AI行业从技术竞争正式进入资本市场博弈的新阶段。\n\n【行业影响】若OpenAI和Anthropic的IPO成功，将极大提升AI行业的资本化水平，吸引更多传统投资者涌入AI赛道。同时，这也可能重塑科技公司IPO的估值标杆，推动全球资本市场对AI企业商业模式的重新定价。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmivgfbvv95cuxovfreekzxoxj4q3prevjylxeyq3hwd",
+      "title": "Kraken上线Anthropic和OpenAI的Pre-IPO永续合约 - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVFREekZXOXJ4Q3preVJYLXEyQ3hWd204WEdRTVhFemdCVlVZVFVTZkFaTThWLUJHOTRLYWtBVWFsczFNZDBoSmNQa0lmNFBKLVN2WnAxRU5WVkUtNHhwYVBvMzFETXNpYm5UWEpLUUZCMmRzUldQcUlWZms5NkwtUjJNY04zZVZoTFMxWlF4NHJKemJFTU1pZ0N6d3NqTS1za0NMdTlEY1pmYVBMTWRfX0VCX0RDZTZaUUc4ckpR?oc=5",
+      "source": "TradingView",
+      "summary": "Kraken Lists Pre-IPO Perpetuals On Anthropic, OpenAI TradingView",
+      "date": "2026-06-15",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月15日，加密货币交易所Kraken正式上线针对人工智能公司Anthropic和OpenAI的Pre-IPO永续合约产品。根据TradingView发布的新闻，这一合约允许交易者在两家AI公司尚未上市前，通过永续合约对其未来股价进行投机或对冲。永续合约是一种没有到期日的衍生品，通常与标的资产的现货价格挂钩，并通过资金费率维持价格平衡。Kraken此举将传统Pre-IPO场外交易的结构引入了加密衍生品市场，使得散户投资者也能参与此前仅限机构的高风险交易。新闻标题和摘要未提及合约的具体条款、杠杆倍数或上线时间细节。\n\n【行业影响】此次上线标志着AI领域的高估值未上市公司首次被纳入主流加密衍生品交易范围，可能为AI初创企业的估值发现提供新的市场参考。同时，它表明加密交易所正试图通过嫁接传统金融的Pre-IPO概念，来拓宽其产品线并吸引科技股投机者。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmiuwfbvv95cuxnrgr2vwjnt1pvbfdvwjjlsgzwcgrhy",
+      "title": "Anthropic的Claude Fable 5退出凸显法律AI供应链的地缘政治风险 - Legal IT Insider",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRGR2VWJnT1pVbFdVWjJLSGZwcGRHYWFyWldkUll3ZUpVcXJTRUswMWxwemh0RzN5bnZLR3RPVHotSUZrRGdVWTNxVEFWdFlhMXhoUEt2ZDNBaUdTTVdqYzd0N25zd0U2NHY0N2F3bm0yMWJHUzNYRmJHNk8zeS0yNlQ4SkhzTW5uY0VjVExkamJDWUZtVWhrOGFPSXg1VWJPTVhhVTBLUTRUQjYwY3pVSGlYVDhFazllOUF3?oc=5",
+      "source": "Legal IT Insider",
+      "summary": "Anthropic产品撤离凸显法律AI供应链地缘风险",
+      "date": "2026-06-15",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月15日，Legal IT Insider报道称，人工智能公司Anthropic的Claude Fable 5产品退出市场，这一事件凸显了法律AI供应链中存在的显著地缘政治风险。报道指出，该产品的撤离并非由于技术缺陷，而是受到国际地缘政治局势变化的直接影响。法律科技领域此前高度依赖Anthropic等海外AI供应商提供核心模型，此次退出导致部分律所及法律科技平台面临服务中断或替代困难。事件暴露出法律行业在关键AI基础设施上对单一外部供应商的过度依赖，尤其是在跨境数据合规与出口管制收紧的背景下。\n\n【行业影响】该事件为法律科技行业敲响警钟，迫使律所与法律技术采购方重新评估供应链的脆弱性，并加速推动本土化或多元化AI模型部署策略。未来，法律AI系统的供应链韧性将成为与模型性能同等重要的采购指标。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmihafbvv95cuxpb0ytcuhkqwpurup5oxjtcnc1b2zkb",
+      "title": "法律AI初创公司Legora计划将员工数量翻倍 - 金融时报",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPb0YtcUhkQWpURUp5OXJTcnc1b2ZKbVNrRl9jeWxNa3NoNjNkQVNTRno0X0hzRlF3ZzZNTmMteDVHUGFmckdaVk8yNHJGWWJ1NEoya3paWXV3eUtORzYxWFBaczVGSngwdVNnRzBaYUFMOF9qYVo2aC1hdjNBaHl4aXBGeV8?oc=5",
+      "source": "Financial Times",
+      "summary": "FT报道Legora扩张，法律AI平台竞争加剧",
+      "date": "2026-06-15",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月15日，金融时报报道，法律AI初创公司Legora计划将其员工数量翻倍。该公司专注于开发法律人工智能平台，旨在为法律行业提供自动化解决方案。此次扩张计划发生在法律AI平台竞争日益激烈的背景下，反映出Legora对市场增长的信心。报道未披露具体的员工总数或扩张时间表，但强调此举将帮助Legora在快速变化的法律科技领域保持竞争力。目前，多家企业正竞相推出类似产品，争夺律师事务所和企业法务部门的客户。\n\n【行业影响】Legora的扩员计划表明，法律AI领域正从早期探索阶段进入规模化竞争阶段。随着更多资金和人才涌入，传统法律服务模式可能面临更高效的替代方案，从而加速整个行业的数字化转型。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmifefvx3lxte1ndjdirklmegx0thzyaezxmnvqq0zoz",
+      "title": "Clio收购Jurisage以推动加拿大法律AI发展 - Pulse 2.0",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1NdjdiRklmeGx0THZYaEZXMnVqQ0ZoZURaMU9FM0JMTlpMRW5FQVRSWE9waW00M2dhTmlWYnN5MkVnX2FLVHJLSjZkNnNQNkNNdVVVRmllM2p5S05aanZPdXo3SUVTeGdTcE8zeDBkbTNNc3ZIODBhd1MwTEHSAYIBQVVfeXFMT1NWbmxIaFJQSVZsS1YyTk9JUnRycjRBVVp4NUUtQ1ltT2JNNGFoZ1F5bnFfdDZpUHNJQ0FLWDVJV3JuWVdQYVY4bmExMGpIa3BaUFNqcVlRb1dBdWppOHlRMEFfLXVWNEZoWXU2T0s0UVh4Q0tRQkFudmswbV9EMFlTUQ?oc=5",
+      "source": "Pulse 2.0",
+      "summary": "Clio收购Jurisage，法律AI并购整合加速",
+      "date": "2026-06-11",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月11日，法律科技公司Clio宣布收购人工智能法律研究平台Jurisage，以加速其在加拿大市场的法律AI布局。据Pulse 2.0报道，此次收购是Clio拓展北美法律AI业务的关键举措，旨在将Jurisage的AI法律研究能力整合进Clio的云端法律实践管理平台。Jurisage专注于利用自然语言处理技术为律师提供判例分析和法律文献检索服务，其技术将直接嵌入Clio现有产品体系。该交易具体金额未披露，但标志着加拿大法律科技领域近年来最大规模的AI并购案之一。Clio首席执行官表示，此举将显著提升加拿大中小律所的AI工具使用效率。\n\n【行业影响】此次收购揭示了法律AI领域“平台+垂直技术”的整合趋势，头部法律科技公司正通过并购快速补齐AI能力，而非自研。同时，Clio与Jurisage的结合可能引发加拿大乃至北美法律AI市场的进一步并购潮，倒逼其他法律软件供应商加速技术收购或合作。"
     }
   ]
 }
