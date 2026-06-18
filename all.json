@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-17T14:27:00.204Z",
-  "total": 89,
+  "updated": "2026-06-18T12:40:21.076Z",
+  "total": 99,
   "items": [
     {
       "id": "r-https-techcrunch-com-2026-06-09-anthropics-claude-fable-5-is-a-version-of-mythos",
@@ -891,6 +891,106 @@
       "date": "2026-06-11",
       "category": "legal-ai",
       "analysis": "【事件概述】2026年6月11日，根据搜狐报道，中国近百所高校正式成立联盟，标志着法律AI教育进入新阶段。该联盟的建立旨在推动法律人工智能技术进入法学实训课堂，使学生在模拟实践中掌握AI辅助法律分析、文书生成等技能。报道称，这是中国法律AI教育的“里程碑”事件，联盟成员高校将共享课程资源与实训平台。此举意味着法学教育开始系统性地整合人工智能工具，以应对数字时代法律服务的变革需求。联盟的具体名称和牵头高校在标题与摘要中未提及，但明确涉及“近百所高校”的广泛参与。\n\n【行业影响】此次联盟成立将加速法律AI在高校教育中的标准化普及，为法律行业输送具备AI应用能力的复合型人才。同时，它可能推动法律科技公司与高校合作开发实训系统，从而影响未来法律服务的效率与模式。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmirafbvv95cuxqry1vt2dwzfbvug5aogl0tgvkbda0n",
+      "title": "DeepSeek完成74亿美元里程碑式AI融资",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRy1VT2dWZFBVUG5aOGl0TGVkbDA0NlVYcWFaUnNjSUp6Y0tMRWxsTUJMVkhBTGtWRmhneTdzaTRkTHljc2VWSmdGaElGX0tWR0swZV9MeXV4TEtpdVhXWklkdC1zV2UzN1Jmb2hLRk5FYUx6YXZJT1J0NXR4dUpHYWFDTWlfelJPRmY3VTBLWFlvalpfY1ByamFlaEFQSHlpVTl6dmNKTGVlamNH?oc=5",
+      "source": "Nepalnews.com",
+      "summary": "DeepSeek获74亿美元融资，标志性巨额融资",
+      "date": "2026-06-18",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月18日，据Nepalnews.com报道，人工智能公司DeepSeek完成了一轮74亿美元的融资。该轮融资被描述为“里程碑式”的融资，标志着AI领域出现了一笔巨额资金注入。新闻标题和摘要未提及具体投资方、融资轮次（如是否为首轮或后续轮次）以及资金的具体用途。该消息仅确认了融资规模与事件性质，未提供公司估值、股权结构或业务进展等额外细节。\n\n【行业影响】这笔74亿美元融资的规模本身即具有指标意义，它表明全球资本对AI赛道的长期信心依然强劲，且头部AI公司仍能吸引远超常规科技融资的超大规模资金。这一事件可能进一步拉大AI领域初创公司与传统科技公司之间的资源差距，并促使更多投资者关注具备基础模型或关键基础设施研发能力的AI企业。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmiyafbvv95cuxomzqwzzrtmhbvn1jytthozfdddfzwd",
+      "title": "谷歌Gemini联合负责人Noam Shazeer将加入即将IPO的OpenAI",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMzQwZzRtMHBvN1JYTThoZFdDdFZWdmxPbFN1MjBmelc3dC1qdzM2ZGJLQ1pHSDlFVjVVRjlLSEtYbTV2Z1JkTGVWV3B4amVSN1dMYktDSS1MZmJtYVhYSGs5TUQwem5ZR0pEZzZ1ZjJiLTFWNWt2RXUtR1lJdTRiN1NJbEhPazhPTS0yUWJhZ1h5NkRqQlJJMG1pYmtGS2NTdTNUa0tUelNZN3ZTaG8zdnE4b21OX3BzbmFnMENCZGZjTmE0VW0xcg?oc=5",
+      "source": "TradingView",
+      "summary": "谷歌Gemini联合创始人跳槽OpenAI，人才争夺",
+      "date": "2026-06-18",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月18日，据TradingView报道，谷歌Gemini项目的联合负责人Noam Shazeer将加入即将进行首次公开募股（IPO）的OpenAI。Shazeer是谷歌Gemini大模型的核心创始成员之一，此次跳槽标志着AI领域顶尖人才从谷歌向OpenAI的流动。报道指出，这一人事变动发生在OpenAI筹备IPO的关键时期，凸显了行业对顶级AI专家的激烈争夺。Shazeer的离开对谷歌Gemini团队构成重大损失，而OpenAI则借此进一步强化了其技术领导力。\n\n【行业影响】该事件表明，随着AI商业化进程加速，头部企业之间的人才竞争已进入白热化阶段。Noam Shazeer的加盟将为OpenAI的IPO增添重要技术背书，可能加速其估值增长并影响行业竞争格局。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmisgfbvv95cuxpsdnhc3zjoha1adbictr3dxpsvkfce",
+      "title": "Anthropic和OpenAI模型太贵，微软考虑使用DeepSeek微调版 - 新浪财经",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSDNhc3ZjOHA1aDBicTR3dXpSVkFCem9Pajh4TEdqZmVTTnBtRXhkS253VWFURzkzVjZSVVB0Mi1MOWE5OENiN2RVdG52RWlUZC1EU01QdGJZYXBhZHlTRDFERUc1N0NQQ2dPQVhUYUtxdFBEVFR5Y3U3NzhlQkJXa2xkS21TS05JZHBFZW5URnNhNlNDUXk5RC1EaXBZTy1GSUhNUUV3Vmkxa3J3WGJrZHFR?oc=5",
+      "source": "新浪财经",
+      "summary": "【编辑推荐】微软考虑转用DeepSeek，反映巨头成本压力\nAnthropic和OpenAI模型太贵，微软考虑使用DeepSeek微调版 新浪财经",
+      "date": "2026-06-18",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月18日，据新浪财经报道，微软正在考虑放弃继续使用Anthropic和OpenAI的AI模型，转而采用DeepSeek的微调版本。报道指出，这一决策的主要驱动因素是Anthropic和OpenAI提供的模型成本过高，给微软带来了巨大的成本压力。微软作为科技巨头，此前长期依赖这两家公司的模型来支撑其AI服务。目前，微软正在评估DeepSeek微调版在性能与成本之间的平衡，以作为替代方案。这一动向反映出微软在AI基础设施投入上的务实调整。\n\n【行业影响】微软的转向将直接冲击Anthropic和OpenAI的高价策略，迫使它们重新审视定价模型。同时，这一事件也标志着开源或低成本模型开始获得顶级企业的认可，可能加速全球AI服务商的价格竞争与技术路线分化。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmirafbvv95cuxqry1vt2dwzfbvug5aogl0tgvkbda0n",
+      "title": "DeepSeek完成74亿美元里程碑式AI融资",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRy1VT2dWZFBVUG5aOGl0TGVkbDA0NlVYcWFaUnNjSUp6Y0tMRWxsTUJMVkhBTGtWRmhneTdzaTRkTHljc2VWSmdGaElGX0tWR0swZV9MeXV4TEtpdVhXWklkdC1zV2UzN1Jmb2hLRk5FYUx6YXZJT1J0NXR4dUpHYWFDTWlfelJPRmY3VTBLWFlvalpfY1ByamFlaEFQSHlpVTl6dmNKTGVlamNH?oc=5",
+      "source": "Nepalnews.com",
+      "summary": "DeepSeek raises $7.4 billion in landmark AI funding round Nepalnews.com",
+      "date": "2026-06-18",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月18日，据Nepalnews.com报道，中国人工智能公司DeepSeek完成了一轮74亿美元的里程碑式融资。该轮融资被描述为“landmark AI funding round”，即具有标志性意义的AI融资轮。此次融资规模巨大，反映出投资者对DeepSeek技术路线和商业化前景的高度认可。目前具体投资方名单尚未在标题或摘要中披露，但融资总额74亿美元的数字已使其成为AI领域近年来最大规模的单轮融资之一。这一事件标志着DeepSeek在竞争激烈的全球AI市场中进一步巩固了资本优势。\n\n【行业影响】74亿美元的融资规模将显著改变AI领域的资本竞争格局，可能加速DeepSeek在基础模型研发、算力基础设施及全球化布局上的投入。这一融资事件也向市场释放了强烈信号：即使面临国际技术博弈，头部AI公司依然能获得巨额资本支持，行业“军备竞赛”或将进一步升级。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmiyafbvv95cuxomzqwzzrtmhbvn1jytthozfdddfzwd",
+      "title": "谷歌Gemini联合负责人Noam Shazeer将加入即将IPO的OpenAI",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMzQwZzRtMHBvN1JYTThoZFdDdFZWdmxPbFN1MjBmelc3dC1qdzM2ZGJLQ1pHSDlFVjVVRjlLSEtYbTV2Z1JkTGVWV3B4amVSN1dMYktDSS1MZmJtYVhYSGs5TUQwem5ZR0pEZzZ1ZjJiLTFWNWt2RXUtR1lJdTRiN1NJbEhPazhPTS0yUWJhZ1h5NkRqQlJJMG1pYmtGS2NTdTNUa0tUelNZN3ZTaG8zdnE4b21OX3BzbmFnMENCZGZjTmE0VW0xcg?oc=5",
+      "source": "TradingView",
+      "summary": "Google Gemini co-lead Noam Shazeer to join IPO-bound OpenAI TradingView",
+      "date": "2026-06-18",
+      "category": "ai-progress",
+      "analysis": "【事件概述】据TradingView 2026年6月18日报道，谷歌Gemini项目的联合负责人Noam Shazeer将离开谷歌，加入即将进行首次公开募股的OpenAI。Shazeer是谷歌AI领域的关键人物，其职业生涯早期曾参与Transformer模型的开发，该模型是当前生成式AI的基础架构之一。他在谷歌期间领导了Gemini大语言模型的研发工作，此次跳槽至OpenAI正值后者筹备上市的关键阶段。报道称，Shazeer的加入将为OpenAI在模型架构和前沿研究方面带来直接经验。该人事变动标志着两家AI巨头之间的人才竞争进一步升级。\n\n【行业影响】Shazeer从谷歌跳槽至IPO前夕的OpenAI，凸显了顶级AI人才在头部企业间的稀缺性与流动性。这一变动可能加速OpenAI在下一代基础模型上的研发进度，同时削弱谷歌在Gemini项目上的核心领导力，从而影响大模型领域的竞争格局。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmimgfbvv95cuxpyumyredotenmx09qs2dnvne0vke3c",
+      "title": "特朗普新AI行政令中的透明与问责缺失——Tech Policy Press",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYUMyREdOTENmX09QS2dnVnE0VkE3cnE1VUFRQ2tFZ3dGdkxRbkl0cTdqZkpWTTFRVHBiUzZ3Y3pQUlpQX3JHa2Jac1lhZUdwclY5UG81ZEVSS2xkVnJUZk5fQnlJRGpIZnJSU2FkYWxzNDZxUUFiOFc1dGprRnZkWVR2WUlEbnM4c0xodVRQUjY0UTNPY18ycUdB?oc=5",
+      "source": "Tech Policy Press",
+      "summary": "【编辑推荐】特朗普AI行政令透明与问责缺失引关注",
+      "date": "2026-06-17",
+      "category": "ai-regulation",
+      "analysis": "【事件概述】2026年6月17日，Tech Policy Press发布报道，指出特朗普政府新签署的AI行政令在透明与问责方面存在显著缺失。该报道基于行政令文本分析，认为新政策未对AI系统的开发与部署设置明确的透明度要求，也未建立有效的问责机制来监督AI应用可能带来的风险。报道强调，尽管行政令旨在推动AI领域的技术创新与经济增长，但其对公众监督和监管责任的忽视引发了广泛关注。特朗普政府此次未采纳此前部分政策倡导者提出的强化披露与独立审计建议，导致该行政令被批评为“重发展、轻治理”的典型。【行业影响】该行政令的缺失可能削弱美国在AI伦理治理领域的国际领导力，并增加企业面临的不确定性——缺乏统一透明标准将导致行业自律与联邦监管之间的断层，进而影响AI产品的市场信任与合规成本。若问责机制长期缺位，未来可能加剧AI应用中的偏见与安全风险，对全球AI监管框架的协调构成挑战。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmisefvx3lxte5qwevqamxwqvkxnmk1v1piskhvqxjrz",
+      "title": "Anthropic新模型发布三天就被禁用 美AI监管路线之争升温 - 财联社",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5QWEVqamxWQVkxNmk1V1pISkhvQXJrZUY0bWxtWjhSUVBfMVJfdGZES3VCcDN4M2dURUpWOGMzZEFscF9QZ3JVcQ?oc=5",
+      "source": "财联社",
+      "summary": "【编辑推荐】Anthropic模型被禁，凸显美国AI监管路线争议\nAnthropic新模型发布三天就被禁用 美AI监管路线之争升温 财联社",
+      "date": "2026-06-15",
+      "category": "ai-regulation",
+      "analysis": "【事件概述】2026年6月15日，据财联社报道，美国人工智能公司Anthropic在发布其新模型仅三天后，该模型即遭到禁用。这一事件直接凸显了美国国内在AI监管路线上的激烈争议。报道指出，此次模型被禁是当前美国AI监管路线之争升温的具体表现。Anthropic作为一家以安全为导向的AI企业，其新模型迅速被叫停，反映出监管机构与行业之间在安全标准与创新速度上的矛盾正在激化。\n\n【行业影响】该事件标志着美国AI监管从讨论阶段进入实际执法与冲突阶段，Anthropic的遭遇可能成为其他AI公司调整产品发布策略的警示。同时，它加剧了行业内部对联邦层面统一监管框架的呼声，若路线之争持续，可能拖累美国在全球AI竞争中的创新节奏。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmiqgfbvv95cuxpynizuxj2a2lkeethbxbgbxbra1mxt",
+      "title": "欧盟AI法案：对尼日利亚开发者的禁止实践——Business News Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYnIzUXJ2a2lkeEtHbXBGbXBRa1MxTU5Lc1VuQUQ3U2NLdkNhXzJSQ05KNHlRN19meWw3RVJHeF9uYVhOa21idmluRU9oQ0lQWFZoazcxbzhlWnVZZ2ZHZkJXdlhnX3pndEVJS3ZRT09iWWV5dFVBLThkaFRvb0ZDNm9mb2VkcVNYVmpiQkJta1dPX0l6TDNkZHhlTG0tZDg0TlFIQmVFZUY5UQ?oc=5",
+      "source": "Business News Nigeria",
+      "summary": "欧盟AI法案：对尼日利亚开发者的禁止实践",
+      "date": "2026-06-18",
+      "category": "ai-regulation",
+      "analysis": "【事件概述】2026年6月18日，Business News Nigeria发布报道，指出欧盟AI法案对尼日利亚开发者构成了“禁止实践”。该报道标题与摘要均聚焦于欧盟AI法案对尼日利亚开发者的影响，强调该法案在实施中可能限制或禁止尼日利亚开发者的某些AI开发与实践行为。报道未具体说明被禁止的实践类型，但明确将尼日利亚开发者作为受该法案约束或影响的海外群体之一。该事件反映出欧盟AI法案的域外效力正在触及非洲科技从业者。\n\n【行业影响】这一动态表明，欧盟AI法案的监管范围已超出欧盟边界，对尼日利亚等非欧盟国家的AI开发者产生直接限制。若此类“禁止实践”被广泛执行，可能削弱尼日利亚等非洲国家AI产业的创新活力，并引发全球AI监管标准与本地发展需求之间的冲突。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmiswfbvv95cuxnec13u1l6nkhyctzlullmeu91vfb1r",
+      "title": "法律AI初创公司Eve遭遇专利侵权诉讼 - 路透社",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeC13U1l6NkhycTZLUllMeU91VFB1RTZSdHF0LXY2MHc5dzZRa3lvckQ3LUNYV19MZzBnLXV1aF91Tl9RSElRTi1sbEotMVpuYV9rREhJa05jMmR1eU5DTUFxdXRxVEZJdk13MUZJc1hoQTVVbnlRczJLTVJFa3U4V0NWOVNrWVVJLVRncXdKVVlQaS1zWEoweGl4Tk5BajMyWHhHSFliNXVRNDhaOXFRS3BnWQ?oc=5",
+      "source": "Reuters",
+      "summary": "【编辑推荐】路透报道法律AI初创专利诉讼，行业重大纠纷",
+      "date": "2026-06-17",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月17日，路透社报道称，法律AI初创公司Eve正面临一起专利侵权诉讼。该诉讼由另一家未在标题和摘要中具名的原告提起，指控Eve公司所开发的法律人工智能技术侵犯了其持有的相关专利。目前案件的具体细节尚未完全公开，但路透社将其列为“编辑推荐”新闻，指出这是法律AI行业的一起重大纠纷。Eve公司作为新兴的法律科技企业，其核心产品涉及利用AI辅助法律文书生成与案件分析，此次诉讼可能对其技术路线与商业模式产生直接影响。\n\n【行业影响】这起诉讼标志着法律AI领域竞争从市场拓展阶段进入了知识产权攻防阶段。若原告胜诉，可能迫使其他法律AI初创公司重新评估自身技术的专利合规性，从而抬高整个行业的研发门槛与法律风险成本。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmijgfbvv95cuxprhu1r3nhafq1odduu1i0wfldwfpzd",
+      "title": "Harvey的下一步：构建自有法律AI模型 - Non-Billable",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRHU1R3NHaFQ1ODduU1I0WFlDWFpzd2lKQnU4bDhMX0xBMXZybi1PaGlqcnBRbzJXRmFQNDFpdDRHYU9iclNkeGF3RW5SeXFsWmhSQnhLVmxQT0FDUHZYZ21SNDVZSlZqeTNYVEZzb2UtbkI0WmwxQzVVMXp3Z0JMZUgxcjlPY2lCaWhObVF3?oc=5",
+      "source": "Non-Billable",
+      "summary": "【编辑推荐】Harvey自研法律AI模型，头部公司产品升级",
+      "date": "2026-06-18",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月18日，据法律科技媒体Non-Billable报道，法律AI初创公司Harvey宣布将构建自有法律AI模型，这标志着其从依赖第三方基础模型转向自研核心技术的战略升级。报道指出，Harvey此举旨在通过定制化模型更精准地处理法律文本、合同分析与案例检索等专业任务。目前，多家头部律所及法律服务机构已与Harvey合作，将自研模型整合进其现有工作流，以提升法律服务的效率与准确性。此次产品升级被编辑推荐为行业重要动态，反映出法律AI领域对垂直领域专用模型的迫切需求。\n\n【行业影响】Harvey自研法律AI模型将加剧法律科技市场的技术竞争，促使其他厂商加速投入基础模型研发，从而推动整个行业从通用AI应用向专业化、定制化方向演进。这一动作也可能改变律所与AI供应商的合作模式，未来头部律所或更倾向于与拥有自研能力的AI公司深度绑定，以构建差异化的竞争优势。"
     }
   ]
 }
