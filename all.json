@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-19T13:56:21.125Z",
-  "total": 106,
+  "updated": "2026-06-21T11:37:13.507Z",
+  "total": 111,
   "items": [
     {
       "id": "r-https-techcrunch-com-2026-06-09-anthropics-claude-fable-5-is-a-version-of-mythos",
@@ -1061,6 +1061,56 @@
       "date": "2026-06-19",
       "category": "legal-ai",
       "analysis": "【事件概述】2026年6月19日，据Startup Fortune报道，法律AI初创公司Harvey AI的代币价格暴涨了12倍。这一暴涨被媒体视为标志性事件，表明法律AI正从实验性应用阶段迈入基础设施建设阶段。Harvey AI作为专注于法律领域的人工智能平台，其代币的市值飙升引发了行业广泛关注。报道指出，此轮暴涨反映了市场对法律AI技术成熟度与商业化潜力的高度认可。\n\n【行业影响】Harvey AI代币的暴涨直接印证了法律AI赛道已获得资本与技术的双重确认，从概念验证进入规模化落地。这一事件将加速其他法律科技公司调整战略，推动更多律所和企业将AI工具视为基础法律设施而非辅助工具。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmi6gfbvv95cuxoutffaux0djv2zf9cm2nirgvdamt5x",
+      "title": "谷歌Gemini联合负责人Noam Shazeer离职，加入即将IPO的OpenAI",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOUTFfaUx0djV2ZF9CM2NiRGVDamt5X002UDBYb0duc3QxWmRFSlFwUmgzNWM2aDdKaEdyaGx6X2U4YXhkdzhSWmowYkVjTUVXaUZuNWtXQUs5M0U3THRCZ05Ca2hNODZSdHJ6NnQ0UFRYajk3MHBOUWktc1RlVGs2b2VxSTZESmwyLWdrSUVndUtKY3lBLXUyblRETFZFYnR5UkFHTzBEbUhEb1RhMkxoWGdtTE1XZEVPenBUYTV2MTNyT0VMQ3BVeXpNRGNQbzVGQlVkVm5PTnphNXhieXd1U3EwNEFlYml4U1HSAe8BQVVfeXFMTTBrdkJOMTcxQXJrR1V2TmNEdkdzZGFUOWNIeG1IeXloLWVhcHh1NGkyRlZMUklXbDlONVZkMDVGdVBxV3A1a2d1Si15S2VzZlpJVHVUbzd6RlB5SWRqSGlNX0xGSlluVlFWZVZCaHNLMFNOc25hcklsbkxwVC14a1NjNHhzdU9rSk4zNHBIaHpkb1ctcDJHREt6SV9oeVY1LTZJY3lEeWNXaFI1Zkh3R1hZZzZXT01RZDN2U0VkTlByZjVEbENEUnh1UlNXOVJwWHVETTZueVBKMkVabHlKMnI1bkVjeENVRWJOWTk1LXc?oc=5",
+      "source": "Storyboard18",
+      "summary": "Google Gemini co-lead Noam Shazeer quits to join IPO-bound OpenAI Storyboard18",
+      "date": "2026-06-18",
+      "category": "ai-progress",
+      "analysis": "【事件概述】据Storyboard18于2026年6月18日报道，谷歌Gemini项目的联合负责人Noam Shazeer已从谷歌离职，并加入即将进行首次公开募股（IPO）的OpenAI。Shazeer是谷歌Gemini项目的关键领导者之一，他的离职标志着谷歌在AI领域核心人才的又一次流失。Shazeer将加入OpenAI，而OpenAI目前正处于IPO筹备阶段，这一人事变动发生在AI行业竞争白热化的时期。此前，Shazeer曾深度参与谷歌AI模型的研发，他的加盟可能为OpenAI带来重要的技术经验。\n\n【行业影响】这一事件凸显了顶尖AI人才在谷歌与OpenAI之间的持续流动，反映出两家公司在AI前沿领域的激烈人才争夺战。Shazeer在Gemini项目中的领导经验，可能加速OpenAI在IPO前后的技术迭代与产品布局，进一步加剧AI大模型市场的竞争格局。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmiqafbvv95cuxpu0xrnefmbhatajc2alliaxvsm2req",
+      "title": "谷歌Gemini联合负责人Noam Shazeer将加入即将IPO的OpenAI",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPU0xRNEFmbHAtajc2allIaXVSM2REQWNoNE1GSVZMRW9fclpOcDdzWXBUeHZhMFJCSUtTbEZTLURRSXZRaWFyd21ZRGo5S1pNc01EZGtyUjdDRnd4NW54S3pmU2xvZnZheVJfWGYwRFVyT2VYbS1aSFFmVU4yeG16QmdxYjR0Q1V2RHBBZk5ITHVaMy1PZUR5dHFvYXlSMHRzcWV5WHdhTV8?oc=5",
+      "source": "CNA",
+      "summary": "Google Gemini co-lead Noam Shazeer to join IPO-bound OpenAI CNA",
+      "date": "2026-06-18",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月18日，据CNA报道，谷歌Gemini联合负责人Noam Shazeer将加入即将进行IPO的OpenAI。Noam Shazeer是谷歌Gemini项目的核心领导者之一，其离职并转投OpenAI意味着AI领域顶尖人才的重大流动。OpenAI目前正处于IPO前夕，Shazeer的加入将为其带来在大型语言模型研发方面的深厚经验。值得注意的是，Shazeer此前曾参与Transformer架构的早期工作，而Gemini是谷歌对标GPT系列的关键产品。该消息由CNA在当日发布，未披露具体入职时间或职位细节。\n\n【行业影响】这一人事变动凸显了AI行业头部企业间的人才竞争已进入白热化阶段，尤其是从谷歌到OpenAI的跨公司流动，可能进一步加剧两大AI阵营的技术路线分化。同时，Shazeer在OpenAI即将上市的关键节点加入，或将增强市场对OpenAI技术领导力的信心，对其IPO估值产生积极影响。"
+    },
+    {
+      "id": "r-https-www-wired-com-story-anthropic-mythos-export-controls-ai-regulations",
+      "title": "白宫实时制定AI规则",
+      "url": "https://www.wired.com/story/anthropic-mythos-export-controls-ai-regulations/",
+      "source": "wired.com",
+      "summary": "【编辑推荐】白宫实时制定AI规则，监管不确定性。Anthropic在触犯特朗普政府后仍无法发布Claude Mythos或Fable 5，但无人能确切说明该公司做错了什么。",
+      "date": "2026-06-18",
+      "category": "ai-regulation",
+      "analysis": "【事件概述】2026年6月18日，据wired.com报道，白宫正在实时制定人工智能规则，导致监管不确定性。在此背景下，人工智能公司Anthropic在触犯特朗普政府后，仍无法发布其Claude Mythos或Fable 5模型。然而，目前无人能够确切说明该公司具体做错了什么。这一情况凸显了监管标准在执行层面的模糊性，以及企业面临的不明确合规边界。\n\n【行业影响】该事件表明，美国政府在实际监管操作中可能缺乏清晰、可预测的规则框架，这使得AI企业在产品发布和创新上面临巨大风险。若监管标准持续处于“实时制定”状态，将可能抑制行业投资与研发节奏，甚至导致企业因无法预判合规要求而被迫推迟关键产品的上市。"
+    },
+    {
+      "id": "hn-48612810",
+      "title": "欧盟为何重写其标志性AI法案",
+      "url": "https://www.theparliamentmagazine.eu/news/article/why-the-eu-rewroteits-landmark-ai-law",
+      "source": "Hacker News",
+      "summary": "【编辑推荐】欧盟重写AI法案，标志性监管调整",
+      "date": "2026-06-20",
+      "category": "ai-regulation",
+      "analysis": "【事件概述】2026年6月20日，Hacker News发布报道指出，欧盟正在重写其标志性的《人工智能法案》。这一监管调整被形容为“标志性监管调整”，意味着欧盟对原有AI监管框架进行了根本性的修订。报道标题直接点明“欧盟为何重写其标志性AI法案”，暗示此次重写是出于对现有法案效果或适用性的重新评估。摘要中的“编辑推荐”标签进一步凸显了该事件的重要性和紧迫性。目前尚无具体修订细节公布，但重写行为本身说明欧盟认为原法案已无法适应AI技术的最新发展或监管需求。\n\n【行业影响】这一重写行动将深刻影响全球AI监管风向标。作为首个综合性AI监管框架，欧盟原法案曾是各国立法参照模板，如今其主动推翻重写，可能意味着旧有监管逻辑存在根本缺陷，全球AI监管可能因此进入新一轮调整周期。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmijwfbvv95cuxpytq0twjybnpfr3l5r2ytqlb2r0hkt",
+      "title": "要闻 | 中央网信办举报中心开设“涉AI应用乱象举报专区” - 新浪财经",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYTQ0TWJYbnpfR3l5R2YtQlB2R0hkT3dVUVlPVV9KUkhpRFM4WlRDcDA4QUtNbUdpTXBCVk15NGJFZzZ3R2o4VnRTZG1tSWhfaTRYQmhTb0dta1AtanBDZk5iNm5UMjdVUEVtOERKbmlPTWRJVGJCTF9BcEZseXFSeFJEcnQ4WS1NYkN4ZXhRRQ?oc=5",
+      "source": "新浪财经",
+      "summary": "【编辑推荐】中国网信办开设AI应用乱象举报专区\n要闻 | 中央网信办举报中心开设“涉AI应用乱象举报专区” 新浪财经",
+      "date": "2026-06-14",
+      "category": "ai-regulation",
+      "analysis": "【事件概述】2026年6月14日，据新浪财经报道，中央网信办举报中心正式开设了“涉AI应用乱象举报专区”。该专区旨在受理公众针对人工智能应用中出现的各类违法违规行为的举报。此举体现了监管部门对AI领域乱象的高度关注，并试图通过设立专门渠道来收集和处理相关问题。报道指出，这一专区的设立是中央网信办在AI监管方面的最新动态，但未具体说明举报范围涵盖哪些具体行为。\n\n【行业影响】该专区的设立标志着中国在AI应用监管上迈出了具体化的一步，为公众提供了正式反馈渠道，有助于及时发现和遏制AI滥用现象。这将促使AI开发者和平台企业更加重视合规运营，加速行业自律与监管规则的落地。"
     }
   ]
 }
