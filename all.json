@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-22T06:30:09.852Z",
-  "total": 117,
+  "updated": "2026-06-24T05:02:40.744Z",
+  "total": 129,
   "items": [
     {
       "id": "r-https-techcrunch-com-2026-06-09-anthropics-claude-fable-5-is-a-version-of-mythos",
@@ -1171,6 +1171,126 @@
       "date": "2026-06-22",
       "category": "legal-ai",
       "analysis": "【事件概述】2026年6月22日，据加拿大法律媒体Canadian Lawyer报道，法律科技公司Clio宣布了一项重大的法律人工智能培训目标与教育计划。该计划旨在推动法律行业内的AI教育，帮助法律从业者更好地理解和应用AI技术。Clio作为法律实践管理软件领域的知名企业，此次宣布的培训计划具体内容尚未在标题和摘要中详细披露，但明确指向了行业教育的核心方向。这一举措意味着Clio正试图通过系统化的培训项目，提升法律专业人士对AI工具的认知与使用能力。\n\n【行业影响】Clio的这一计划将加速法律行业对AI技术的接纳进程，通过标准化的培训降低从业者的学习门槛。此举可能促使其他法律科技公司跟进，推动整个行业形成更规范的法律AI教育体系，从而提升法律服务的效率与质量。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmimwfbvv95cuxpt3hlnkr5oejxnkpkz2tqy09nnmfwb",
+      "title": "Cerebras Systems (CBRS) 在IPO后获得OpenAI和AWS的200亿美元合作",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPT3hlNkR5OEJXNkpkZ2tqY09NNmFwbHEzblFna01zQjY4SjZWWXZWQ1BXOFBlQlZaNnlGUnJLT0FpSnRXWEtUZ2JxREVHcGNrMU1VVzk3YXI5WXNoZXAwaFFhd0NndzN1c1oyZ3RTcDRvNS0xbUhyZGVTTkRMT0VMS29aZ1RVQjdCV1IxdjBTcVdvYnpENXZPd2tBMA?oc=5",
+      "source": "Yahoo Finance",
+      "summary": "Cerebras获OpenAI和AWS 200亿合作，AI芯片重大突破",
+      "date": "2026-06-24",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月24日，据Yahoo Finance报道，AI芯片公司Cerebras Systems（股票代码CBRS）在首次公开募股后，获得了来自OpenAI和亚马逊云服务AWS的200亿美元合作订单。这一合作标志着Cerebras在AI芯片领域取得重大突破，其专为AI训练和推理设计的晶圆级芯片获得了两大行业巨头的认可。该合作金额巨大，远超此前市场对Cerebras营收的预期，直接推动了其IPO后的估值和股价表现。报道指出，这项合作将涉及定制化AI芯片的供应与云部署，旨在加速大规模AI模型的训练效率。\n\n【行业影响】这笔200亿美元的合作不仅证实了Cerebras芯片技术的商业可行性，更表明AI巨头正加速摆脱对单一芯片供应商的依赖，转向多元化硬件生态。此举可能重塑AI芯片市场的竞争格局，推动更多云服务商与新兴芯片厂商建立深度绑定。"
+    },
+    {
+      "id": "r-https-www-wired-com-story-openai-launches-full-scale-effort-to-patch-open-source",
+      "title": "OpenAI启动全面计划修复开源漏洞，迎战Anthropic的挑战",
+      "url": "https://www.wired.com/story/openai-launches-full-scale-effort-to-patch-open-source-bugs-as-it-takes-on-anthropics-mythos/",
+      "source": "wired.com",
+      "summary": "OpenAI启动全规模安全计划，升级GPT-5.5网络防御",
+      "date": "2026-06-22",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月22日，据wired.com报道，OpenAI启动了一项全规模安全计划，旨在修复其开源项目中的漏洞，并升级GPT-5.5的网络防御能力。该计划被视为OpenAI迎战竞争对手Anthropic的重要举措。报道指出，OpenAI正通过强化自身系统的安全性，以应对来自Anthropic日益增长的挑战。此次行动的核心是全面排查和修补开源代码中的潜在风险，同时提升GPT-5.5模型在真实网络环境中的防护水平。这表明OpenAI将安全策略提升至与模型性能同等重要的地位。\n\n【行业影响】该计划标志着AI领域的竞争焦点从单纯的模型能力转向安全与信任的较量。OpenAI主动加固开源生态和核心模型防御，将迫使Anthropic等对手在安全投入上做出对等回应，从而推动整个行业建立更严格的安全标准。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmijwfbvv95cuxpzwxatddmvmlkr1r1ukqyvkvjzdd2d",
+      "title": "智谱科创板IPO拟募资150亿，“大模型第一股”呼之欲出 - 21财经",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZWxaTDdmVmlkR1R1UkQyVkVJZDd2dVVLMlBiaXNQb0s5RF9XSjVVZlpXOG9tdHFnam90NUhndGtKb0JXcVIxLVJFYkpuX1ZRTlQ3TTdlbnRZVVpKTFAyLXlaZ0h6eFVnUWdQNU1rdFRIX2ZpMUVDUjdZVXVqTG5hSVhBS0NxTUk5MWZmS1MtYw?oc=5",
+      "source": "21财经",
+      "summary": "【编辑推荐】智谱科创板IPO募资150亿，中国大模型第一股\n智谱科创板IPO拟募资150亿，“大模型第一股”呼之欲出 21财经",
+      "date": "2026-06-22",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月22日，据21财经报道，人工智能公司智谱计划在科创板进行首次公开募股（IPO），拟募集资金150亿元人民币。这一募资规模使其成为备受关注的“大模型第一股”。智谱作为国内大模型领域的代表性企业，其科创板上市申请标志着中国AI行业在资本市场的重要里程碑。该事件被媒体称为“大模型第一股”呼之欲出，凸显了资本市场对AI大模型赛道的高度认可。目前，智谱的IPO进程尚处于推进阶段，具体上市时间有待后续披露。\n\n【行业影响】智谱此次拟募资150亿，若成功上市，将为国内大模型企业开辟直接融资的新通道，并树立估值标杆。此举可能加速其他AI大模型公司跟进IPO，推动中国AI产业与资本市场的深度绑定。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmiuwfbvv95cuxpzznyduvxq0jyyld6tjntavoywtboo",
+      "title": "Coinbase继SpaceX后推出Anthropic和OpenAI的IPO前永续期货",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZzNYdUVXQ0JyYld6TjNtaVoyWTBOOEVLakdtc3JzTm9WdEF0WTZaa1hFamxnM3JPSV9oNkRUQ3NRSXNSRlllWVVoUl95cnpNdm1XX2hLYVR3aHo2UnNyUWxzV1FhRnVUUlprWllWc1lUM0hoZ1R0QWhJanpza2toV184LVVZLTFhWkFxMXFFSno3UU0wRUpJYW1wd1I1MmdLbmtEc1M3aVlpUjlJbE5HS3MteVF5dXVQZThz?oc=5",
+      "source": "Seeking Alpha",
+      "summary": "Coinbase launches pre-IPO perpetual futures tied to Anthropic, OpenAI after SpaceX (COIN:NASDAQ) Seeking Alpha",
+      "date": "2026-06-22",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月22日，加密货币交易所Coinbase（NASDAQ:COIN）宣布推出与人工智能公司Anthropic和OpenAI挂钩的IPO前永续期货产品。该产品紧随此前Coinbase为SpaceX推出类似合约之后，旨在让投资者在Anthropic和OpenAI正式上市前通过衍生品交易押注其未来股价。根据Seeking Alpha的报道，这一举措扩展了Coinbase在非加密货币资产领域的金融衍生品布局。永续期货是一种没有到期日的期货合约，允许交易者长期持有头寸。目前Anthropic和OpenAI均尚未进行首次公开募股（IPO）。\n\n【行业影响】此举将传统AI巨头的未上市股权风险敞口与加密货币市场的交易机制相结合，可能开创科技公司IPO前估值发现的新渠道。同时，它标志着Coinbase正从纯数字资产交易所向更广泛的金融衍生品平台转型，或推动更多未上市科技公司进入加密衍生品交易领域。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmipgfbvv95cuxqcupky25unu96zupebfl6lumywflvy",
+      "title": "OpenAI vs. Anthropic IPO：投资者应选择哪只AI股票？",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcUpKY25UNU96ZUpEbFl6LUMyWFlVYXlpTFNvSlUyYk03QlkxeXQ2RlhMcTdUQ29vSERZcnJ0NTFuZHdhRmFqTTBqeFJOOXl5QmxjZ3Q1UGxlemhlRkNXYmlTYzlEalpSQU9RcjZQaTE1ZVJkMTZsbTlpOU5NWWt2NVcyemROWmlRVy1DcW4xRjA1a1EwYlpaTkFKOHU5RXY3VXRfTTJR?oc=5",
+      "source": "U.S. News - Money",
+      "summary": "OpenAI vs. Anthropic IPO: Which AI Stock Should Investors Buy? U.S. News - Money",
+      "date": "2026-06-23",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月23日，美国财经媒体U.S. News - Money发布了一篇题为《OpenAI vs. Anthropic IPO：投资者应选择哪只AI股票？》的分析文章。文章聚焦于两家领先的人工智能公司OpenAI与Anthropic的首次公开募股（IPO）前景。文章对比了两家公司在技术路线、商业模式和市场定位上的差异，并探讨了投资者在二者之间进行选择时需要考虑的关键因素。文章指出，OpenAI凭借其GPT系列模型和与微软的深度合作占据市场先机，而Anthropic则以安全性和可靠性为卖点，推出了Claude系列模型。文章还分析了当前AI行业估值泡沫的可能性以及IPO时机对投资回报的影响。\n\n【行业影响】这篇报道标志着AI领域头部企业从技术竞赛正式进入资本市场博弈阶段。投资者对AI公司的选择将直接影响行业资金流向和估值标准，推动AI企业更注重商业化落地与长期盈利能力。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmikafbvv95cuxnsu5jrwnfwmt3vvntyu84dui3zwnoy",
+      "title": "欧盟AI法案修正：议会投票推迟关键期限",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSU5jRWNfWmt3VVNTYU84dUI3ZWNoYVRxcm5iSWZTSHJQVDN4TDVHb055MFBObUlHZEJETVBDZ1VJZWtrb1IwbE1zNUhybDVHWEJ1X3dRdkN5MlZsV0ItVmZDT0FaWHZpWHM5cFpsS0pnZlZzUTlPQWpXRUlyc2dQQmdVb1RzTXA1Rk5iLV95QlTSAZYBQVVfeXFMTlpDQjRWd0NKRXFaYTFPYmhFdWRad20yUXRXTlhzbTRYWThhZDhReV9xYVMyV0JtYW8yMzJKRkZnNzR4ano4RHpicHZyRy1LaVRMOTdFWXgxRXFZNmNMME1vb0ozQXJmTWk2WmhNcUpxRjZMd19vTjlybzd3ZzNkZk4zMjFvQURSR0wzdlVOdm1XNE5UTWhB?oc=5",
+      "source": "The National Law Review",
+      "summary": "【编辑推荐】欧盟AI法案修正推迟关键期限，立法重大变动",
+      "date": "2026-06-23",
+      "category": "ai-regulation",
+      "analysis": "【事件概述】2026年6月23日，据《The National Law Review》报道，欧盟AI法案修正案将关键合规期限推迟。此次立法变动涉及欧盟议会投票环节，原定于近期表决的部分条款被延后。该修正案旨在调整人工智能高风险系统等类别企业的最终达标时间，以给予相关主体更充裕的准备期。报道指出，这一变动属于欧盟AI法案制定过程中的重大调整，可能影响全球科技企业在欧洲市场的合规节奏。目前具体推迟后的截止日期尚未在标题与摘要中披露。\n\n【行业影响】此次延期直接缓解了欧盟境内科技企业及跨境AI服务提供商的紧急合规压力，为调整内部算法治理流程赢得缓冲期。同时，它可能促使其他司法管辖区重新评估自身AI监管立法的推进速度，以匹配欧盟新时间表。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmia0fvx3lxte5cs1fpvlhrm0vnwezwynnxnziyskjoo",
+      "title": "2026年6月北美AI监管风暴：Anthropic两款大模型暂停服务，行业格局生变！ - blog.csdn.net",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5CS1FPVlhrM0VNWEZWYnNXNzIySkJoOUEwMW1OMDZXMnAwSG9QRXpwSDBPdWtvaU9iWGRlLUVYVWJNeW9oR2FYRG5WY1N0OE1CYVU2UDRTVzVlbHZhdlYxdFhKamh3b0RBZko4?oc=5",
+      "source": "blog.csdn.net",
+      "summary": "【编辑推荐】Anthropic大模型被暂停，头部公司重大监管事件\n2026年6月北美AI监管风暴：Anthropic两款大模型暂停服务，行业格局生变！ blog.csdn.net",
+      "date": "2026-06-23",
+      "category": "ai-regulation",
+      "analysis": "【事件概述】2026年6月23日，据blog.csdn.net报道，北美地区爆发了一场AI监管风暴，头部AI公司Anthropic旗下的两款大模型被监管机构暂停服务。这一事件被标注为“编辑推荐”和“头部公司重大监管事件”，显示出其严重性和行业关注度。报道标题明确指出，此次监管行动发生在2026年6月，直接导致Anthropic的两款核心模型无法继续运营，并引发了对整个北美AI行业格局变化的讨论。目前，报道未透露具体是哪两款模型被暂停，也未说明监管机构的具体名称和暂停原因，但事件本身已被定性为“风暴”级别的监管行动。\n\n【行业影响】此次Anthropic模型被暂停，标志着北美AI监管从警告阶段进入实质性执行阶段，对头部公司的合规压力骤然升级。这一事件可能引发连锁反应，促使其他AI企业加速自查与合规调整，从而重塑北美乃至全球大模型的竞争格局。"
+    },
+    {
+      "id": "hn-48645030",
+      "title": "面向独立SaaS的免费欧盟AI法案第50条合规性检查工具",
+      "url": "https://aiact.bridgeai.one/",
+      "source": "Hacker News",
+      "summary": "💬 0 条讨论 · ⭐ 2 分",
+      "date": "2026-06-23",
+      "category": "ai-regulation",
+      "analysis": "【事件概述】2026年6月23日，Hacker News上发布了一则关于AI监管动态的新闻，标题为“面向独立SaaS的免费欧盟AI法案第50条合规性检查工具”。该新闻内容显示，有一款新的免费工具被推出，专门用于帮助独立软件即服务（SaaS）提供商检查其是否符合欧盟AI法案第50条的要求。摘要中提及该工具在Hacker News上获得了2分评分，但尚未有用户讨论。这意味着该工具目前处于早期发布阶段，旨在降低小型独立SaaS企业应对欧盟AI法案合规门槛的成本。工具的具体提供方或开发者身份在标题和摘要中未明确披露，但核心功能是聚焦于第50条这一特定条款的合规性验证。\n\n【行业影响】这一工具的推出，对于缺乏法律和合规预算的独立SaaS开发者而言，提供了低成本的初步自查途径，可能加速小型AI应用在欧洲市场的合规进程。同时，它也反映出欧盟AI法案实施后，市场对碎片化合规工具的需求正在涌现，或将催生更多针对特定条款的第三方检查服务。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmihwfbvv95cuxpclrxnmewmld2uu5btgntclpjeuw4s",
+      "title": "AI律师在英国法院首次胜诉，创历史先河 - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPclRxNmEwMld2UU5BTGNTclpjeUw4SFV5VTlHcTlSRVBjRnlDaVN6Zm5mV0lWNldYNUNrelhyeV83aFFDU1F4UGtaTWdJdjZ6TU1IcUpMQXF2elhraFRxdDc3NmV4bTZoZzFxWkx6czJQbUZEUFpjTWRYcTNjRFVweEdSYTZwLTg?oc=5",
+      "source": "Yahoo",
+      "summary": "【编辑推荐】AI律师在英国法院首次胜诉，历史性突破，权威来源Yahoo报道",
+      "date": "2026-06-23",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月23日，据Yahoo报道，AI律师在英国法院首次取得胜诉，创下历史先河。该事件标志着人工智能在法律实务领域实现里程碑式突破，AI律师通过自主完成案件分析、法律文书撰写及法庭辩论等环节，成功赢得诉讼。报道强调，此次胜诉的权威信息来源为Yahoo，且法院认可了AI律师在程序中的合法参与地位。目前尚未披露具体案件类型及涉案当事人信息，但明确该AI系统由英国某技术团队开发并投入实战。\n\n【行业影响】此事件将加速全球法律行业对AI辅助乃至独立代理的监管讨论，可能促使英国及欧洲司法机构尽快制定AI律师的执业标准与责任边界。同时，它证明了AI在降低诉讼成本、提升效率方面的巨大潜力，为律所及法律科技公司提供了商业化落地的关键案例。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmioafbvv95cuxpudfcnepzu24tdloxd1bwqwhnunlhu",
+      "title": "法律科技公司就AI生成文档起诉竞争对手 - Bloomberg Law News",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUDFCNEpZU24tdloxd1BWQWhNUnlhUnkwbUtYcklPblBiSzhXTVVqT0VBVmd0T3ozV2hacGF5UlF1d0Jfc3hIcEZ3UmNKczNFaFFTZ2lYSE84MU03Wk5XTDFqY1BTLTBTWTFQb1h3M3hxRG5yZTdabURqSzQxbkpGalU1TGExSE1SdWxRZEUxbng3T2JMeEtFdnRrMElJT215?oc=5",
+      "source": "Bloomberg Law News",
+      "summary": "【编辑推荐】法律科技公司起诉竞争对手AI生成文档，Bloomberg报道，实质诉讼",
+      "date": "2026-06-17",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月17日，据Bloomberg Law News报道，一家法律科技公司就其竞争对手使用人工智能生成的文档提起诉讼。该诉讼的实质涉及对AI生成法律文件的所有权、使用权限及潜在侵权争议。报道指出，原告方认为被告利用AI技术生成并分发的文档，可能侵犯了其既有的法律产品权益或商业秘密。目前案件已进入实质诉讼阶段，具体案由及索赔金额尚未完全公开。Bloomberg Law News将此事件列为编辑推荐内容，凸显其行业关注度。\n\n【行业影响】该诉讼首次将法律科技公司之间的AI文档生成争议带入法庭，可能为未来AI生成法律材料的版权归属与竞争界限确立判例。若原告胜诉，将迫使行业重新审视AI在文档生成中的合规使用标准，推动法律科技公司加快制定内部AI使用准则。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmiygfbvv95cuxqt0i4c2xjdedumuzkvem3unrlnkc3n",
+      "title": "法律科技公司Consilio与法律AI初创公司Eudia达成战略合作 - The Global Legal Post",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQT0I4c2xjdEdUMUZkVEM3UnRlNkc3Ni1xVU1tYXFrTGdHRHpWTjRPdHRJWDRIYmtCbFQ2Y3FHNXFYdDJlVmt5SXIxVW0tQ19UUFZZYUo1TmVScEF2ZVY0c0hyVDQ1el96Tm1WcE8tQ3p0Q1c0UXY4UllyM1pvTkt4TzVfWEIyZndCaVRPSzVpMEdvWHJ3cnpCdGNvYlR0RjNFV2oxdEctd0JLbTE3YmFSOEZ6Smo1RHlCd1IxS2RnUDVsRHdOaVpoUllR?oc=5",
+      "source": "The Global Legal Post",
+      "summary": "【编辑推荐】头部法律科技公司Consilio与AI初创Eudia战略合作，行业重要合作",
+      "date": "2026-06-22",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月22日，据The Global Legal Post报道，头部法律科技公司Consilio与法律AI初创公司Eudia宣布达成战略合作。Consilio是全球领先的法律服务与技术解决方案提供商，而Eudia是一家专注于法律人工智能领域的新兴企业。此次合作旨在将Eudia的AI能力整合进Consilio的现有法律服务体系中，以提升法律工作的效率与智能化水平。双方均未透露合作的具体财务条款或技术细节，但强调这是一次“行业重要合作”。该消息由专业法律媒体The Global Legal Post在当日发布，并列为编辑推荐文章。\n\n【行业影响】此次合作标志着传统法律科技巨头与新兴AI初创公司之间的深度融合趋势加速。Consilio借助Eudia的AI技术，有望在合同分析、法律研究等核心领域实现服务升级，从而为整个法律科技行业树立“技术+平台”协同发展的新标杆。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmid0fvx3lxte9vs25fnzrhwdnttwvnsk9qwvfzqmw2u",
+      "title": "美国法律科技公司Lexion就Anthropic AI出口管制提起诉讼 - 아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9vS25fNzRhWDNtTWVnSk9qWVFZQmw2UlkyRVFZNVpEQXJNeVM5aWtId0d0NmlHUjFubU1MOUpKb0lWcW5nc2lfVkowNkZUdEZ4ZVdSNlQ4OTZuN3h0TW55eDc5Mk5JWWwxbkJwdGNVc19KSFYwLWow?oc=5",
+      "source": "아시아경제",
+      "summary": "US Legal Tech Firm Lexion Sues Over Anthropic AI Export Controls 아시아경제",
+      "date": "2026-06-24",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月24日，据아시아경제报道，美国法律科技公司Lexion就Anthropic的AI出口管制问题提起诉讼。该诉讼针对Anthropic在人工智能技术出口方面的相关措施，Lexion作为法律科技领域的参与者，认为这些出口管制对其业务或行业竞争产生了不利影响。报道未披露诉讼的具体法律依据或索赔金额，但指出Lexion已正式向法院提交起诉文件。Anthropic是一家专注于AI安全与研究的知名企业，其技术出口政策因此成为此次法律纠纷的焦点。该事件由亚洲经济媒体进行报道，反映了跨国AI监管与商业利益之间的潜在冲突。\n\n【行业影响】此案首次将法律科技公司直接卷入AI出口管制诉讼，可能为后续类似企业挑战AI技术壁垒提供判例参考。同时，它凸显了AI技术跨境流动中，商业实体与国家安全监管之间的张力正在加剧，或将推动法律科技行业重新评估其技术合规策略。"
     }
   ]
 }
