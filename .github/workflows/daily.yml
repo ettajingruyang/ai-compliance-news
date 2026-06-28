@@ -12,6 +12,7 @@ permissions:
 jobs:
   fetch-news:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -32,6 +33,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add data.json archive/ all.json
           if git diff --staged --quiet; then
             echo "No changes to commit"

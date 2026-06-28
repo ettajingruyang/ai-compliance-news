@@ -389,6 +389,12 @@ function updateAllJson(date, items) {
 // ============================================================
 
 async function main() {
+  // 防止网络请求 hang 导致进程永不退出
+  const GLOBAL_TIMEOUT = setTimeout(() => {
+    console.error("❌ 全局超时：运行超过 10 分钟，强制退出");
+    process.exit(1);
+  }, 10 * 60 * 1000);
+
   console.log("🚀 AI 合规资讯聚合器\n");
 
   const useAI = !!DEEPSEEK_KEY;
@@ -562,6 +568,7 @@ async function main() {
   updateArchive(date, allCurated);
   updateAllJson(date, allCurated);
 
+  clearTimeout(GLOBAL_TIMEOUT);
   console.log(`✅ 完成! ${allCurated.length} 条精选 → data.json`);
 }
 
