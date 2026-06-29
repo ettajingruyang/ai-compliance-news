@@ -1,174 +1,159 @@
 {
-  "period": "2026-06-22/2026-06-28",
-  "label": "2026年第4周",
-  "generated": "2026-06-22T17:56:54.510Z",
+  "period": "2026-06-29/2026-07-05",
+  "label": "2026年第5周",
+  "generated": "2026-06-29T03:46:03.580Z",
   "total": 15,
   "items": [
     {
-      "id": "g-https-news-google-com-rss-articles-cbmidkfvx3lxte9pttixrfjivdjzvevfm0jps0x2q3dqn",
-      "title": "Gemini联合负责人Noam Shazeer离职谷歌，在IPO前加入OpenAI - BeInCrypto",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9PTTIxRFJiVDJZVEVFM0JpS0x2Q3dqNU5TNUU2ekplU3B5elE4dGRpT0xiaGJTRVpIQXp1MWJYSVNVX0FaLTNYdU5Mcjg0U0JrRU1zY0IxOXB2dVcxTGxvT0ZXU05laGoybzFRYXRVSktLWnl0WlE?oc=5",
-      "source": "BeInCrypto",
-      "summary": "【编辑推荐】谷歌Gemini联合创始人跳槽OpenAI，人才重大变动",
-      "date": "2026-06-19",
-      "category": "ai-progress",
-      "analysis": "【事件概述】2026年6月19日，据BeInCrypto报道，谷歌Gemini模型的联合负责人Noam Shazeer已正式从谷歌离职，并在OpenAI计划进行首次公开募股（IPO）前选择加入该公司。Shazeer是Gemini项目的核心领导者之一，他的离开标志着谷歌在AI人才争夺战中遭遇重大损失。报道指出，Shazeer加入OpenAI的时间点正值后者筹备IPO的关键阶段，此举可能为OpenAI带来关键的技术领导力。目前，双方均未就此次人事变动的具体细节和未来职责发表官方声明。\n\n【行业影响】Noam Shazeer从谷歌跳槽至即将IPO的OpenAI，凸显了顶级AI人才在头部企业间的激烈流动。这一变动可能加速OpenAI在下一代模型研发上的进度，同时给谷歌Gemini团队的稳定性与后续发展带来不确定性。",
-      "archivedDate": "2026-06-22"
-    },
-    {
-      "id": "g-https-news-google-com-rss-articles-cbmizgfbvv95cuxny0lwu3ljzhhlwfpvnefuvkztr3lxx",
-      "title": "DeepSeek里程碑式融资如何在激烈AI竞争中巩固创始人控制权 - 南华早报",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNY0lWU3lJZHhlWFpVNEFUVkZTR3lXX3Jpc0N6NlZxTWgzbzUwalFQZnQ0Rk9Nb1gwM1pqM3JwaGktV2tDS0VZTVBQWnVoVGJFNGJlc1QxNF8xLTdNREVMUFFJWWJZTkFQZGhub3lORlJ5Vmd6T3VzZVBjeV9tTExydzRmaXdUNm9Nbkl6VVBEdnpjeThGYkszUlhWelRDbllCNDBtLWdpMkxyUENDQlgyLVF6MmRkRmZlc2hxUEpHSE9zNkZOZVpuQUZCcUJKd9IBzgFBVV95cUxPRWhHaHVQYzBudVpaTGM5ODVGWUJsZlg1alppYlUwLU1maXJiMGN0dmFWR29LOGdqRFZ2LUEyaHUyXzBTQTlmVDBaMnB3dy0tUVp0ZC1pMHdQSl9UdWZjQUNXTFhlR3hkeVZFenRFR2d0UXhzTzZYUDBBeDNtZFRDdTVwSHBkREpoX0dHbVgzZlhkLXBzQTR3b29UXzU1QVhCX0lUX2pLUWdrQXd6ZEY1ZV9ncHNFRGpBVHZDTnJoQkItcE95Qm5Od19hTy12dw?oc=5",
-      "source": "South China Morning Post",
-      "summary": "【编辑推荐】DeepSeek获里程碑融资，巩固创始人控制权",
-      "date": "2026-06-18",
-      "category": "ai-progress",
-      "analysis": "【事件概述】2026年6月18日，南华早报报道了DeepSeek完成一轮里程碑式融资的消息。该融资在激烈的人工智能竞争背景下进行，核心目的在于巩固创始人对公司的控制权。报道未披露具体融资金额及投资方细节，但强调此次融资结构经过特殊设计，以确保创始团队在股权稀释的同时仍能保持对公司的战略决策主导权。DeepSeek作为中国AI领域的重要参与者，此举被视为应对行业资本涌入与竞争加剧的关键策略。融资完成后，公司创始人将继续掌握董事会多数席位或拥有特殊投票权，从而避免因外部资本介入导致控制权旁落。\n\n【行业影响】这一事件凸显了AI初创企业在高速扩张阶段平衡资本需求与创始人主导权的普遍挑战。通过特殊股权架构设计，DeepSeek可能为其他中国AI公司提供一种在激烈融资竞赛中保持治理稳定的参考模式，同时也反映出当前AI行业投资方对创始人长期愿景的认可与妥协。",
-      "archivedDate": "2026-06-22"
-    },
-    {
-      "id": "g-https-news-google-com-rss-articles-cbmirwfbvv95cuxqqy1ryxrecw1xbnlkm0hlyw1eodrwz",
-      "title": "SpaceX IPO引发对OpenAI和Anthropic的期待 - Bloomberg.com",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQy1RYXREcW1xbnlKM0hlYW1EODRWZWdYdHV4TS15ekJwV0tJY2J6aW92WGVqQldmc3Z2aFYxRGRaclJoSHk5Q2xnNG9jWi00TF9aNDlZY0F6MzMxZ3BDVXFEc3ZUeHN3MWczNk9DMlJwekliUnpEM0l2MV9hRjVtTmt2LUp6YnRVX0pVeWhWQkVrd3g4RGNRYW5ReHJoNVRCMkZiWUNYX2M3ZDlEZy1j?oc=5",
-      "source": "Bloomberg.com",
-      "summary": "【编辑推荐】SpaceX IPO提振市场对OpenAI和Anthropic预期",
-      "date": "2026-06-20",
-      "category": "ai-progress",
-      "analysis": "【事件概述】据Bloomberg.com 2026年6月20日报道，SpaceX的首次公开募股（IPO）正在引发市场对人工智能领域领先公司OpenAI和Anthropic的期待。报道指出，SpaceX的成功上市提振了投资者对这两家AI公司的预期。尽管SpaceX本身是一家太空探索技术公司，但其IPO被视为一个信号，表明市场对高风险、高增长科技企业的热情依然高涨。这种情绪外溢到了AI领域，尤其是OpenAI和Anthropic这类尚未上市但备受瞩目的人工智能公司。市场参与者开始关注这些公司未来进行IPO的可能性及其估值潜力。\n\n【行业影响】这一事件表明，SpaceX的IPO不仅巩固了科技股的市场信心，还直接推动了市场对AI龙头企业资本化进程的关注。如果OpenAI或Anthropic未来选择上市，其估值可能会参考SpaceX的成功路径，从而为整个人工智能行业带来更强的资本吸引力。",
-      "archivedDate": "2026-06-22"
-    },
-    {
-      "id": "g-https-news-google-com-rss-articles-cbmijafbvv95cuxnvtbfmxvzac1rcgfjrfl6vw5lywjut",
-      "title": "正式发布GLM-5.2全开源大模型 港股人工智能股走高 智谱涨超40% - 搜狐网",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVTBfMXVZaC1RcGFJRFl6VW5lYWJUTnVtTHkwMTc4cWdEc1lGS1lldlZRSl9NVUxiY1pnTnhBSk9IMFl6TXB4ZlRIbTR6YndPekZJM3JkZnFRaHl0OWZhYjlVSWk1eHpSbE9HN0FiZDZHbFZNT0RmTl9UQTdNTkZfbjNJQVN6YzEwZnVOeQ?oc=5",
-      "source": "搜狐网",
-      "summary": "【编辑推荐】智谱发布GLM-5.2全开源大模型，重大技术突破\n正式发布GLM-5.2全开源大模型 港股人工智能股走高 智谱涨超40% 搜狐网",
-      "date": "2026-06-22",
-      "category": "ai-progress",
-      "analysis": "【事件概述】2026年6月22日，据搜狐网报道，智谱公司正式发布了GLM-5.2全开源大模型，被编辑推荐为“重大技术突破”。该消息直接推动了港股人工智能板块走高，其中智谱公司股价单日涨幅超过40%。此次发布的核心亮点在于“全开源”特性，意味着该模型的技术细节和权重将对开发者完全开放。这是智谱在GLM系列模型基础上的又一次重要迭代，进一步巩固了其在大模型开源领域的地位。\n\n【行业影响】GLM-5.2的全开源策略可能加速国内AI应用生态的构建，降低企业部署大模型的门槛。同时，港股市场对智谱股价的强烈反应，也显示出资本对开源大模型商业化前景的高度认可。",
-      "archivedDate": "2026-06-22"
-    },
-    {
-      "id": "g-https-news-google-com-rss-articles-cbmidkfvx3lxte9pttixrfjivdjzvevfm0jps0x2q3dqn",
-      "title": "Gemini联合负责人Noam Shazeer离职谷歌，在IPO前加入OpenAI - BeInCrypto",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9PTTIxRFJiVDJZVEVFM0JpS0x2Q3dqNU5TNUU2ekplU3B5elE4dGRpT0xiaGJTRVpIQXp1MWJYSVNVX0FaLTNYdU5Mcjg0U0JrRU1zY0IxOXB2dVcxTGxvT0ZXU05laGoybzFRYXRVSktLWnl0WlE?oc=5",
-      "source": "BeInCrypto",
-      "summary": "Gemini Co-Lead Noam Shazeer Quits Google, Joins OpenAI Before IPO BeInCrypto",
-      "date": "2026-06-19",
-      "category": "ai-progress",
-      "analysis": "【事件概述】2026年6月19日，据BeInCrypto报道，谷歌Gemini项目的联合负责人Noam Shazeer已从谷歌离职，并在OpenAI计划进行首次公开募股（IPO）之前加入了OpenAI。Shazeer是谷歌AI领域的关键人物，曾共同领导Gemini大模型的开发工作。他的离职标志着谷歌在AI人才竞争中的又一次重大损失。目前尚不清楚Shazeer在OpenAI的具体职务，但考虑到其资历，他很可能将在OpenAI的IPO进程中扮演重要角色。这一人事变动发生在AI行业竞争白热化、OpenAI即将上市的关键时间节点。\n\n【行业影响】Noam Shazeer从谷歌跳槽至即将IPO的OpenAI，凸显了顶级AI人才正加速向资本化程度更高的初创企业流动。这既反映了OpenAI通过上市预期吸引顶尖技术领袖的能力，也可能迫使谷歌在核心团队稳定性和激励政策上做出更大调整。",
-      "archivedDate": "2026-06-22"
-    },
-    {
-      "id": "g-https-news-google-com-rss-articles-cbmilgfbvv95cuxqmegwb0w2cldkbmlvellfwvvcvudcm",
-      "title": "Anthropic模型被下架引发“临时”AI监管警告 - 《国会山报》",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMEgwb0w2cldkbmlvellfWVVCVUdCMDJKelpJRlpDak5OSXV5Qlhpano1X2lGYzJtcVNkMWREYlZrbDZKUV93dkcyZ3RuVE8zWi0zUmN4SDBDT09XVjVFX3psbXMyaTM2RmhGTE5GUWIyVHM2OV82SnZhRVBiYlVSYkIwc3lsSGh5NVRyVGRjVTRYM2JycFHSAZsBQVVfeXFMTm9qZHg1Y0VaZFFLeHg4SVgxSk4yTVJxaGVzQ1QwV1dsYmdKRWtQdWRXMU5qQU14N01lOFpHZ1NtMWszdi1paHZsV1VRTHlRVzRfVXl3aFBRcVRJRkJoRE1DVUhGNGZKR2VwMXlaUDZJN1F3ek4zMW9GaFhTVnhRbEJVOEYySTJHUXZQV0NMYTFLYUZveTg2U1gzVEE?oc=5",
-      "source": "The Hill",
-      "summary": "Anthropic模型被下架，引发临时监管争议",
-      "date": "2026-06-16",
-      "category": "ai-regulation",
-      "analysis": "【事件概述】2026年6月16日，据《国会山报》报道，人工智能公司Anthropic的模型被下架，这一事件引发了关于“临时”AI监管的警告。报道指出，该模型的下架行为直接触发了监管层面的争议，各方开始讨论当前针对AI产品的临时性管控措施是否足够有效。Anthropic作为知名AI企业，其模型被下架的具体原因尚未在标题和摘要中详细说明，但事件本身已经暴露出AI监管在应对突发风险时的仓促与不确定性。此次下架行动被描述为“临时”监管举措，暗示了现有监管框架可能缺乏长期、统一的规则。\n\n【行业影响】该事件凸显了当前AI监管的碎片化与应急性特征，即当模型出现争议时，监管方往往只能采取临时下架等被动措施，而非基于前瞻性法规进行预防。这警示整个AI行业，缺乏稳定监管预期将增加企业合规成本，并可能阻碍技术创新与市场信任的建立。",
-      "archivedDate": "2026-06-22"
-    },
-    {
-      "id": "g-https-news-google-com-rss-articles-cbmimgfbvv95cuxpyumyredotenmx09qs2dnvne0vke3c",
-      "title": "特朗普新AI行政令在透明度与问责方面存在漏洞 - 《科技政策报》",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYUMyREdOTENmX09QS2dnVnE0VkE3cnE1VUFRQ2tFZ3dGdkxRbkl0cTdqZkpWTTFRVHBiUzZ3Y3pQUlpQX3JHa2Jac1lhZUdwclY5UG81ZEVSS2xkVnJUZk5fQnlJRGpIZnJSU2FkYWxzNDZxUUFiOFc1dGprRnZkWVR2WUlEbnM4c0xodVRQUjY0UTNPY18ycUdB?oc=5",
-      "source": "Tech Policy Press",
-      "summary": "特朗普新AI行政令透明与问责存漏洞",
-      "date": "2026-06-17",
-      "category": "ai-regulation",
-      "analysis": "【事件概述】2026年6月17日，科技政策媒体《科技政策报》发布分析文章指出，美国前总统特朗普签署的新AI行政令在透明度与问责机制方面存在显著漏洞。文章称，该行政令虽旨在推动人工智能发展，但未能对AI系统的训练数据来源、算法决策过程等关键环节设定明确的公开披露要求。同时，行政令缺乏对AI造成损害时的责任归属与追责程序的详细规定，削弱了公众监督与法律救济的可能性。报道认为，这些缺失可能导致企业在部署AI时规避审查，增加技术滥用的风险。\n\n【行业影响】该行政令若以当前形式实施，将可能为科技企业在AI开发中提供较低的合规门槛，进而影响全球AI治理标准的一致性。其透明度与问责的缺失，也可能促使其他国家在制定AI法规时更侧重风险防控，从而加剧国际AI监管框架的分化。",
-      "archivedDate": "2026-06-22"
-    },
-    {
-      "id": "r-https-www-wired-com-story-anthropic-mythos-export-controls-ai-regulations",
-      "title": "白宫实时制定AI规则 - 影响Anthropic",
-      "url": "https://www.wired.com/story/anthropic-mythos-export-controls-ai-regulations/",
-      "source": "wired.com",
-      "summary": "Anthropic still can’t distribute Claude Mythos or Fable 5 after running afoul of the Trump administration. But no one can say exactly what the company did wrong.",
-      "date": "2026-06-18",
-      "category": "ai-regulation",
-      "analysis": "【事件概述】2026年6月18日，据wired.com报道，白宫正在实时制定人工智能监管规则，这一动态直接影响了AI公司Anthropic。报道指出，Anthropic因与特朗普政府产生冲突，至今仍无法发布其Claude Mythos或Fable 5模型。然而，令人困惑的是，没有任何人能明确说明该公司究竟做错了什么。这种在规则尚未明确前便对特定企业施加限制的做法，引发了外界对监管透明度的质疑。目前，Anthropic的模型分发受阻，但具体的违规依据仍不清晰。\n\n【行业影响】这一事件凸显了美国AI监管的即时性与不确定性：企业在面对尚未成文的规则时可能突然遭受处罚，这将严重影响其产品发布节奏与商业计划。同时，缺乏明确违规说明的做法，可能动摇整个行业对监管公平性的信心，促使更多AI公司重新评估在美国市场推出新模型的风险。",
-      "archivedDate": "2026-06-22"
-    },
-    {
-      "id": "g-https-news-google-com-rss-articles-cbmieefvx3lxte5md2xmbertwwptemw3rek1q1bszvbfc",
-      "title": "中国加紧筹建世界人工智能合作组织，密集开展政策部署 - 新浪财经",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Md2xMbERtWWpTemw3REk1Q1BsZVBfc3c5NFhBRDFKaDVKSUg0WThnWUp4blpRTjhYQk9Cb3p2dUk3TWRvTC1xOXFnWnIzVGJaVjRtWUJFR0tqQzN3eHFLY1M3d2JxSWZNcnpqWTZnUG84bVFKUzZ6eA?oc=5",
-      "source": "新浪财经",
-      "summary": "【编辑推荐】中国筹建世界AI合作组织，政策部署密集\n中国加紧筹建世界人工智能合作组织，密集开展政策部署 新浪财经",
-      "date": "2026-06-18",
-      "category": "ai-regulation",
-      "analysis": "【事件概述】2026年6月18日，据新浪财经报道，中国正在加紧筹建“世界人工智能合作组织”，并围绕该组织密集开展一系列政策部署。报道指出，这一筹建工作是中国在人工智能领域推动全球治理与合作的重要举措。目前相关筹备细节尚未完全公开，但政策部署的密集程度表明该组织旨在促进国际AI规则协调与技术交流。报道未披露具体参与方或时间表，但强调这是当前中国AI监管与外交领域的重点动向。该消息由新浪财经以编辑推荐形式发布，凸显其在行业内的关注度。\n\n【行业影响】这一动态表明，中国正试图通过建立多边机制来主导全球AI治理话语权。若该组织成功落地，可能重塑国际AI合作框架，并对现有欧美主导的AI规则体系形成竞争与补充，从而影响全球AI技术标准与监管走向。",
-      "archivedDate": "2026-06-22"
-    },
-    {
-      "id": "hn-48608173",
-      "title": "英国最高数据与AI监管机构负责人因“不当”幽默辞职",
-      "url": "https://www.bbc.co.uk/news/articles/c0eyq7rnn22o",
+      "id": "hn-48692995",
+      "title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
+      "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
       "source": "Hacker News",
-      "summary": "英国数据与AI监管机构负责人因不当言论辞职",
-      "date": "2026-06-20",
+      "summary": "https:&#x2F;&#x2F;archive.md&#x2F;ArXuFhttps:&#x2F;&#x2F;www.nbcnews.com&#x2F;tech&#x2F;tech-news&#x2F;us-government-gives-a...",
+      "date": "2026-06-26",
+      "category": "ai-progress",
+      "archivedDate": "2026-06-29"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-06-26-its-not-about-anthropic-vs-openai-anymore",
+      "title": "It’s not about Anthropic vs. OpenAI anymore",
+      "url": "https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/",
+      "source": "techcrunch.com",
+      "summary": "AI models have progressed to the point where their capabilities have real political consequences. Dealing with those consequences will require collective action.",
+      "date": "2026-06-26",
+      "category": "ai-progress",
+      "archivedDate": "2026-06-29"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-06-25-anthropics-claude-is-winning-over-paid-consumers",
+      "title": "Anthropic’s Claude is winning over paid consumers, a market owned by ChatGPT",
+      "url": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/",
+      "source": "techcrunch.com",
+      "summary": "Despite ChatGPT's commanding market lead, consumers who pay for AI have been increasingly choosing Anthropic's Claude, data shows.",
+      "date": "2026-06-25",
+      "category": "ai-progress",
+      "archivedDate": "2026-06-29"
+    },
+    {
+      "id": "hn-48688700",
+      "title": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+      "url": "https://github.com/workweave/router",
+      "source": "Hacker News",
+      "summary": "We built a model router that plugs into coding agents (e.g. Claude Code, Codex, Cursor, etc.) and intelligently sends requests to the best model to serve them. Here&#x27;s a quick demo of running it l",
+      "date": "2026-06-26",
+      "category": "ai-progress",
+      "archivedDate": "2026-06-29"
+    },
+    {
+      "id": "r-https-36kr-com-p-3873476968272902-f-rss",
+      "title": "8点1氪丨两大存储巨头今日发布大规模投资计划；江淮汽车股价腰斩，章建平9日套现近3亿元；Anthropic Fable 5有望很快恢复访问",
+      "url": "https://36kr.com/p/3873476968272902?f=rss",
+      "source": "36kr.com",
+      "summary": "今日热点导览 《给阿嬷的情书》总票房已突破19亿元 梁文锋署名，DeepSeek发布最新论文 WPS回应C盘占用问题，即将更新七月版本上线磁盘存储管理功能 触屏MacBook将搭载M5芯片发布，苹果计划跳过M6 Pro及M6 Max 美国监管部门关闭针对特斯拉Model 3及Model Y转向失控调查 TOP 3大新闻 韩国将于6月29日宣布三星、SK集团的多个大型项目 韩国将于6月29日宣布“三大工程”计划，韩国总统李在明将与政府各部门、三星电子和SK的官员会面，并发布政策和投资公告。李在明将于下午2点在总统府青瓦台发表讲话，届时韩国产业通商部、科学技术信息通信部、气候能源环境部和国土交通部",
+      "date": "2026-06-28",
+      "category": "ai-progress",
+      "archivedDate": "2026-06-29"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-06-25-the-white-house-is-asking-openai-to-slow-roll-th",
+      "title": "The White House is asking OpenAI to slow roll the release of its new model over safety concerns",
+      "url": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
+      "source": "techcrunch.com",
+      "summary": "OpenAI reportedly plans to share its newest model, GPT 5.6, with a select group of partners instead of with the broader public. The reason: the Trump administration told it to.",
+      "date": "2026-06-25",
       "category": "ai-regulation",
-      "analysis": "【事件概述】2026年6月20日，据Hacker News报道，英国最高数据与AI监管机构的负责人因发表“不当”幽默言论而辞职。该机构是英国数据与人工智能监管的核心部门，负责监督数据保护及AI伦理合规。这位负责人的辞职直接源于其个人在公开或内部场合的不当幽默表述，被认定为不符合其职务所要求的严肃性与公信力。目前该机构尚未公布继任者人选，但已启动紧急过渡程序以维持监管工作的连续性。此次事件被媒体视为英国AI监管领域一次突发的人事动荡。\n\n【行业影响】该事件凸显了AI监管机构领导层个人言行对机构公信力的直接影响，尤其是在全球AI治理标准快速成型的敏感时期。英国作为AI监管规则制定的重要参与者，其监管高层因“幽默”不当而辞职，可能削弱外界对英国AI监管专业性与稳定性的短期信心。",
-      "archivedDate": "2026-06-22"
+      "archivedDate": "2026-06-29"
     },
     {
-      "id": "g-https-news-google-com-rss-articles-cbmiuwfbvv95cuxnrgr2vwjnt1pvbfdvwjjlsgzwcgrhy",
-      "title": "Anthropic的Claude Fable 5撤回凸显法律AI供应链的地缘政治风险",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRGR2VWJnT1pVbFdVWjJLSGZwcGRHYWFyWldkUll3ZUpVcXJTRUswMWxwemh0RzN5bnZLR3RPVHotSUZrRGdVWTNxVEFWdFlhMXhoUEt2ZDNBaUdTTVdqYzd0N25zd0U2NHY0N2F3bm0yMWJHUzNYRmJHNk8zeS0yNlQ4SkhzTW5uY0VjVExkamJDWUZtVWhrOGFPSXg1VWJPTVhhVTBLUTRUQjYwY3pVSGlYVDhFazllOUF3?oc=5",
-      "source": "Legal IT Insider",
-      "summary": "Anthropic产品撤回凸显法律AI供应链地缘政治风险",
-      "date": "2026-06-15",
+      "id": "r-https-techcrunch-com-2026-06-27-asian-ai-startups-launch-mythos-like-models-as-a",
+      "title": "Asian AI startups launch Mythos-like  models as Anthropic’s export ban drags on",
+      "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
+      "source": "techcrunch.com",
+      "summary": "New models are launching in Asia that promise Mythos-like capabilities without fear of an export ban. U.S. AI labs may never recover this enormous market.",
+      "date": "2026-06-27",
+      "category": "ai-regulation",
+      "archivedDate": "2026-06-29"
+    },
+    {
+      "id": "hn-48645030",
+      "title": "Free EU AI Act Article 50 compliance checker for indie SaaS",
+      "url": "https://aiact.bridgeai.one/",
+      "source": "Hacker News",
+      "summary": "💬 0 条讨论 · ⭐ 2 分",
+      "date": "2026-06-23",
+      "category": "ai-regulation",
+      "archivedDate": "2026-06-29"
+    },
+    {
+      "id": "hn-48658182",
+      "title": "9 Weeks to AGI: Accountability and Governance Infrastructure for the EU AI Act",
+      "url": "https://assimilatedhuman.github.io/inquisitor-labs/eu-ai-act.html",
+      "source": "Hacker News",
+      "summary": "💬 1 条讨论 · ⭐ 1 分",
+      "date": "2026-06-24",
+      "category": "ai-regulation",
+      "archivedDate": "2026-06-29"
+    },
+    {
+      "id": "hn-48701615",
+      "title": "Everyone feared AI taking over; the real danger is AI serving just the few",
+      "url": "https://news.ycombinator.com/item?id=48701615",
+      "source": "Hacker News",
+      "summary": "Everyone feared AI would enslave humanity; but it looks like the real fight is stopping governments and Big Tech from enslaving AI for the benefit of the few.Amid the newly announced \"regulation\" of O",
+      "date": "2026-06-27",
+      "category": "ai-regulation",
+      "archivedDate": "2026-06-29"
+    },
+    {
+      "id": "hn-48707090",
+      "title": "China companies Z.Ai,China 360 claim having cybersec AI models to match Mythos",
+      "url": "https://www.reuters.com/legal/litigation/chinas-360-says-it-has-developed-tools-match-anthropics-mythos-2026-06-24/",
+      "source": "Hacker News",
+      "summary": "💬 1 条讨论 · ⭐ 8 分",
+      "date": "2026-06-28",
       "category": "legal-ai",
-      "analysis": "【事件概述】2026年6月15日，Legal IT Insider报道称，人工智能公司Anthropic撤回了其法律AI产品Claude Fable 5。该产品撤回事件直接凸显了法律AI供应链中潜在的地缘政治风险。报道指出，这一撤回行为并非源于技术性能问题，而是与全球供应链中的地缘政治因素密切相关。Anthropic作为Claude系列模型的主要开发商，其产品在多个法律实务领域曾有应用。本次撤回意味着法律行业用户将无法继续使用该版本产品，相关依赖该模型的合规、合同审查等流程可能面临中断或调整。\n\n【行业影响】该事件向法律科技行业发出明确警示：法律AI系统的稳定性不仅取决于算法能力，更受制于底层芯片、数据跨境流动及国际监管等供应链环节的地缘政治博弈。法律机构在采购或自研AI工具时，必须将供应商所在国的政策风险纳入尽职调查范围，否则可能遭遇关键服务突然中断的合规与业务连续性危机。",
-      "archivedDate": "2026-06-22"
+      "archivedDate": "2026-06-29"
     },
     {
-      "id": "g-https-news-google-com-rss-articles-cbmiswfbvv95cuxnec13u1l6nkhyctzlullmeu91vfb1r",
-      "title": "法律AI初创公司Eve遭遇专利侵权诉讼",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeC13U1l6NkhycTZLUllMeU91VFB1RTZSdHF0LXY2MHc5dzZRa3lvckQ3LUNYV19MZzBnLXV1aF91Tl9RSElRTi1sbEotMVpuYV9rREhJa05jMmR1eU5DTUFxdXRxVEZJdk13MUZJc1hoQTVVbnlRczJLTVJFa3U4V0NWOVNrWVVJLVRncXdKVVlQaS1zWEoweGl4Tk5BajMyWHhHSFliNXVRNDhaOXFRS3BnWQ?oc=5",
-      "source": "Reuters",
-      "summary": "法律AI初创公司Eve遭专利侵权诉讼，影响行业格局",
-      "date": "2026-06-17",
-      "category": "legal-ai",
-      "analysis": "【事件概述】2026年6月17日，据路透社报道，法律AI初创公司Eve遭遇专利侵权诉讼。该诉讼的具体原告及涉案专利细节在标题与摘要中未明确披露，但摘要指出此案将对行业格局产生影响。Eve是一家专注于法律领域的人工智能初创企业，此次被诉专利侵权可能涉及其核心AI技术或产品功能。诉讼的提起标志着法律AI赛道内知识产权纠纷的公开化，Eve公司目前尚未就诉讼内容发表公开回应。这一事件在行业内引发关注，因为专利诉讼可能延缓Eve的产品迭代与市场拓展节奏。\n\n【行业影响】该诉讼凸显了法律AI领域技术壁垒与知识产权保护的重要性，可能促使其他初创公司重新评估自身技术的原创性与专利风险。若Eve败诉，或将改变法律AI市场的竞争格局，影响投资者对同类企业的信心。",
-      "archivedDate": "2026-06-22"
-    },
-    {
-      "id": "g-https-news-google-com-rss-articles-cbmiwafbvv95cuxootdmnkvjr1jlyxlrvxzcs2jqwtlgs",
-      "title": "Clio宣布重大法律AI培训目标与教育计划",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOTdMNkVJR1JLYXlrVXZCS2JqWTlGSTA1ZFhiOVozTS05NkFzcEppZ1l1NkZvV1dTU2xLMG5rVllFNTZDMVZLLW4zR3h3Z2JSSHFyQ3lYRW5PMGRiQ0k0Q0NjbHRzV2NWRVc3ODAwZmtZZGVUOHRhUEhxbDd4d3poWVB6TGNZcWhDbTlfWmNQS0pkd1c4ZlROeXA3RE1LdjBYNFYybXZKeVZ5Sm02bXU1bE1SUHFtTjdLTTJwaTVsc3E?oc=5",
-      "source": "Canadian Lawyer",
-      "summary": "Clio宣布重大法律AI培训计划，推动行业教育",
+      "id": "r-https-www-artificiallawyer-com-2026-06-22-the-legal-ai-scaffold-changes-everythi",
+      "title": "The Legal AI Scaffold Changes Everything – Claude Study",
+      "url": "https://www.artificiallawyer.com/2026/06/22/the-legal-ai-scaffold-changes-everything-claude-study/",
+      "source": "artificiallawyer.com",
+      "summary": "A study by consultancy Legal Nodes, which included MikeOSS, shows that no matter how good a general model appears to be, it’s the legal AI ...",
       "date": "2026-06-22",
       "category": "legal-ai",
-      "analysis": "【事件概述】2026年6月22日，据加拿大法律媒体Canadian Lawyer报道，法律科技公司Clio宣布了一项重大的法律人工智能培训目标与教育计划。该计划旨在推动法律行业内的AI教育，帮助法律从业者更好地理解和应用AI技术。Clio作为法律实践管理软件领域的知名企业，此次宣布的培训计划具体内容尚未在标题和摘要中详细披露，但明确指向了行业教育的核心方向。这一举措意味着Clio正试图通过系统化的培训项目，提升法律专业人士对AI工具的认知与使用能力。\n\n【行业影响】Clio的这一计划将加速法律行业对AI技术的接纳进程，通过标准化的培训降低从业者的学习门槛。此举可能促使其他法律科技公司跟进，推动整个行业形成更规范的法律AI教育体系，从而提升法律服务的效率与质量。",
-      "archivedDate": "2026-06-22"
+      "archivedDate": "2026-06-29"
     },
     {
-      "id": "g-https-news-google-com-rss-articles-cbmitgfbvv95cuxqzk5ya0v5skpquw5ztmvjowpjckrib",
-      "title": "Portobello因AI颠覆担忧推迟出售法律科技公司",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZk5ya0V5SkpqUW5ZTmVjOWpjckRib1Q3czY3NGJ4VmVPdXBuRzFmMU15eFNSRU5EcWdiQTZ0cmc5OTlnTkkwNnJnWFNkR0RJSWhtTVZaWDY3bmNYRDkyRllGQnZGOTJmaUo0ZWVXeXFMRGIzbDE4a3YwM3I2Si1HVUJWd05Fb0FiZURqdXdEblBfbGU1VHBHVUR2VjREc1dYSVpKYmRwbnJzdlE4WXRJNGo5U2Jtdw?oc=5",
-      "source": "Bloomberg.com",
-      "summary": "彭博报道AI颠覆担忧导致法律科技公司出售延迟",
-      "date": "2026-06-16",
+      "id": "hn-48663022",
+      "title": "Show HN: ccMarvin – Just Email with AI",
+      "url": "https://ccmarvin.com",
+      "source": "Hacker News",
+      "summary": "Backstory: My name is Michael Stoppelman, I&#x27;m a super angel (300+ investments, I&#x27;ve invested in YC companies like Vanta, Flexport, Biorender, Permitflow and Canary Technologies). Prior to th",
+      "date": "2026-06-24",
       "category": "legal-ai",
-      "analysis": "【事件概述】2026年6月16日，彭博社报道称，由于对人工智能颠覆效应的担忧，投资公司Portobello决定推迟出售其旗下法律科技公司。Portobello原本计划将这家法律科技资产推向市场，但潜在买家对AI技术可能彻底改变法律行业服务模式、降低现有技术价值表示疑虑。这一不确定性导致交易进程暂停，Portobello选择等待市场对AI影响形成更清晰判断后再作决策。报道未披露该法律科技公司的具体名称及原定出售时间表。\n\n【行业影响】该事件表明，AI对法律行业的颠覆性影响已从技术讨论延伸至并购交易层面，投资者开始重新评估法律科技资产的长期价值。Portobello的推迟出售可能成为行业风向标，促使其他法律科技公司及投资机构在估值和交易时机上更加审慎。",
-      "archivedDate": "2026-06-22"
+      "archivedDate": "2026-06-29"
     },
     {
-      "id": "g-https-news-google-com-rss-articles-cbmigafbvv95cuxnbfpgwfptdfjhbxh2b3nasepjsmtjd",
-      "title": "法务法人信源出版《AI法律指南》娱乐内容行业应对指南 - starnewskorea.com",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbFpGWFpTdFJHbXh2b3NaSEpJSmtJd1RubUQzYnZMSlNJMWpFOEh5SDBlNTRZdXQ2MUtXSWFnQWhxVWY1TXRDb01nOHYxNGx5X0R3MnZnS0dEVTd5bFRVQ1U1aGoyV2syODU0dWZlMmo4ZzdRTENJOFVuWXBjMWJDbw?oc=5",
-      "source": "starnewskorea.com",
-      "summary": "法务法人信源出版《AI法律指南》娱乐内容行业应对指南 starnewskorea.com",
-      "date": "2026-06-16",
+      "id": "hn-48662453",
+      "title": "The AI Data Centre Legal Case That Could Eradicate Civil Rights",
+      "url": "https://read.misalignedmag.com/the-ai-data-centre-legal-case-that-could-eradicate-civil-rights-c20308e15ce5",
+      "source": "Hacker News",
+      "summary": "💬 0 条讨论 · ⭐ 3 分",
+      "date": "2026-06-24",
       "category": "legal-ai",
-      "analysis": "【事件概述】2026年6月16日，韩国法务法人信源（법무법인 신원）通过starnewskorea.com宣布出版《AI法律指南》娱乐内容行业应对指南。该指南专门针对娱乐内容行业在人工智能技术应用过程中可能面临的法律问题，旨在为相关从业者提供系统性的合规参考。法务法人信源作为专业法律机构，此次推出的指南聚焦于AI生成内容、版权归属、数据使用等娱乐产业特有的法律风险领域。出版方希望通过这份指南帮助娱乐公司、制作方及创作者提前识别并规避法律纠纷。\n\n【行业影响】这一举措标志着法律实务界开始为特定垂直行业定制化提供AI法律解决方案，反映出娱乐内容产业在AI冲击下的法律需求已从泛化讨论进入具体操作层面。指南的出版可能推动韩国乃至亚洲娱乐行业建立更规范的AI内容使用标准，同时为其他法律机构开发类似行业指南提供了示范。",
-      "archivedDate": "2026-06-22"
+      "archivedDate": "2026-06-29"
+    },
+    {
+      "id": "hn-48638999",
+      "title": "Show HN: ExplainNotice: AI summary for bills, notices, and letters",
+      "url": "https://explainnotice.com",
+      "source": "Hacker News",
+      "summary": "Founder here. I built this because many everyday notices are hard to understand: utility bills, medical bills, insurance letters, landlord notices, government letters, etc.The app extracts a few pract",
+      "date": "2026-06-23",
+      "category": "legal-ai",
+      "archivedDate": "2026-06-29"
     }
   ],
-  "overview": "**本周要闻综述**\n\n本周，AI合规与法律AI领域呈现出三大核心态势：AI行业人才与资本流动加速，全球监管格局在博弈中快速成型，而法律AI则在地缘政治风险与商业化落地之间寻求平衡。\n\n在AI重大进展方面，人才争夺战进入白热化阶段。Gemini联合负责人Noam Shazeer在谷歌IPO前夕离职并加入OpenAI，这一高调变动凸显了头部企业对核心人才的激烈竞争，也预示着模型研发方向的潜在调整。与此同时，DeepSeek完成里程碑式融资，并以此巩固创始人控制权，反映出初创公司在资本涌入下对治理结构的深度思考。\n\n监管动态方面，全球治理路径分化加剧。美国方面，特朗普新AI行政令被批评在透明度与问责上存在漏洞，而白宫正实时制定影响Anthropic等公司的具体规则，显示出政策落地的紧迫性。欧洲与英国方面，Anthropic模型被下架引发了关于“临时”监管有效性的警告，英国最高数据与AI监管机构负责人则因“不当”幽默辞职，暴露出机构内部的治理危机。中国则加紧筹建世界人工智能合作组织，密集部署政策，以争夺全球规则制定话语权。\n\n法律AI领域风险与机遇并存。Anthropic的Claude Fable 5撤回事件，凸显了法律AI供应链对地缘政治的脆弱性。此外，法律AI初创公司Eve遭遇专利侵权诉讼，表明技术落地过程中的知识产权纠纷开始显现。另一方面，Clio宣布重大法律AI培训与教育计划，推动行业人才培养，而Portobello因AI颠覆担忧推迟出售法律科技公司，则反映出市场对技术冲击的观望态度。\n\n展望下周，需重点关注Noam Shazeer加入OpenAI后可能引发的组织架构与战略调整，以及美国白宫针对Anthropic的具体规则细节，这将成为全球AI监管的风向标。同时，法律AI领域的专利诉讼进展，将直接影响该赛道的创业生态与投资信心。"
+  "overview": "**本周要闻综述**\n\n本周，AI领域呈现出三大核心态势：模型能力竞赛进入以“信任”为核心的分发阶段，全球监管框架加速从原则走向可操作的工具化落地，而法律AI则在应用创新与权利挑战之间剧烈碰撞。\n\n在AI重大进展方面，最显著的变化是市场格局从“一家独大”转向“多元分化”。Anthropic的Claude在付费消费者市场持续蚕食ChatGPT的份额，其最新模型Mythos获得美国政府批准，仅向“受信任”的美国组织开放。这标志着AI部署从“广泛可用”转向“授权分发”，安全审查成为技术扩散的前置条件。同时，亚洲AI初创公司因Anthropic的出口禁令而被迫开发类似Mythos的模型，显示出地缘政治正在重塑技术供应链。\n\nAI监管动态本周进入“工具化”阶段。美国白宫基于安全顾虑，要求OpenAI推迟新模型的发布节奏，延续了行政机构对前沿模型的直接干预。欧洲方面，欧盟AI法案的合规压力催生了大量SaaS工具，如免费的Article 50合规检查器和面向“9周内实现AGI”的治理基础设施方案。监管不再是抽象原则，而是可嵌入开发流程的代码。\n\n法律AI领域呈现出“双刃剑”特征。一方面，中国公司周鸿祎的360和Z.Ai声称已推出对标Mythos的网络安全AI模型，显示法律科技正与国家安全深度绑定。另一方面，一个关于AI数据中心的法律案件可能侵蚀公民权利，而“ccMarvin”等工具试图用AI简化法律邮件沟通，Claude的研究则展示了AI如何在法律工作中构建“脚手架”式支持。合规与权利保障之间的张力愈发尖锐。\n\n展望下周，值得关注的趋势包括：美国政府对OpenAI新模型的审查结果将直接影响行业发布节奏；亚洲替代模型与Anthropic之间的技术差距能否缩小；以及欧盟AI法案合规工具的市场接受度，将验证“监管科技”是否真正能降低中小企业的合规门槛。"
 }
