@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-26T05:08:39.994Z",
-  "total": 146,
+  "updated": "2026-06-29T01:00:57.765Z",
+  "total": 172,
   "items": [
     {
       "id": "r-https-techcrunch-com-2026-06-09-anthropics-claude-fable-5-is-a-version-of-mythos",
@@ -1461,6 +1461,250 @@
       "date": "2026-06-25",
       "category": "legal-ai",
       "analysis": "【事件概述】2026年6月25日，据Law.com报道，佛罗里达州律师协会（Florida Bar）与一家法律AI平台达成了一项创新合作协议。该合作被视为司法系统在人工智能应用领域的一次重要突破。摘要中明确指出，此次合作聚焦于将AI技术更深入地融入法律实践与司法流程，但未披露该法律AI平台的具体名称。双方旨在通过这一合作探索AI在案件管理、法律研究或文书处理等环节的合规应用，同时确保符合律师职业伦理与监管要求。佛罗里达州律师协会作为官方律师管理机构，其直接介入意味着对AI工具在司法系统中的角色给予了正式认可与规范引导。\n\n【行业影响】这一合作标志着美国州级律师协会首次与AI平台建立正式合作关系，可能为其他州乃至联邦层面的司法AI应用提供可参考的监管与协作范本。它表明法律行业正从被动应对AI技术转向主动构建合规框架，推动AI在司法效率提升与职业伦理约束之间寻求平衡。"
+    },
+    {
+      "id": "hn-48692995",
+      "title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
+      "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
+      "source": "Hacker News",
+      "summary": "https:&#x2F;&#x2F;archive.md&#x2F;ArXuFhttps:&#x2F;&#x2F;www.nbcnews.com&#x2F;tech&#x2F;tech-news&#x2F;us-government-gives-a...",
+      "date": "2026-06-26",
+      "category": "ai-progress"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-06-26-its-not-about-anthropic-vs-openai-anymore",
+      "title": "It’s not about Anthropic vs. OpenAI anymore",
+      "url": "https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/",
+      "source": "techcrunch.com",
+      "summary": "AI models have progressed to the point where their capabilities have real political consequences. Dealing with those consequences will require collective action.",
+      "date": "2026-06-26",
+      "category": "ai-progress"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-06-25-anthropics-claude-is-winning-over-paid-consumers",
+      "title": "Anthropic’s Claude is winning over paid consumers, a market owned by ChatGPT",
+      "url": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/",
+      "source": "techcrunch.com",
+      "summary": "Despite ChatGPT's commanding market lead, consumers who pay for AI have been increasingly choosing Anthropic's Claude, data shows.",
+      "date": "2026-06-25",
+      "category": "ai-progress"
+    },
+    {
+      "id": "hn-48688700",
+      "title": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+      "url": "https://github.com/workweave/router",
+      "source": "Hacker News",
+      "summary": "We built a model router that plugs into coding agents (e.g. Claude Code, Codex, Cursor, etc.) and intelligently sends requests to the best model to serve them. Here&#x27;s a quick demo of running it l",
+      "date": "2026-06-26",
+      "category": "ai-progress"
+    },
+    {
+      "id": "r-https-36kr-com-p-3870720040588295-f-rss",
+      "title": "9点1氪｜苹果涨价引山姆代购潮；DeepSeek大规模招聘；黄金再度跌破4000美元",
+      "url": "https://36kr.com/p/3870720040588295?f=rss",
+      "source": "36kr.com",
+      "summary": "今日热点导览 OpenAI官宣推出GPT-5.6 亚洲“果链”股价几乎全线大幅下跌 SpaceX计划为美国消费者推出新的星链移动服务 美团股价低迷，王兴回应 小鹏机器人调整：新设九部门，何小鹏兼任产品部负责人 微信回应朋友圈互动规则：单删原封不动，互删清空对方全部痕迹 TOP3大新闻 苹果涨价引山姆代购潮，部分门店已卖断货 近日，社交媒体上多名网友反馈，多地山姆会员超市的iPad及Mac系列产品出现抢购、代购的情况。原因在于，苹果宣布上调iPad及Mac系列产品价格后，山姆超市并未进行价格调整。6月26日，有多名代购称可加价45元至300元不等前往山姆代购，并表示代购需求超级多，店内已基本无货",
+      "date": "2026-06-27",
+      "category": "ai-progress"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-06-27-asian-ai-startups-launch-mythos-like-models-as-a",
+      "title": "Asian AI startups launch Mythos-like  models as Anthropic’s export ban drags on",
+      "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
+      "source": "techcrunch.com",
+      "summary": "New models are launching in Asia that promise Mythos-like capabilities without fear of an export ban. U.S. AI labs may never recover this enormous market.",
+      "date": "2026-06-27",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "hn-48658182",
+      "title": "9 Weeks to AGI: Accountability and Governance Infrastructure for the EU AI Act",
+      "url": "https://assimilatedhuman.github.io/inquisitor-labs/eu-ai-act.html",
+      "source": "Hacker News",
+      "summary": "💬 1 条讨论 · ⭐ 1 分",
+      "date": "2026-06-24",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "r-https-36kr-com-newsflashes-3871213411128577-f-rss",
+      "title": "具身世界模型“我悟”通过合规备案",
+      "url": "https://36kr.com/newsflashes/3871213411128577?f=rss",
+      "source": "36kr.com",
+      "summary": "6月26日，北京人形机器人创新中心慧思开物平台的双大脑模型天鹕（Pelican-VL）和我悟（WoW）同步完成北京市网信办最新一批生成式人工智能服务备案。北京人形将正式启动慧思开物全系列模型Token服务，计划分阶段面向产业客户、科研机构、开发者全面开放API调用能力。（界面新闻）",
+      "date": "2026-06-27",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "r-https-www-artificiallawyer-com-2026-06-22-the-legal-ai-scaffold-changes-everythi",
+      "title": "The Legal AI Scaffold Changes Everything – Claude Study",
+      "url": "https://www.artificiallawyer.com/2026/06/22/the-legal-ai-scaffold-changes-everything-claude-study/",
+      "source": "artificiallawyer.com",
+      "summary": "A study by consultancy Legal Nodes, which included MikeOSS, shows that no matter how good a general model appears to be, it’s the legal AI ...",
+      "date": "2026-06-22",
+      "category": "legal-ai"
+    },
+    {
+      "id": "hn-48663022",
+      "title": "Show HN: ccMarvin – Just Email with AI",
+      "url": "https://ccmarvin.com",
+      "source": "Hacker News",
+      "summary": "Backstory: My name is Michael Stoppelman, I&#x27;m a super angel (300+ investments, I&#x27;ve invested in YC companies like Vanta, Flexport, Biorender, Permitflow and Canary Technologies). Prior to th",
+      "date": "2026-06-24",
+      "category": "legal-ai"
+    },
+    {
+      "id": "hn-48662453",
+      "title": "The AI Data Centre Legal Case That Could Eradicate Civil Rights",
+      "url": "https://read.misalignedmag.com/the-ai-data-centre-legal-case-that-could-eradicate-civil-rights-c20308e15ce5",
+      "source": "Hacker News",
+      "summary": "💬 0 条讨论 · ⭐ 3 分",
+      "date": "2026-06-24",
+      "category": "legal-ai"
+    },
+    {
+      "id": "hn-48638999",
+      "title": "Show HN: ExplainNotice: AI summary for bills, notices, and letters",
+      "url": "https://explainnotice.com",
+      "source": "Hacker News",
+      "summary": "Founder here. I built this because many everyday notices are hard to understand: utility bills, medical bills, insurance letters, landlord notices, government letters, etc.The app extracts a few pract",
+      "date": "2026-06-23",
+      "category": "legal-ai"
+    },
+    {
+      "id": "hn-48698263",
+      "title": "Adobe Generative AI User Guidelines (2026)",
+      "url": "https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html",
+      "source": "Hacker News",
+      "summary": "💬 1 条讨论 · ⭐ 2 分",
+      "date": "2026-06-27",
+      "category": "legal-ai"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmitafbvv95cuxqweloy3h3dwvkcdlycljtn3b3wurnb",
+      "title": "OpenAI考虑在Anthropic预计上市后于2027年进行IPO",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWElOY3h3dWVKcDlYclJTN3B3WURnbThHX2NPTUFrdmJKeS03Y1duU0VMekw1SjBUUlFVVS1EbFlEWTdKakxyTmFRSWwtYmxVb0VMYjhrSjJPbUQ4eUxoTURidEt6TkloWW9vc3JIekR4TmdtTlUwUTBINHc4U2JJcVlIb1Q4Q3BJQ1hnYVg0ZEZHZGFNWWNSaWRDVXNaR2hjU0pDLUluT1FjY0xoSm01Zlhrak0?oc=5",
+      "source": "Bloomberg.com",
+      "summary": "【编辑推荐】OpenAI考虑2027年IPO，重大融资动态",
+      "date": "2026-06-26",
+      "category": "ai-progress",
+      "analysis": "【事件概述】据彭博社2026年6月26日报道，人工智能公司OpenAI正在考虑于2027年进行首次公开募股（IPO）。这一计划是在其竞争对手Anthropic预计上市之后提出的。报道指出，OpenAI的IPO考虑标志着该公司在经历多轮融资后，正加速向公开市场迈进。该消息源自彭博社的编辑推荐，被描述为一项“重大融资动态”。目前，OpenAI尚未正式确认具体时间表，但这一潜在举动已引发市场对AI行业资本化进程的关注。\n\n【行业影响】若OpenAI在2027年成功IPO，将成为继Anthropic之后又一家登陆公开市场的主要AI实验室，进一步推动AI领域的资本化浪潮。此举可能吸引更多投资者将AI视为长期资产类别，并加剧头部企业之间在融资规模和战略布局上的竞争。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmibkfvx3lxtfbvaxzpswtpsnfctfntm3uxsu04lwhnt",
+      "title": "OpenAI发布新版GPT大模型 仅向特定用户开放 - 央广网",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBVaXZpSWtPSnFCTFNTM3UxSU04LWhnT2drVkhvRml1dUNiaFI5VjNXM0Z5VlB5aVNvVnY3aTVEd2htOUhaUEZKQmFTcVdwTFc4NTJ5c1ZpQmVDZDZMTjlZTklOQ3M5eFZhSnFTTzhn?oc=5",
+      "source": "央广网",
+      "summary": "【编辑推荐】OpenAI发布新版GPT大模型，头部公司重大产品更新\nOpenAI发布新版GPT大模型 仅向特定用户开放 央广网",
+      "date": "2026-06-28",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月28日，据央广网报道，OpenAI发布了新版GPT大模型，这是头部公司的一次重大产品更新。此次发布的新模型并未向所有用户开放，而是仅面向特定用户群体提供访问权限。这一举措表明OpenAI在新模型的应用策略上采取了更为谨慎和分层的部署方式。报道中未明确说明“特定用户”的具体范围，但通常可能包括付费企业客户、研究机构或经过审核的开发者。该新闻直接援引了央广网的报道，确认了OpenAI作为发布主体的身份以及发布的明确日期。\n\n【行业影响】OpenAI选择仅向特定用户开放新版GPT，而非全面公测，可能标志着大模型行业从“广撒网式”发布转向“精细化定制”阶段。这一策略将加速头部企业在高端商业场景中的技术壁垒构建，同时迫使其他AI公司重新思考产品开放节奏与用户分层策略。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmitafbvv95cuxqweloy3h3dwvkcdlycljtn3b3wurnb",
+      "title": "OpenAI考虑在Anthropic预计上市后于2027年进行IPO",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWElOY3h3dWVKcDlYclJTN3B3WURnbThHX2NPTUFrdmJKeS03Y1duU0VMekw1SjBUUlFVVS1EbFlEWTdKakxyTmFRSWwtYmxVb0VMYjhrSjJPbUQ4eUxoTURidEt6TkloWW9vc3JIekR4TmdtTlUwUTBINHc4U2JJcVlIb1Q4Q3BJQ1hnYVg0ZEZHZGFNWWNSaWRDVXNaR2hjU0pDLUluT1FjY0xoSm01Zlhrak0?oc=5",
+      "source": "Bloomberg.com",
+      "summary": "OpenAI Weighs IPO in 2027 After Expected Anthropic Public Debut Bloomberg.com",
+      "date": "2026-06-26",
+      "category": "ai-progress",
+      "analysis": "【事件概述】据Bloomberg.com 2026年6月26日报道，OpenAI正在考虑于2027年进行首次公开募股（IPO），这一计划紧随其主要竞争对手Anthropic预计的上市之后。报道指出，OpenAI的IPO时间表与Anthropic的公开上市预期紧密相关，显示出两家AI头部公司在资本市场上的竞争态势。目前OpenAI尚未正式提交IPO申请，但内部已在评估2027年作为潜在上市窗口期。该消息基于知情人士透露，具体上市规模和估值尚未公布。Anthropic此前曾传出筹备上市的消息，但具体时间表同样未最终确认。\n\n【行业影响】这一事件标志着AI行业头部企业正加速从私募融资转向公开市场，将推动资本对AI赛道的进一步聚焦。若两家公司相继上市，可能引发AI领域估值标准的新一轮讨论，并为后续AI初创公司的资本路径提供重要参照。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmie0fvx3lxte5yseiwcelwuhltv0zqckmwsu9yu0rsc",
+      "title": "OpenAI考虑在Anthropic预计上市后于2027年进行IPO",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ySEIwcElwUHltV0ZQckMwSU9yU0RSckZWQk5NOG9pWkRVNlZRa01Wc1UyNHhqMDVBZDItWmRBdzdiT21XVmx5Zmt0blYwSVpfN0JWcTZsSW80WVJmeHZtdHZrRmUwallkaW9lcWdmakdTQlJLQUF6U1dnONIBgAFBVV95cUxObk9GX1RWTENFUVA2LTBlN244X0wtaDJsR0tvMm1wUGJBbVFITHIzcVBfT3h4dFBtZEFENnlBV3FuQTJLaURZV2czUlJwemJscWhWN254bnpSWUNvNlN5eS1YZnphcW5BaUs5MW5KdEpKaWNiT0tqVUJWUGJCUVZrMg?oc=5",
+      "source": "The Mercury News",
+      "summary": "OpenAI weighs IPO in 2027 after expected Anthropic public debut The Mercury News",
+      "date": "2026-06-26",
+      "category": "ai-progress",
+      "analysis": "【事件概述】据The Mercury News于2026年6月26日报道，OpenAI正在考虑于2027年进行首次公开募股，这一计划是在其竞争对手Anthropic预计完成上市之后。报道指出，OpenAI的IPO时间表与Anthropic的公开上市预期密切相关，后者可能成为AI领域率先登陆资本市场的公司之一。目前OpenAI尚未正式提交IPO申请，但内部评估显示2027年是一个可行的时间窗口。该消息源自对OpenAI战略规划的知情人士透露，公司正密切关注市场环境与监管动态。Anthropic作为AI安全领域的领先企业，其上市进程被视为行业风向标。\n\n【行业影响】这一动向标志着AI头部企业正加速从私募市场转向公开资本市场。若OpenAI在2027年成功IPO，将极大提升AI行业的资本化水平，并可能引发新一轮AI公司上市潮，重塑全球科技投资格局。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmirwfbvv95cuxpellqnzfmy0jxtlzsb0xlc0vnbze2z",
+      "title": "OpenAI vs. Anthropic：在AI热潮达到顶峰前竞相IPO",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPellQNzFMY0JXTlZSb0xlc0VNbzE2ZmRnSTVoY1pxaXdUZU00YlIzWUVCLTVMQlNHV0g4aTcxcHR4ckt0X3J4al83LW5VNDRBeUpNVF82QVNJQVZMSDR5eXhoSy03S2Ixc3RzV2ZDTDFGbkdCQU1QZHRTXzg2UFVwN3d2RXFfV3JyMXRzQ29saTN2bUk2UG1IRkFsUnluSWdLUG1ibW5jVTRrY2ZVTG5J?oc=5",
+      "source": "24/7 Wall St.",
+      "summary": "OpenAI vs. Anthropic: The Race to IPO Before the AI Hype Peaks Is On 24/7 Wall St.",
+      "date": "2026-06-26",
+      "category": "ai-progress",
+      "analysis": "【事件概述】据24/7 Wall St.于2026年6月26日报道，OpenAI与Anthropic正在展开竞相首次公开募股（IPO）的竞赛，目标是在人工智能热潮达到顶峰前完成上市。两家公司均被视为AI领域的领先企业，OpenAI因推出ChatGPT而闻名，Anthropic则以开发Claude模型著称。报道指出，双方都希望抓住当前市场对AI技术的高估值窗口，通过IPO筹集资金以进一步扩大研发和商业化能力。这场竞争凸显了AI行业头部公司在资本市场的激烈角逐，以及它们对市场时机的高度敏感。目前，两家公司尚未公布具体的IPO时间表或估值细节，但这一动向已引发投资者广泛关注。\n\n【行业影响】这一IPO竞赛表明，AI领域的商业化正进入加速阶段，领先企业急于通过公开市场锁定资本优势以巩固竞争壁垒。同时，如果两家公司成功上市，将可能为整个AI行业树立估值标杆，并吸引更多资本涌入该赛道，进一步推动技术迭代与产业整合。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmis0fvx3lxte5mtmo0tgteawyxnkrymvluu0lumwzsr",
+      "title": "白宫因安全原因要求OpenAI限制GPT 5.6发布",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5mTmo0TGtEaWYxNkRyMVlUU0luMWZsR2pKSlBGYm9BN1djNDhtTXVZdVNTYnRSbHdkc3dmRjVJNmlfWHE3ZV9nUlQzMNIBQkFVX3lxTE5LYTh1X2VfTDRveWg1V3JPYy02c3hCMmdhY0Q4ZzBCN18yb2xqeTlBODVQM1Y4ZVA0YlQ4STU2eHdPUQ?oc=5",
+      "source": "VOI.id",
+      "summary": "白宫因安全原因要求OpenAI限制GPT 5.6发布。",
+      "date": "2026-06-27",
+      "category": "ai-regulation",
+      "analysis": "【事件概述】2026年6月27日，据VOI.id报道，白宫因安全原因正式要求OpenAI限制其最新模型GPT 5.6的发布。该指令直接针对OpenAI公司，要求其在未解决特定安全隐患前不得公开发布该模型。白宫方面未详细说明具体的安全顾虑，但强调此举基于对国家安全和公共利益的考量。OpenAI目前尚未对白宫的要求作出公开回应。这一事件标志着美国政府首次在AI模型发布前直接介入并施加限制，具有重要的政策示范意义。\n\n【行业影响】此次白宫直接干预OpenAI的发布计划，表明美国联邦政府正从事后监管转向事前预防，AI安全审查可能成为未来模型上线的强制性门槛。此举将迫使其他AI公司，如谷歌、Anthropic等，在发布前主动与政府沟通安全评估结果，否则可能面临类似的发布限制风险。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmikafbvv95cuxqvutgai1wbgd1wvlgeg1nauhvnuxem",
+      "title": "Shoosmiths推出AI合同审查平台 - Law360",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVUtGai1wbGd1WVlGeG1naUhVNUxEMjBqWEZ1ZU8wYVVvV2xIaVZjV2lTUTlsaVhPbExqX3JvTFBjOUZ5YTlJQlltNHU2cGZIeUYyVHo0ZVFoR2VEaUNFSHhBOE5sZi1iVjFCRDlSWkQxX3B3ZXI2R0MtRUhfLTdKc1I4MGVZTTh5UW41VGRyMmXSAVZBVV95cUxOaC0wVG1IdDdiVEdDU3lMeWM3MXVwLVl1Z2RibWJ0UWJPZFBsR2J2YzlKRTFZSFBEaFJ4VkgwZmwtUlpxVk5nOHlETTNadXd4LWJxN0E3QQ?oc=5",
+      "source": "Law360",
+      "summary": "知名律所发布AI合同审查平台产品",
+      "date": "2026-06-24",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月24日，据Law360报道，知名英国律所Shoosmiths正式推出了一款AI合同审查平台产品。该平台旨在利用人工智能技术，辅助律师快速、精准地审查合同条款与潜在风险。Shoosmiths作为一家在商业法律服务领域具有影响力的律所，此次发布的AI工具将直接应用于其日常合同审核业务中。这一举措标志着该律所将AI技术深度融入传统法律服务流程，以提升工作效率和客户服务体验。\n\n【行业影响】Shoosmiths此举进一步印证了法律科技在大型律所中的落地趋势，尤其是合同审查这一高频、标准化环节正加速被AI工具替代。该平台的推出可能促使更多同行跟进，推动整个法律服务业在成本控制和服务效率上迎来新一轮竞争与变革。"
+    },
+    {
+      "id": "hn-48643491",
+      "title": "人力资源顾问在英国法庭案中首次使用AI律师获胜",
+      "url": "https://www.theguardian.com/technology/2026/jun/22/artificial-intelligence-law-firm-wins-court-case-in-england-for-first-time",
+      "source": "Hacker News",
+      "summary": "AI律师在英国法院胜诉标志性突破",
+      "date": "2026-06-23",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月23日，Hacker News报道了一起具有标志性意义的案件：在英国法庭审理的一起人力资源顾问相关案件中，一名人力资源顾问首次使用AI律师作为其法律代表，并成功胜诉。该案被视为AI在法律实务领域的突破性应用，标志着人工智能首次在真实庭审中扮演律师角色并取得胜利。尽管报道未披露具体当事人姓名及案件细节，但明确提及该AI律师由某科技公司或法律服务提供商开发（具体名称未在标题和摘要中说明），并在英国法院的正式程序中完成了辩护或代理任务。\n\n【行业影响】此事件可能加速法律行业对AI辅助乃至独立代理的接受度，尤其为小额诉讼或标准化法律事务提供了低成本解决方案。同时，它也将引发关于AI律师的资格认定、责任归属及伦理边界的讨论，推动各国司法系统重新审视技术介入法庭的规则。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmiqgjbvv95cuxpc044zmjmotvnvgfwogvzvvjpddblc",
+      "title": "TruLegal推出行业首个法律AI自我评估工具，AI人才需求加速 - WBOC TV",
+      "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPc044ZmJMOTVnVGFWOGVzVVJPdDBlc3U2R3d6dTByREpvNFZ5REZRS3ZNTkZpSkc5a0RmNFV3dkdodXVRdFhMQnBNTTFXQW82T0JRbGt6X25naVJfc2h6MGwxNzg3NTBXN1dEelc3WmVwTGZoSGZaR0I3ZE5RWGVuVjNCRm1YbXYxaklWcVdqWE5EVHRVUEZhc2xpeUhTd05jN1N5Y1RYWUpRRUFmV2VIZnpzRDdycUsxRW8yOGV4YVE4YUxDVnRpY2ZBX3ZwWlZpcDFMX0JRU25uQUxsdTNTU0VQcllUN3N4aUUwVlR2OTNTSnhoYlpTZ2tZVG5fZ240Ulg2cUREM0RnLVl4NlNFcGpoTDA3SzBWeUZpSlRlLXJwQ0dwVkwxWEJB?oc=5",
+      "source": "WBOC TV",
+      "summary": "法律AI人才评估工具首发推动行业",
+      "date": "2026-06-24",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月24日，据WBOC TV报道，TruLegal推出了行业首个法律AI自我评估工具。该工具旨在帮助法律从业者评估自身在人工智能领域的技能水平与知识储备。TruLegal作为一家专注于法律科技的公司，此次发布标志着法律行业对AI人才需求的进一步加速。新闻标题和摘要均强调，这一工具的首发将推动整个法律行业对AI人才的评估与培养进程。目前，法律领域对具备AI技能的专业人才需求正在显著增长。\n\n【行业影响】TruLegal的自我评估工具首次为法律从业者提供了量化AI能力的标准，有助于律所和企业更精准地识别和培养AI人才。此举将加速法律行业与人工智能技术的深度融合，推动行业从传统服务模式向智能化转型。"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmibefvx3lxte9mwhuxx2tjdnhzoefxskz4mmnvvzbzm",
+      "title": "iCourt与腾讯、百度、火山引擎、阿里云，共同探索法律 AI的无限可能 - 中华网",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9MWHUxX2tJdnhzOEFxSkZ4MmNvVzBzMU9ObzJmU0xzbVRaQ2FfeEIwQUtDU3c2U19lOU8tSHdkbmhPN1Vva1ZhdUkzbjVRdzVCaTZDZWJXdFhHOFk5ZklWQ25BbGtnenI4enlmag?oc=5",
+      "source": "中华网",
+      "summary": "【编辑推荐】中国头部科技巨头联合探索法律AI应用\niCourt与腾讯、百度、火山引擎、阿里云，共同探索法律 AI的无限可能 中华网",
+      "date": "2026-06-26",
+      "category": "legal-ai",
+      "analysis": "【事件概述】2026年6月26日，据中华网报道，法律科技公司iCourt与腾讯、百度、火山引擎、阿里云等中国头部科技企业达成合作，共同探索法律人工智能的无限可能。该合作旨在整合各方在AI技术、云计算及法律数据领域的优势资源，推动法律AI在智能检索、文书生成、案件分析等场景的应用落地。iCourt作为法律科技领域的代表，将与腾讯云、百度智能云、火山引擎及阿里云分别展开技术对接与解决方案开发。此次联合行动被媒体称为“中国头部科技巨头联合探索法律AI应用”的标志性事件，但新闻中未披露具体的合作金额或产品发布时间表。\n\n【行业影响】这一合作意味着法律AI正从单一工具开发转向多技术平台协同的生态构建，有望加速法律服务的智能化与标准化进程。同时，多家云服务厂商的参与也将降低法律机构接入AI能力的门槛，推动整个法律科技行业的竞争格局升级。"
+    },
+    {
+      "id": "r-https-36kr-com-p-3873476968272902-f-rss",
+      "title": "8点1氪丨两大存储巨头今日发布大规模投资计划；江淮汽车股价腰斩，章建平9日套现近3亿元；Anthropic Fable 5有望很快恢复访问",
+      "url": "https://36kr.com/p/3873476968272902?f=rss",
+      "source": "36kr.com",
+      "summary": "今日热点导览 《给阿嬷的情书》总票房已突破19亿元 梁文锋署名，DeepSeek发布最新论文 WPS回应C盘占用问题，即将更新七月版本上线磁盘存储管理功能 触屏MacBook将搭载M5芯片发布，苹果计划跳过M6 Pro及M6 Max 美国监管部门关闭针对特斯拉Model 3及Model Y转向失控调查 TOP 3大新闻 韩国将于6月29日宣布三星、SK集团的多个大型项目 韩国将于6月29日宣布“三大工程”计划，韩国总统李在明将与政府各部门、三星电子和SK的官员会面，并发布政策和投资公告。李在明将于下午2点在总统府青瓦台发表讲话，届时韩国产业通商部、科学技术信息通信部、气候能源环境部和国土交通部",
+      "date": "2026-06-28",
+      "category": "ai-progress"
+    },
+    {
+      "id": "hn-48701615",
+      "title": "Everyone feared AI taking over; the real danger is AI serving just the few",
+      "url": "https://news.ycombinator.com/item?id=48701615",
+      "source": "Hacker News",
+      "summary": "Everyone feared AI would enslave humanity; but it looks like the real fight is stopping governments and Big Tech from enslaving AI for the benefit of the few.Amid the newly announced \"regulation\" of O",
+      "date": "2026-06-27",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "hn-48707090",
+      "title": "China companies Z.Ai,China 360 claim having cybersec AI models to match Mythos",
+      "url": "https://www.reuters.com/legal/litigation/chinas-360-says-it-has-developed-tools-match-anthropics-mythos-2026-06-24/",
+      "source": "Hacker News",
+      "summary": "💬 1 条讨论 · ⭐ 8 分",
+      "date": "2026-06-28",
+      "category": "legal-ai"
     }
   ]
 }
