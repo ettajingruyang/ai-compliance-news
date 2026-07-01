@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-29T01:00:57.765Z",
-  "total": 172,
+  "updated": "2026-07-01T01:03:21.367Z",
+  "total": 185,
   "items": [
     {
       "id": "r-https-techcrunch-com-2026-06-09-anthropics-claude-fable-5-is-a-version-of-mythos",
@@ -1704,6 +1704,123 @@
       "source": "Hacker News",
       "summary": "💬 1 条讨论 · ⭐ 8 分",
       "date": "2026-06-28",
+      "category": "legal-ai"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-06-30-amazon-launches-new-1-billion-fde-org-following-",
+      "title": "Amazon launches new $1 billion FDE org, following OpenAI and Anthropic",
+      "url": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/",
+      "source": "techcrunch.com",
+      "summary": "Engineers on the new team will embed within companies to deploy purpose-built agents, focusing on fast deployments and customer self-sufficiency.",
+      "date": "2026-06-30",
+      "category": "ai-progress"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmizkfvx3lxte9zoe5jumptctdvbwhmbtcysnnbvhbta",
+      "title": "中国AI大模型调用量连续九周领跑，美国份额一年内从72%跌至33%：智谱GLM-5.2调用量环比增长66%，Claude Sonnet 4.6近四个月来首次跌出榜单 - 每日经济新闻",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9zOE5JUmpTcTdvbWhmbTcySnNBVHBtaUdYTG1xRTBzRk1SSXNuRlVScVZWUzZ3VF9RZmNFeTk1V2NUMWVlM2dfWGcyTWVQVXZvX3kyTFZWVGxuMEM5SVF1SFBlWkFCUQ?oc=5",
+      "source": "每日经济新闻",
+      "summary": "中国AI大模型调用量连续九周领跑，美国份额一年内从72%跌至33%：智谱GLM-5.2调用量环比增长66%，Claude Sonnet 4.6近四个月来首次跌出榜单 每日经济新闻",
+      "date": "2026-06-29",
+      "category": "ai-progress"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmi5gfbvv95cuxozjradtqtx1z6wdd6sfjhx2hicjvib",
+      "title": "US Government Restricts OpenAI's Most Powerful GPT-5.6 AI Models While Anthropic's Mythos 5 Gets Partial Release - ETV Bharat",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZjRadTQtX1Z6WDd6SFJHX2hIcjVib2E1blBJUVJETTFvV2ZVNl9zcXBpdHl0dW01OGY1QzZRb3NqZW1EbEFuTm1qbktnVjducUFmQ29hZXF5VzE0eUxEQnFYSkREUW42akJCdElBTFhaMFV4WGplTWwzQU9oZVp5LU9IYmxaQ1pDbFZJS3h6dWhKS2xjUEluVE40WFpsdmVwQ3NzNi1NelpLYzJrYnZCLU9mSUNlQlZ3bVlIWk5fX2E5RkVtcDhTNGpzNUluMkM1S2RzOXBJdEVJeTFjTzVGT3UyNFVLZ9IB6wFBVV95cUxORzlyWml3RV9WZC01SlZSalVkQjZrNmdIdUFsYTA0YmxQZWN0YkVEbFQwTEU1Vm9BVmVwSHBRdW8tQTFZdlFRT2JBN2tCMFE0OHFKcGs5dVRYTGRTZXJkTlRpSUR1WXQ0YVViYS1UczBIaElEV1hmdjJja0VVb3RncHNoS1FDS2FrR2hHNmV4YVdwT0hmbTJmLVU2aVlyb21UQnpmdmpaR25oTk9zYXJqQjFzNnJCTndUVk52bVJCWVMtMWgzVnZWQlJyWmJtcGs0dUR5ZEJuZC0xdkxUSHdlazZTaEw5MkltcExN?oc=5",
+      "source": "ETV Bharat",
+      "summary": "US Government Restricts OpenAI's Most Powerful GPT-5.6 AI Models While Anthropic's Mythos 5 Gets Partial Release ETV Bharat",
+      "date": "2026-06-27",
+      "category": "ai-progress"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmiwwfbvv95cuxnzmvoalhxlvk2c214zuvzsjjpeuk4b",
+      "title": "STARTRADER Launches Pre-IPO Trading Products for OpenAI and Anthropic - PR Newswire",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZmVOalhxLVk2c214ZUVzSjJpeUk4bmxFNmt1ajNmVjVKMFMxNXNfS1lwRnJyX2pzSzdSajNzM3hMNndhLWx2TkxwRElXV0VQWDVpaDNIWjc4SkNWcjJEZVdOd3JjanFoUFNaY01iWGlIczNIdzNOVm1hUXYzZ3EtR2dpVUtsdk5vR3dRcnNxY09oaGh6MC1wZU9PeFo1M3hidUNyWnIyWEc1Um03ZTV0LXJ2bkVYNFpKZTcxLV8wRHJPODg?oc=5",
+      "source": "PR Newswire",
+      "summary": "STARTRADER Launches Pre-IPO Trading Products for OpenAI and Anthropic PR Newswire",
+      "date": "2026-06-30",
+      "category": "ai-progress"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmioafbvv95cuxnszlsuddwc2wyt3vjwflqzjjed29cv",
+      "title": "STARTRADER Launches Pre-IPO CFDs for OpenAI and Anthropic - Let's Data Science",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSzlSUDdwc2wyT3VjWFlQZjJEd29CV0Y0aG9mcFYwTHJJRnM2bmlyc3RQZlVxbURvcGZhcUZMYWJMei1leUNVV1RQZVk3R2JNdWtSVjBDdUV5UFBxQjV1Um5oX1MxRVF6TF9UYnJESlB1ejlFbDZUOUZJcmU5N0p3UU1nTGtJOFdvbHU1UGx3RFlodHo5UzhMemJiZXFnZlpO?oc=5",
+      "source": "Let's Data Science",
+      "summary": "STARTRADER Launches Pre-IPO CFDs for OpenAI and Anthropic Let's Data Science",
+      "date": "2026-06-29",
+      "category": "ai-progress"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmia0fvx3lxte50njltuy1ldu5xwldiqtzsb3ztrevdn",
+      "title": "GPT-5.6受限发布，海外AI监管升级，国产大模型迎来破局机遇？ - blog.csdn.net",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE50NjlTUy1LdU5XWldiQTZSb3ZTREVDNFVmZ2RQeER4YTNTaVdDSFJLVTNXUFhnbV8yREUyeUNMQmZwSDZlajJIUUplSUJmOUNFeG11R29XZXBYdU5JcTFWMUJRMGRsblpLb1J3?oc=5",
+      "source": "blog.csdn.net",
+      "summary": "GPT-5.6受限发布，海外AI监管升级，国产大模型迎来破局机遇？ blog.csdn.net",
+      "date": "2026-06-28",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmilwfbvv95cuxqsexqnnblsuxeegu4uvjnuujzcud2w",
+      "title": "AI Executive Order aims to balance security and innovation - App Developer Magazine",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSExqNnBLSUxEeGU4UVJNUUJzcUd2WDZHWHBPdFc4SW00YnZCcUYxb3pCdm1Ia3poVDdCSTNLQ1dXNDNGdlljMHZvQ3JUaHlEVkdDYlFqdUNfMU85MElSX0NiRm5QdkFTdEdIX3ZVbmN0RG5BMkV5TVJYV2dhamI3OE4taVVVT0tRRXdTWVhpLUwzWEc2TXhr?oc=5",
+      "source": "App Developer Magazine",
+      "summary": "AI Executive Order aims to balance security and innovation App Developer Magazine",
+      "date": "2026-06-29",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmiqwfbvv95cuxqni1vmkmxv0xywvj6umdkbmlmvkzhm",
+      "title": "TrustEvals launches AI governance platform to ensure compliance in finance and real estate sectors. - Pluang",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNi1vMkMxV0xyWVJ6UmdkbmlMVkZHMDRSQld4cnFYdGRHdmpHcUhtSUtIVWpvb1pZeXBhVTlCcV9SaVhoTFl2ekhVNTZFQTh4LUVUdEpSZkNVdFdyQzVDMjY5OWVEVTA1ejRfclc4NnlCNjZST0xCWWNUQ0NzaTRyQ0tvSjd4Q0hkSFFObXR3MVN6WnFXZm5aM0FobmdESTZyT3YzLUZsTUxza0E?oc=5",
+      "source": "Pluang",
+      "summary": "TrustEvals launches AI governance platform to ensure compliance in finance and real estate sectors. Pluang",
+      "date": "2026-06-30",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "hn-48730624",
+      "title": "Show HN: Privacy policy generator for AI apps (LLM disclosure, EU AI Act)",
+      "url": "https://ai-policy-gen.pages.dev",
+      "source": "Hacker News",
+      "summary": "💬 2 条讨论 · ⭐ 6 分",
+      "date": "2026-06-30",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "hn-48720239",
+      "title": "AI Accountability in Justice and Medicine – Ethics and EU AI Act",
+      "url": "https://neuralcoretech.com/ai-accountability-justice-medicine/",
+      "source": "Hacker News",
+      "summary": "💬 0 条讨论 · ⭐ 1 分",
+      "date": "2026-06-29",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmi4gfbvv95cuxoc2f2mwf2zc1oaulobgfxvfvntnzkz",
+      "title": "Perplexity Launches Legal AI Platform: 20-Model Agent Targets Law Firm Workflows Above Westlaw - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOc2F2MWF2ZC1oaUlobGFxVFVnTnZkZTJlSjBTMktEckJfeXFhclZscnF5Q0EzY2pkck9mQlRCMl9yV2Zib0VyV1o0ZlQ4Smk1ODhqN2lnb3htNjZJVkN0UzltOFBwdTh6ZHhONUw5VUlGQzZnWjBabWhKeGFqcDlqT3FFeXpyai1nNGFqbVVoNE5zbGx6dWlQLU04aXM4TEt5NVVEcnJFUV9KRUxYTWxieElnZ3FXb0VIbXc5bWxLZTkwSUFkcThKMGlvTlNva0VLdktXcW1Xd0dLT05TUzhjYlB3?oc=5",
+      "source": "Tech Times",
+      "summary": "Perplexity Launches Legal AI Platform: 20-Model Agent Targets Law Firm Workflows Above Westlaw Tech Times",
+      "date": "2026-06-28",
+      "category": "legal-ai"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmizafbvv95cuxpztnld1vcn3vxr1dcz1zdakrlwvfat",
+      "title": "UK law firm Shoosmiths unveils proprietary gen AI contract review tool Project Apollo - The Global Legal Post",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZTNLd1VCN3VxR1dCZ1ZDakRlWVFaTUdBb1R1WW1OdnctUlJsWVJ5czZ1NFR3VUg3Ym9hQ1QyMUtuX0ZxX2ZMMkNlM1pSVWlRellzeVBwemVfYWd6YmJuLVdsOUFuR0JwRkdlX254bHJWRFlKbWRHYllxN19QX29TeGE5Z0YxRUhoUllZWGlVRFRCLUxGZWFPeFBTQlF6OWxhQmM0MUxvd3VqNkdlbk84ejhGcHF2cnNsczZFek5JOWpGT3dQT1FqQmtsUFk?oc=5",
+      "source": "The Global Legal Post",
+      "summary": "UK law firm Shoosmiths unveils proprietary gen AI contract review tool Project Apollo The Global Legal Post",
+      "date": "2026-06-29",
+      "category": "legal-ai"
+    },
+    {
+      "id": "g-https-news-google-com-rss-articles-cbmia0fvx3lxte5oagc4rdzfvnrvzerwmud6mkxelvoys",
+      "title": "iCourt与腾讯、百度、火山引擎、阿里云，共同探索法律 AI的无限可能 - 新华报业网",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5OaGc4RDZFVnRvZERWMUd6MkxELVoySEVoeURabFU3OVd0VWNZUThJRkNObHQ0UGI0OVJMNlFFcDhEcjNpUmxfdDl1SlZyakdSZTNNV3ItUmt2U3E4UHo5aXBzQkl4ejBnU0dv?oc=5",
+      "source": "新华报业网",
+      "summary": "iCourt与腾讯、百度、火山引擎、阿里云，共同探索法律 AI的无限可能 新华报业网",
+      "date": "2026-06-30",
       "category": "legal-ai"
     }
   ]
