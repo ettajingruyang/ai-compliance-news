@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-01T01:03:21.367Z",
-  "total": 185,
+  "updated": "2026-07-03T06:06:15.350Z",
+  "total": 190,
   "items": [
     {
       "id": "r-https-techcrunch-com-2026-06-09-anthropics-claude-fable-5-is-a-version-of-mythos",
@@ -1822,6 +1822,56 @@
       "summary": "iCourt与腾讯、百度、火山引擎、阿里云，共同探索法律 AI的无限可能 新华报业网",
       "date": "2026-06-30",
       "category": "legal-ai"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-07-02-microsoft-launches-its-own-ai-deployment-company",
+      "title": "微软斥资25亿美元成立AI部署公司",
+      "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
+      "source": "techcrunch.com",
+      "summary": "微软紧随亚马逊、OpenAI和Anthropic，成立新的AI部署集团。",
+      "date": "2026-07-02",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年7月2日，科技媒体TechCrunch报道，微软宣布斥资25亿美元成立一家全新的AI部署公司。这一举措标志着微软紧随亚马逊、OpenAI和Anthropic等主要科技企业的步伐，正式进入AI部署领域。新公司的具体名称和业务细节尚未在标题和摘要中披露，但明确其核心任务是将AI技术从研发阶段推向实际应用场景。微软此次投入的25亿美元资金，显示出其对AI商业化落地的战略重视。该部署集团将与微软现有的云服务、企业软件等业务形成协同，旨在加速AI解决方案在全球企业中的普及。\n\n【行业影响】微软的入局进一步加剧了AI部署市场的竞争，此前亚马逊、OpenAI和Anthropic已在该领域展开布局。此举表明，头部科技公司正从模型竞赛转向应用落地，AI部署将成为决定行业格局的下一个关键战场。"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-07-01-gemini-spark-googles-agentic-assistant-is-now-av",
+      "title": "谷歌智能助手Gemini Spark现已登陆Mac",
+      "url": "https://techcrunch.com/2026/07/01/gemini-spark-googles-agentic-assistant-is-now-available-on-mac/",
+      "source": "techcrunch.com",
+      "summary": "谷歌全天候智能助手Gemini Spark登陆Mac，同时带来实时追踪及更多应用支持等改进。",
+      "date": "2026-07-01",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年7月1日，据科技媒体TechCrunch报道，谷歌公司宣布其全天候智能助手Gemini Spark正式登陆Mac平台。该助手此前已在其他设备上运行，此次Mac版本的推出意味着用户可以在苹果电脑上直接使用谷歌的AI助手功能。同时，Gemini Spark带来了实时追踪能力的升级，能够更及时地响应用户需求。此外，该版本还扩展了对更多第三方应用的支持，提升了跨应用协作的便捷性。这一更新标志着谷歌在跨平台AI助手布局上迈出了重要一步。\n\n【行业影响】Gemini Spark登陆Mac，直接与苹果自家的Siri形成竞争，可能推动桌面端AI助手的功能竞赛。实时追踪和多应用支持功能的加入，将提升AI助手在生产力场景中的实用性，加速AI从手机向电脑端的渗透。"
+    },
+    {
+      "id": "r-https-www-technologyreview-com-2026-06-30-1139987-claude-science-is-anthropics-n",
+      "title": "Anthropic发布旗舰产品Claude Science",
+      "url": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
+      "source": "technologyreview.com",
+      "summary": "在周二面向制药高管、生物科技创始人和研究人员的活动中，Anthropic宣布了重大新产品Claude Science，旨在……",
+      "date": "2026-06-30",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年6月30日，据technologyreview.com报道，人工智能公司Anthropic在周二举办的一场面向制药高管、生物科技创始人和研究人员的活动中，正式发布了其旗舰新产品Claude Science。该产品被定位为一项重大新发布，旨在服务于生命科学领域的专业用户。从标题和摘要信息来看，Claude Science是Anthropic针对特定行业需求推出的垂直化AI工具，其发布场景和受众明确指向生物医药研发环节。目前摘要未披露该产品的具体功能细节，但强调其作为“旗舰产品”的重要性。\n\n【行业影响】Claude Science的推出标志着AI公司从通用大模型向专业领域深度渗透的趋势加速。若该产品能有效整合生物科技与制药领域的专业数据与工作流，可能显著缩短药物发现与临床试验周期，并对现有科研AI工具市场形成竞争压力。"
+    },
+    {
+      "id": "r-https-36kr-com-p-3879158039834629-f-rss",
+      "title": "8点1氪丨“具身智能第一股” 宇树科技上市申请通过；SK海力士单日市值蒸发10000亿元；配置失误引发0元抢购潮，霸王茶姬致歉",
+      "url": "https://36kr.com/p/3879158039834629?f=rss",
+      "source": "36kr.com",
+      "summary": "【编辑推荐】宇树科技科创板IPO过会，中国具身智能第一股\n今日热点导览 苹果拟于今明两年推出至少五款新iPhone AI版支付宝开放公测，上线72项办事技能 特朗普回应“利用职位牟利”：股市在涨，大家都在赚钱 LV起诉茉莉奶白，茉莉奶白被判赔1030万元 6月赴日航班取消1488个 安克创新港股上市首日破发 TOP3大新闻 证监会同意宇树科技科创板IPO注册 7月2日，证监会网站显示，同意宇树科技首次公开发行股票注册。这意味着，全球首家在IPO前实现人形机器人规模化盈利的企业正式拿到A股“入场券”，将成为A股“人形机器人第一股”。 宇树科技从今年3月20日科创板IPO申请获受理，再到7月2日注册生效，仅用时104天。其创下科创板预先审阅机制落地以来的",
+      "date": "2026-07-03",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年7月2日，证监会同意宇树科技首次公开发行股票注册，该公司从3月20日科创板IPO申请获受理到注册生效仅用时104天。宇树科技被媒体称为“具身智能第一股”，是全球首家在IPO前实现人形机器人规模化盈利的企业，即将成为A股“人形机器人第一股”。这一进展标志着中国具身智能领域迎来了首家上市公司，其快速过会也体现了科创板对前沿科技企业的支持力度。同时，今日热点还包括SK海力士单日市值蒸发10000亿元、霸王茶姬因配置失误引发0元抢购潮并致歉等事件。\n\n【行业影响】宇树科技成功过会，为人形机器人赛道树立了明确的资本化标杆，将加速资本对具身智能领域的关注与投入。其IPO前的盈利证明，也打破了市场对“人形机器人难以商业化”的疑虑，可能推动更多同类企业加快上市步伐。"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-07-02-meta-quietly-launches-vibe-coded-gaming-app-pock",
+      "title": "Meta低调上线AI游戏生成应用Pocket",
+      "url": "https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/",
+      "source": "techcrunch.com",
+      "summary": "Meta低调推出实验性AI应用Pocket，用户可通过文本提示生成并分享互动小游戏。",
+      "date": "2026-07-02",
+      "category": "ai-progress",
+      "analysis": "【事件概述】2026年7月2日，科技媒体TechCrunch报道称，Meta公司低调上线了一款名为Pocket的实验性AI应用。该应用允许用户通过输入文本提示，直接生成并分享可玩的互动小游戏。Pocket的推出标志着Meta在AI驱动的内容生成领域迈出了新的一步，但目前仍处于实验阶段，尚未进行大规模宣传。用户只需提供简单的文字描述，即可快速创建出具备基本互动功能的游戏作品，并能够与他人分享。这一举措延续了Meta近年来在生成式AI领域的探索，尤其是在文本到内容生成方面的技术积累。\n\n【行业影响】Pocket的发布降低了游戏创作的门槛，使非专业用户也能通过自然语言快速生成互动内容。这或将推动AI在轻量级游戏开发与社交分享场景中的应用，进一步加剧科技巨头在AI生成工具赛道上的竞争。"
     }
   ]
 }
