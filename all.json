@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-03T06:06:15.350Z",
-  "total": 190,
+  "updated": "2026-07-04T01:01:07.911Z",
+  "total": 200,
   "items": [
     {
       "id": "r-https-techcrunch-com-2026-06-09-anthropics-claude-fable-5-is-a-version-of-mythos",
@@ -1872,6 +1872,96 @@
       "date": "2026-07-02",
       "category": "ai-progress",
       "analysis": "【事件概述】2026年7月2日，科技媒体TechCrunch报道称，Meta公司低调上线了一款名为Pocket的实验性AI应用。该应用允许用户通过输入文本提示，直接生成并分享可玩的互动小游戏。Pocket的推出标志着Meta在AI驱动的内容生成领域迈出了新的一步，但目前仍处于实验阶段，尚未进行大规模宣传。用户只需提供简单的文字描述，即可快速创建出具备基本互动功能的游戏作品，并能够与他人分享。这一举措延续了Meta近年来在生成式AI领域的探索，尤其是在文本到内容生成方面的技术积累。\n\n【行业影响】Pocket的发布降低了游戏创作的门槛，使非专业用户也能通过自然语言快速生成互动内容。这或将推动AI在轻量级游戏开发与社交分享场景中的应用，进一步加剧科技巨头在AI生成工具赛道上的竞争。"
+    },
+    {
+      "id": "r-https-www-wired-com-story-can-cursor-remain-an-open-platform-inside-of-spacex",
+      "title": "Can Cursor Remain a Platform for OpenAI and Anthropic’s Models Inside SpaceX?",
+      "url": "https://www.wired.com/story/can-cursor-remain-an-open-platform-inside-of-spacex/",
+      "source": "wired.com",
+      "summary": "Cursor hopes to continue offering third-party AI models after it's acquired by SpaceX, testing the relationships between frontier AI labs.",
+      "date": "2026-07-02",
+      "category": "ai-progress"
+    },
+    {
+      "id": "r-https-www-wired-com-story-anthropic-added-a-new-security-measure-to-get-back-int",
+      "title": "Anthropic Added a New Security Measure to Get Back Into the Trump Administration’s Good Graces",
+      "url": "https://www.wired.com/story/anthropic-added-a-new-security-measure-to-get-back-into-the-trump-administrations-good-graces/",
+      "source": "wired.com",
+      "summary": "The government has removed restrictions on Anthropic’s Fable 5 and Mythos 5 AI models—but there were strings attached.",
+      "date": "2026-07-01",
+      "category": "ai-progress"
+    },
+    {
+      "id": "r-https-36kr-com-newsflashes-3879857819201798-f-rss",
+      "title": "生数科技正式发布Vidu S1实时交互模型",
+      "url": "https://36kr.com/newsflashes/3879857819201798?f=rss",
+      "source": "36kr.com",
+      "summary": "36氪获悉，生数科技正式发布Vidu S1实时交互模型，提供实时可交互的新一代视频生成能力，模型支持实时视频通话和语音控制视频走向。同时，Vidu S1支持540P（960x540）高清分辨率、25FPS帧率（最高支持42FPS），可基于真人、动漫、萌宠等任意初始形象及个性化音色，快速创建专属交互角色。",
+      "date": "2026-07-03",
+      "category": "ai-progress"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-06-30-trump-drops-restrictions-on-anthropics-mythos-an",
+      "title": "Trump drops restrictions on Anthropic’s Mythos and Fable models",
+      "url": "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/",
+      "source": "techcrunch.com",
+      "summary": "The Trump administration's erratic approach to AI policymaking has left companies across the industry with little clarity about what will govern future model releases.",
+      "date": "2026-07-01",
+      "category": "ai-progress"
+    },
+    {
+      "id": "hn-48694885",
+      "title": "US allows Anthropic to release Mythos AI to 'trusted' US organizations",
+      "url": "https://www.reuters.com/technology/us-releases-anthropic-model-mythos-some-us-companies-semafor-reports-2026-06-26/",
+      "source": "Hacker News",
+      "summary": "💬 0 条讨论 · ⭐ 1 分",
+      "date": "2026-06-27",
+      "category": "ai-progress"
+    },
+    {
+      "id": "hn-48765655",
+      "title": "31 Days Until EU AI Act",
+      "url": "https://leanpub.com/eu-ai-act",
+      "source": "Hacker News",
+      "summary": "💬 0 条讨论 · ⭐ 3 分",
+      "date": "2026-07-02",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "hn-48774845",
+      "title": "CorvinOS – a self-hosted agentic OS which enforce EU AI Act 2026 by design",
+      "url": "https://github.com/CorvinLabs/CorvinOS",
+      "source": "Hacker News",
+      "summary": "💬 0 条讨论 · ⭐ 2 分",
+      "date": "2026-07-03",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "hn-48769007",
+      "title": "Startup sues Palo Alto Networks' Koi Security due to AI-hallucinated report",
+      "url": "https://www.theregister.com/legal/2026/07/02/startup-sues-palo-alto-networks-koi-security-saying-an-ai-hallucinated-report-falsely-linked-it-to-chinese-espionage/5266201",
+      "source": "Hacker News",
+      "summary": "💬 2 条讨论 · ⭐ 7 分",
+      "date": "2026-07-03",
+      "category": "legal-ai"
+    },
+    {
+      "id": "r-https-www-artificiallawyer-com-2026-06-29-kirkland-partners-with-syllo-for-secre",
+      "title": "Kirkland Partners With Syllo For Secret Sauce Litigation",
+      "url": "https://www.artificiallawyer.com/2026/06/29/kirkland-partners-with-syllo-for-secret-sauce-litigation/",
+      "source": "artificiallawyer.com",
+      "summary": "Fresh from signing a massive deal with Palantir and going on a legal AI hiring spree, Kirkland & Ellis has inked a deal with Syllo, ...",
+      "date": "2026-06-29",
+      "category": "legal-ai"
+    },
+    {
+      "id": "hn-48760467",
+      "title": "Show HN: Navia Dratp – an online version of an out-of-print Bandai strategy game",
+      "url": "https://naviadratp.com/",
+      "source": "Hacker News",
+      "summary": "I built an online version of Navia Dratp, an out-of-print chess-like strategy game by Bandai (think chess plus mana and deckbuilding).One interesting part was the Claude-powered AI opponent. The criti",
+      "date": "2026-07-02",
+      "category": "legal-ai"
     }
   ]
 }
