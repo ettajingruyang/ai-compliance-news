@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-04T01:01:07.911Z",
-  "total": 200,
+  "updated": "2026-07-08T01:00:49.311Z",
+  "total": 210,
   "items": [
     {
       "id": "r-https-techcrunch-com-2026-06-09-anthropics-claude-fable-5-is-a-version-of-mythos",
@@ -1961,6 +1961,96 @@
       "source": "Hacker News",
       "summary": "I built an online version of Navia Dratp, an out-of-print chess-like strategy game by Bandai (think chess plus mana and deckbuilding).One interesting part was the Claude-powered AI opponent. The criti",
       "date": "2026-07-02",
+      "category": "legal-ai"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-07-04-alibaba-reportedly-bans-employees-from-using-cla",
+      "title": "Alibaba reportedly bans employees from using Claude Code",
+      "url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
+      "source": "techcrunch.com",
+      "summary": "Alibaba has reportedly classified Claude Code as high-risk software.",
+      "date": "2026-07-04",
+      "category": "ai-progress"
+    },
+    {
+      "id": "r-https-www-wired-com-story-openai-chief-futurist-joshua-achiam-is-leaving-the-com",
+      "title": "OpenAI’s Chief Futurist Is Leaving the Company",
+      "url": "https://www.wired.com/story/openai-chief-futurist-joshua-achiam-is-leaving-the-company/",
+      "source": "wired.com",
+      "summary": "Joshua Achiam spent nearly nine years at OpenAI researching AI safety and made a memorable appearance in the Musk v. Altman trial.",
+      "date": "2026-07-07",
+      "category": "ai-progress"
+    },
+    {
+      "id": "r-https-www-technologyreview-com-2026-07-06-1140176-your-familys-300-stake-in-open",
+      "title": "Your family’s $300 stake in OpenAI",
+      "url": "https://www.technologyreview.com/2026/07/06/1140176/your-familys-300-stake-in-openai/",
+      "source": "technologyreview.com",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. OpenAI CEO Sam Altman’s oft-discussed promise that Americans will share in the wealth AI creates was in the news again last week. On Thursday, the Financial Times",
+      "date": "2026-07-06",
+      "category": "ai-progress"
+    },
+    {
+      "id": "r-https-36kr-com-p-3886238403129353-f-rss",
+      "title": "8点1氪丨前华为天才少年吐槽DeepSeek面试，称面试官质疑他抄袭；苹果折叠屏已在量产；特朗普呼吁购买戴尔电脑，引发戴尔暴涨百亿美元",
+      "url": "https://36kr.com/p/3886238403129353?f=rss",
+      "source": "36kr.com",
+      "summary": "今日热点导览 网传“7月1日新规：新车智驾芯片自主化率不低于70%”系谣言 商业银行不良处置仍在加速，上半年全行业转让核销合计至少5000亿 国家外汇管理局：截至2026年6月末，中国外汇储备规模为34163亿美元 汇丰暂停向风险较高的私募信贷客户提供贷款 SpaceX公布AI数据中心计划，同步推进星链卫星脱轨 TOP3大新闻 前华为天才少年吐槽DeepSeek面试，称面试官质疑他抄袭 7月6日，前华为“天才少年”李博杰在社交平台公开吐槽DeepSeek的面试流程，提及流程较慢且繁琐，面试官存在态度问题，质疑他抄袭，他感到“被严重冒犯”。面试过程并不愉快，他还被面试官质疑抄袭。“因为在代码面试",
+      "date": "2026-07-08",
+      "category": "ai-progress"
+    },
+    {
+      "id": "hn-48793158",
+      "title": "ActHub – EU AI Act compliance toolkit for small businesses (PHP, no framework)",
+      "url": "https://sevinhub.com/acthub/",
+      "source": "Hacker News",
+      "summary": "💬 0 条讨论 · ⭐ 2 分",
+      "date": "2026-07-05",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "hn-48824992",
+      "title": "EU AI Act becomes applicable Aug 2: an engineering checklist",
+      "url": "https://conformityengineering.com/playbook/",
+      "source": "Hacker News",
+      "summary": "💬 0 条讨论 · ⭐ 1 分",
+      "date": "2026-07-07",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "hn-48793704",
+      "title": "ComplianceAgent: Open-source EU AI Act compliance scanner",
+      "url": "https://github.com/latreon/compliance-agent",
+      "source": "Hacker News",
+      "summary": "💬 0 条讨论 · ⭐ 1 分",
+      "date": "2026-07-05",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "r-https-www-artificiallawyer-com-2026-07-07-meet-brahe-the-new-ai-first-law-firm",
+      "title": "Meet Brahe – The New AI-First Law Firm",
+      "url": "https://www.artificiallawyer.com/2026/07/07/meet-brahe-the-new-ai-first-law-firm/",
+      "source": "artificiallawyer.com",
+      "summary": "Antti Innanen, the legal AI expert who recently created the agentic experimental firm Lavern, is now launching a real AI-first law firm, Brahe, and is ...",
+      "date": "2026-07-07",
+      "category": "legal-ai"
+    },
+    {
+      "id": "hn-48803653",
+      "title": "Britain should consider regulating AI models, FCA official says",
+      "url": "https://www.reuters.com/legal/litigation/britain-should-consider-regulating-ai-models-fca-official-says-2026-07-06/",
+      "source": "Hacker News",
+      "summary": "💬 2 条讨论 · ⭐ 4 分",
+      "date": "2026-07-06",
+      "category": "legal-ai"
+    },
+    {
+      "id": "hn-48782457",
+      "title": "Show HN: I replaced my $500/mo legal SaaS with an AI-generated toolkit",
+      "url": "https://maxiporonga.gumroad.com/l/ytruk",
+      "source": "Hacker News",
+      "summary": "Built a complete legal document generation toolkit using AI that produces contracts, NDAs, and other legal templates. Replaced paying $500&#x2F;month for a SaaS subscription. One-time purchase, works ",
+      "date": "2026-07-04",
       "category": "legal-ai"
     }
   ]
