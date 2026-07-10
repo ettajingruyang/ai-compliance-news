@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-08T01:00:49.311Z",
-  "total": 210,
+  "updated": "2026-07-10T01:05:22.308Z",
+  "total": 219,
   "items": [
     {
       "id": "r-https-techcrunch-com-2026-06-09-anthropics-claude-fable-5-is-a-version-of-mythos",
@@ -2051,6 +2051,87 @@
       "source": "Hacker News",
       "summary": "Built a complete legal document generation toolkit using AI that produces contracts, NDAs, and other legal templates. Replaced paying $500&#x2F;month for a SaaS subscription. One-time purchase, works ",
       "date": "2026-07-04",
+      "category": "legal-ai"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-07-09-anthropic-openai-and-spacex-are-bigger-than-the-",
+      "title": "Anthropic, OpenAI, and SpaceX are bigger than the last 25 years of tech exits",
+      "url": "https://techcrunch.com/2026/07/09/anthropic-openai-and-spacex-are-bigger-than-the-last-25-years-of-tech-exits/",
+      "source": "techcrunch.com",
+      "summary": "Three big AI IPOs are set to generate more value than all the U.S. VC-backed exits since 2000.",
+      "date": "2026-07-09",
+      "category": "ai-progress"
+    },
+    {
+      "id": "r-https-techcrunch-com-2026-07-09-new-york-times-says-openai-hid-evidence-in-chatg",
+      "title": "New York Times says OpenAI hid evidence in ChatGPT copyright trial",
+      "url": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/",
+      "source": "techcrunch.com",
+      "summary": "News publishers say OpenAI hid tools and datasets that could identify copyrighted journalism in ChatGPT outputs, escalating their lawsuit with a new motion for sanctions.",
+      "date": "2026-07-09",
+      "category": "ai-progress"
+    },
+    {
+      "id": "hn-48847526",
+      "title": "Show HN: Policy enforcement for Claude Code, Cursor, and Codex",
+      "url": "https://kastra.ai/",
+      "source": "Hacker News",
+      "summary": "Show HN: Runtime authorization for Claude Code, Cursor, and CodexHi HN, Fernando and I built Kastra. Kastra intercepts AI agent tool calls and evaluates them against deterministic policies before they",
+      "date": "2026-07-09",
+      "category": "ai-progress"
+    },
+    {
+      "id": "hn-48837666",
+      "title": "Show HN: Runtime security enforcement and capability scoping for agents",
+      "url": "https://www.clayseal.com",
+      "source": "Hacker News",
+      "summary": "Hi everyone. We&#x27;re AI researchers at Harvard and Carnegie Mellon working on a project to advance the state of agent security. Currently, many systems rely on static sandboxing, which in long-runn",
+      "date": "2026-07-08",
+      "category": "ai-progress"
+    },
+    {
+      "id": "r-https-36kr-com-newsflashes-3889114964130307-f-rss",
+      "title": "马斯克称低估Anthropic，表示不会因竞争切断其支持",
+      "url": "https://36kr.com/newsflashes/3889114964130307?f=rss",
+      "source": "36kr.com",
+      "summary": "马斯克当地时间7月9日在社交平台表示，自己此前对人工智能公司Anthropic的判断“明显错误”，并称Anthropic“目前显然是AI领域的领先者”。马斯克说，“目前没有任何公司发布过像Mythos/Fable这样优秀的模型”。马斯克表示，即使Anthropic是竞争对手，他也不会采取会严重伤害该公司的措施。此前有社交平台用户称，Anthropic依赖从SpaceX租用的计算资源，并讨论如果SpaceX停止相关服务可能带来的影响，马斯克对此回应称不会采取类似行动。（界面）",
+      "date": "2026-07-10",
+      "category": "ai-progress"
+    },
+    {
+      "id": "hn-48798385",
+      "title": "Tell HN: don't trust Bigco AI agents with AI research IP",
+      "url": "https://news.ycombinator.com/item?id=48798385",
+      "source": "Hacker News",
+      "summary": "I am very paranoid about sharing potential AI research with e.g. Claude [Code] or ChatGPT&#x2F;Codex.I believe that any company is essentially a paperclip optimizer that will do whatever it takes to w",
+      "date": "2026-07-05",
+      "category": "ai-regulation"
+    },
+    {
+      "id": "hn-48847159",
+      "title": "UN digital tech agency launches initiative to improve trust in AI agents",
+      "url": "https://www.reuters.com/legal/litigation/un-digital-tech-agency-launches-initiative-improve-trust-ai-agents-2026-07-09/",
+      "source": "Hacker News",
+      "summary": "💬 0 条讨论 · ⭐ 2 分",
+      "date": "2026-07-09",
+      "category": "legal-ai"
+    },
+    {
+      "id": "hn-48843778",
+      "title": "SpaceX and AI startup wealth fuels demand for private jets",
+      "url": "https://www.reuters.com/legal/government/spacex-ai-startup-wealth-fuels-demand-private-jets-2026-07-09/",
+      "source": "Hacker News",
+      "summary": "💬 0 条讨论 · ⭐ 4 分",
+      "date": "2026-07-09",
+      "category": "legal-ai"
+    },
+    {
+      "id": "hn-48854316",
+      "title": "Building an AI legal companion for domestic and sexual violence survivors",
+      "url": "https://apps.apple.com/us/app/lea-by-legali-ai/id6759547127?see-all=reviews&platform=iphone",
+      "source": "Hacker News",
+      "summary": "💬 1 条讨论 · ⭐ 1 分",
+      "date": "2026-07-10",
       "category": "legal-ai"
     }
   ]
